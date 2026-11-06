@@ -18,3 +18,15 @@ Limits: automated accessibility checks and browser emulation do not replace test
 Publication verification is recorded below after deployment.
 
 A later regression check added repeated clicks on an already-current entry anchor after filtering it out. The fix and its four browser-project checks passed. The FedRAMP reference manifest was verified unchanged after this independent project work: 63,442 entries.
+
+## Published site
+
+Public repository: https://github.com/pete-wai/change
+
+Live site: https://pete-wai.github.io/change/
+
+The first GitHub Pages workflow succeeded: https://github.com/pete-wai/change/actions/runs/42225296956. A live Chromium check on November 6, 2026 confirmed HTTP 200, all 46 rendered entries, local asset loading without HTTP errors, comparison controls, filtering/reset, and a deep link opening the Flash details. No JavaScript errors occurred. The machine-readable report is output/live-check.json.
+
+The final site update is tracked at https://github.com/pete-wai/change/actions/runs/42225676438. Future main-branch pushes run the same build and content checks before Pages deployment. Research and reviews remain repository files, not published website assets.
+
+The final update workflow also succeeded. A second live smoke check passed after deployment, and the served app.js included the repeated-anchor recovery fix. GitHub emitted non-blocking runtime migration notices for its Pages actions; build and deployment completed successfully. Documentation-only recording commits use [skip ci] because they do not alter the built site.
