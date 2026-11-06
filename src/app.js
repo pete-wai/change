@@ -57,3 +57,9 @@ $('#show-after').addEventListener('click',()=>{before=false;renderExhibit();});
 $('#case-choice').addEventListener('change',renderExhibit);
 filter({save:false}); renderExhibit(); document.documentElement.classList.add('enhanced');
 if (location.hash) revealAnchor();
+// Clicking an already-current anchor does not fire hashchange. It must still
+// reveal an entry that a later filter has hidden.
+document.addEventListener('click',event=>{
+ const link=event.target.closest('a[href^="#"]');
+ if(link && link.getAttribute('href')===location.hash) requestAnimationFrame(revealAnchor);
+});

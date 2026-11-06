@@ -23,3 +23,7 @@ Below: four era jumps, then filters and the chronology. Each row places the date
 ## Responsive and interaction
 
 At 800px the opening stacks. At 600px chronology dates become a compact row above the entry. Era jumps form two columns. Controls wrap; all targets are at least 44px tall. No horizontal timeline is required. Focus is a 3px teal outline with offset. Native details and links preserve keyboard and no-JS reading. Motion is limited to the exhibit state changing with a short opacity transition; reduced motion disables it.
+
+## Reviewed implementation
+
+The final exhibit uses a vertical route in all layouts. Blocked routes end before the destination; the permission case has a dashed continuation. It does not animate. The state control provides the comparison, and reduced-motion scrolling is immediate. The date rail uses short year ranges, with the longer chronology in details. Era titles were revised after review to “Windows gets new defaults” and “Changes you didn’t have to turn on.” The independent reviewer scored all four identified fixes resolved; see reviews/site-review.md. Browser tests cover reflow at 320px with doubled text.

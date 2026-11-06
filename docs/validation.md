@@ -16,3 +16,5 @@ Evidence paths: output/screenshots/, output/playwright-report/, output/test-resu
 Limits: automated accessibility checks and browser emulation do not replace testing with people using assistive technology or physical devices. Sources are predominantly English-language and vendor/standards records. The history deliberately distinguishes measured deployments from recommended practice and does not claim universal adoption. Every external link can change after this check.
 
 Publication verification is recorded below after deployment.
+
+A later regression check added repeated clicks on an already-current entry anchor after filtering it out. The fix and its four browser-project checks passed. The FedRAMP reference manifest was verified unchanged after this independent project work: 63,442 entries.
