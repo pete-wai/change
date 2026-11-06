@@ -1,0 +1,19 @@
+{
+  "name": "change-security-history",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.21.0", "npm": "11.19.0" },
+  "packageManager": "npm@11.19.0",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "@axe-core/playwright": "4.14.0"
+  }
+}

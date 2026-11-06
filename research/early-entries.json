@@ -1,0 +1,576 @@
+[
+  {
+    "id": "early-pc-antivirus-scanning",
+    "year": 1987,
+    "dateLabel": "Brain 1986; scanner prototypes and retail market, 1987-1992",
+    "title": "PC virus scanners emerge alongside floppy-disk controls",
+    "category": "Software",
+    "status": "defense",
+    "summary": "The Brain boot-sector virus appeared on IBM PCs in 1986 and spread through floppy disks. One vendor’s later history dates an MS-DOS detection program to 1987 and its first retail sale to Austria in 1990. NIST guidance in 1989 recommended antivirus checks before releasing new software, and its 1992 guide described a variety of available tools and how to choose among them. These records show a growing, documented practice, while leaving broad adoption unmeasured.",
+    "before": "IBM PC users exchanged floppy disks and software without a well-established scanner category or routine screening practice documented in federal guidance.",
+    "pressure": "Boot-sector viruses such as Brain could spread when a computer booted from an infected diskette. As viruses multiplied, organizations needed ways to detect and contain infected software before sharing it.",
+    "response": "NIST's 1989 management guide recommended antivirus software to test new software before wider release and advised controls on disk use. By December 1992, NIST described a variety of commercial and emerging antivirus tools and published criteria for choosing among them. One vendor's retrospective dates its first DOS detector to 1987 and its first retail sale to Austria in 1990.",
+    "outcome": "Antivirus scanners became an identifiable product class and part of federal guidance for managing PC software. The evidence establishes availability and recommended practice, not widespread installation or compliance.",
+    "scope": "IBM PC and other personal computer environments, especially organizations selecting antivirus tools. Brain and ESET illustrate specific cases, not all virus families or vendors.",
+    "origin": "NIST dates Brain's appearance to 1986. ESET retrospectively dates its detector to 1987 and retail sale in Austria to 1990. NIST guidance appeared in August 1989 and its dedicated tool-selection guide in December 1992.",
+    "prevalence": "The 1992 NIST guide states that a variety of antivirus tools were available, while the 1989 and 1992 documents recommend or help choose use. Neither gives market share or installation rates. ESET's evidence concerns one vendor and a regional first sale.",
+    "milestones": [
+      {
+        "date": "1986",
+        "event": "The Brain IBM PC boot-sector virus appeared; NIST later describes floppy exchange as a PC-virus propagation route."
+      },
+      {
+        "date": "1987",
+        "event": "ESET's founders retrospectively date an MS-DOS virus-detection program to this year."
+      },
+      {
+        "date": "1989-08",
+        "event": "NIST published a management guide recommending antivirus checks and controls for software and disks."
+      },
+      {
+        "date": "1990",
+        "event": "ESET retrospectively dates its first retail sale, in Austria under the STOPVIR name, to this year."
+      },
+      {
+        "date": "1992-12",
+        "event": "NIST published a dedicated guide for selecting among antivirus tools and techniques."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Computer Viruses and Related Threats: A Management Guide",
+        "url": "https://doi.org/10.6028/NIST.SP.500-166",
+        "kind": "government guidance",
+        "supports": "Contemporaneous 1989 recommendations for antivirus testing of new software, disk controls, and organizational response."
+      },
+      {
+        "title": "A Guide to the Selection of Anti-Virus Tools and Techniques",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-5.pdf",
+        "kind": "government technical guide",
+        "supports": "December 1992 statement that a variety of antivirus tools were available and criteria for selecting scanners and related products."
+      },
+      {
+        "title": "Celebrating 30 Years of Continuous Progress and Innovation",
+        "url": "https://www.eset.com/sg/about/newsroom/press-releases1/awards/celebrating-30-years-of-continuous-progress-and-innovation/",
+        "kind": "vendor retrospective",
+        "supports": "ESET's own retrospective on a 1987 NOD detection program and first Austrian retail sale in 1990; single-vendor evidence only."
+      },
+      {
+        "title": "History of Viruses",
+        "url": "https://csrc.nist.rip/publications/nistir/threats/subsubsection3_3_1_1.html",
+        "kind": "government retrospective",
+        "supports": "Brain's 1986 origin, its boot-sector behavior, and the role of disk exchange in PC-virus spread."
+      }
+    ]
+  },
+  {
+    "id": "morris-worm-cert",
+    "year": 1988,
+    "dateLabel": "November 1988 incident; response formed in 1988",
+    "title": "The Morris worm and the first Internet incident center",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "The Morris worm began spreading on November 2, 1988, and overloaded enough research-network computers to interrupt normal communication. After reviewing the response, DARPA asked Carnegie Mellon’s Software Engineering Institute to create a central point for coordinating security emergencies; CERT/CC was established in 1988. Early estimates differ, but the incident exposed how difficult it was for network experts to coordinate while the network itself was disrupted.",
+    "before": "Network administrators and researchers relied on informal contacts and disconnected local responses when a new threat spread across the ARPANET.",
+    "pressure": "The worm replicated across networked Unix systems, consumed system resources, and made some communication paths unavailable just as responders needed them.",
+    "response": "DARPA commissioned SEI to create a central coordination capability. CERT/CC was established in 1988 and distributed incident information and response guidance.",
+    "outcome": "Incident response gained a standing coordination point. CERT/CC later helped other organizations form response teams, although the scale of the 1988 outbreak remains disputed across sources.",
+    "scope": "The first center served research and government Internet users. Later influence reached a much wider network of national and organizational response teams.",
+    "origin": "The incident began November 2, 1988. DARPA's decision followed a post-incident review. CMU/SEI sources give differing month labels for the center's establishment, so the year 1988 is used here.",
+    "prevalence": "The initial impact was significant within the small connected research Internet, but sources vary between approximately 4,000 affected systems and estimates of 5-10% of roughly 60,000-80,000 hosts. The later response-team network grew over decades.",
+    "milestones": [
+      {
+        "date": "1988-11-02",
+        "event": "The Morris worm began spreading."
+      },
+      {
+        "date": "1988",
+        "event": "DARPA established the CERT Coordination Center at SEI in response to the incident."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Fostering Growth in Professional Cyber Incident Management",
+        "url": "https://www.sei.cmu.edu/history-of-innovation/fostering-growth-in-professional-cyber-incident-management/",
+        "kind": "institutional history",
+        "supports": "SEI states that DARPA asked it to establish CERT/CC in the aftermath of the Morris worm."
+      },
+      {
+        "title": "Tracking and Tracing",
+        "url": "https://resources.sei.cmu.edu/asset_files/SpecialReport/2002_003_001_13928.pdf",
+        "kind": "research report",
+        "supports": "Dates the center to 1988 and provides CERT incident counts through 2001."
+      },
+      {
+        "title": "The President's Commission on Critical Infrastructure Protection Internet Report",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Network%20Group%20Internet%20Report_1999.pdf",
+        "kind": "government report",
+        "supports": "Provides a distinct contemporaneous estimate of roughly 4,000 affected computers and about five percent of connected systems."
+      },
+      {
+        "title": "U.S. Department of Homeland Security Announces Partnership with Carnegie Mellon's CERT Coordination Center",
+        "url": "https://www.cmu.edu/cmnews/extra/030915_cyberpartner.html",
+        "kind": "institutional announcement",
+        "supports": "Dates CERT/CC's formation to November 1988, in contrast to a later SEI report's December date; the public entry therefore uses year only."
+      }
+    ]
+  },
+  {
+    "id": "ssh-remote-login",
+    "year": 1995,
+    "dateLabel": "1995 origin; 1999 OpenBSD release",
+    "title": "SSH replaces exposed remote logins",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "In 1995, Tatu Ylönen developed Secure Shell after a password-sniffing incident at his university showed how exposed remote logins could reveal credentials. SSH encrypts remote sessions and authenticates servers, giving administrators a safer way to log in and copy files over untrusted networks. OpenBSD incorporated OpenSSH in 1999, helping distribute a free implementation; the IETF standardized SSH’s architecture in 2006, after the period when adoption had already begun.",
+    "before": "Telnet, rlogin, and related tools often carried login credentials and session data in clear text across shared networks.",
+    "pressure": "A packet sniffer on a university network captured passwords, demonstrating that attackers who could observe traffic could reuse those credentials.",
+    "response": "Ylönen wrote and released SSH in 1995. OpenBSD incorporated the open-source OpenSSH implementation in 1999; the IETF later published SSH as a standards-track protocol in 2006.",
+    "outcome": "Encrypted remote administration became a common cross-platform practice. SSH did not immediately remove clear-text protocols, and host-key verification remained necessary to resist impersonation.",
+    "scope": "Administrators, researchers, and later general users of Unix-like systems and other platforms. The initial incident and implementation history are creator-reported.",
+    "origin": "Ylönen dates the first SSH implementation to 1995 and links its origin to password sniffing. OpenBSD's OpenSSH release history begins in 1999; RFC 4251 was published in January 2006.",
+    "prevalence": "SSH became broadly used, but the cited standards and project histories do not quantify adoption or prove that Telnet and rlogin disappeared.",
+    "milestones": [
+      {
+        "date": "1995",
+        "event": "Ylönen developed and distributed the first SSH implementation."
+      },
+      {
+        "date": "1999",
+        "event": "OpenBSD integrated OpenSSH."
+      },
+      {
+        "date": "2006-01",
+        "event": "The IETF published SSH architecture as RFC 4251."
+      }
+    ],
+    "sources": [
+      {
+        "title": "History of SSH",
+        "url": "https://www.ssh.com/academy/ssh",
+        "kind": "creator history",
+        "supports": "Ylönen's account of the password-sniffing incident, SSH's 1995 origin, and early distribution."
+      },
+      {
+        "title": "OpenSSH History",
+        "url": "https://www.openssh.org/history.html",
+        "kind": "project history",
+        "supports": "OpenBSD's incorporation and distribution of OpenSSH beginning in 1999."
+      },
+      {
+        "title": "RFC 4251: The Secure Shell Protocol Architecture",
+        "url": "https://www.rfc-editor.org/rfc/rfc4251.html",
+        "kind": "standards-track specification",
+        "supports": "The protocol's security design, publication date, and the need to verify host keys."
+      }
+    ]
+  },
+  {
+    "id": "perimeter-firewalls",
+    "year": 1990,
+    "dateLabel": "1990s practice; documented by 2000-2002",
+    "title": "Firewalls make the network edge a security boundary",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "As organizations connected internal networks to the Internet, firewalls became a way to restrict traffic between networks with different security needs. By 2000, the IETF was documenting expected firewall behavior, and NIST’s 2002 guide covered selection, deployment, and policy. The common perimeter design blocked some outside access, but it could not see every attack moving between internal machines, a limitation that later guidance addressed with controls deeper inside networks.",
+    "before": "Connected organizations had to decide which network services could cross between internal systems and less trusted external networks.",
+    "pressure": "Internet connectivity exposed internal services to remote access and attack, while unrestricted inbound traffic made every service harder to protect individually.",
+    "response": "Network administrators installed packet filters, proxies, and gateway firewalls at network boundaries, with rules defining which traffic could pass.",
+    "outcome": "Perimeter filtering became an established layer of organizational security. It did not detect every attack and could not stop traffic that moved only between internal hosts.",
+    "scope": "Organizational network security, with different firewall technologies and policies across organizations. Evidence establishes an established field by 2000-2002, not a universal installation date.",
+    "origin": "There is no single invention or adoption date. IETF guidance in 2000 and NIST guidance in 2002 document mature operational practice; NIST's 2009 retrospective describes earlier perimeter placement.",
+    "prevalence": "The guidance establishes firewalls as a standard organizational concern but does not provide a measured share of organizations deploying them.",
+    "milestones": [
+      {
+        "date": "2000-10",
+        "event": "RFC 2979 documented firewall behavior and interoperability expectations."
+      },
+      {
+        "date": "2002-01",
+        "event": "NIST published SP 800-41 guidance on firewall selection, deployment, and policy."
+      },
+      {
+        "date": "2009",
+        "event": "NIST described the limits of perimeter-only placement and the use of internal controls."
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 2979: Behavior of and Requirements for Internet Firewalls",
+        "url": "https://www.rfc-editor.org/rfc/rfc2979.html",
+        "kind": "IETF informational RFC",
+        "supports": "Firewall behavior and interoperability expectations by October 2000."
+      },
+      {
+        "title": "NIST SP 800-41: Guidelines on Firewalls and Firewall Policy",
+        "url": "https://csrc.nist.gov/pubs/sp/800/41/final",
+        "kind": "government guidance",
+        "supports": "Firewall selection, deployment, management, and policy were established organizational practices by January 2002."
+      },
+      {
+        "title": "Protecting Information Systems with Firewalls",
+        "url": "https://csrc.nist.gov/pubs/itlb/2009/10/protecting-information-systems-with-firewalls-revi/final",
+        "kind": "government retrospective",
+        "supports": "NIST's retrospective on perimeter placement, blind spots, and later internal network controls."
+      }
+    ]
+  },
+  {
+    "id": "intrusion-detection-systems",
+    "year": 2001,
+    "dateLabel": "1999-2001 guidance",
+    "title": "Intrusion detection adds monitoring to network defense",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "Firewalls could filter traffic, but they could not identify every attack that passed through or began inside a network. By 1999, NIST was advising organizations on acquiring and deploying intrusion detection systems; its 2001 guide described software and hardware that watched host or network events for signs of security problems. NIST called IDS a necessary addition to most organizations’ security infrastructure, an expert assessment rather than a deployment census.",
+    "before": "Many organizations relied on access controls and perimeter devices that could not reveal all suspicious activity within systems or across allowed network paths.",
+    "pressure": "Network attacks increased in number and severity, creating demand for ways to monitor events and identify possible intrusions.",
+    "response": "NIST issued guidance on acquiring and deploying IDS in 1999 and published SP 800-31 in 2001, covering systems that monitor host and network events.",
+    "outcome": "Intrusion monitoring became a recognized organizational security layer alongside prevention. Detection systems generated alerts for staff to investigate and did not prevent every attack.",
+    "scope": "Organizational information systems and networks, as described by NIST. The guide's claim that IDS was necessary for most organizations reflects NIST's assessment, not measured deployment prevalence.",
+    "origin": "IDS research predates this period. The dated behavioral milestone here is NIST's 1999-2001 institutional guidance, not invention of the technology.",
+    "prevalence": "NIST's 2001 publication characterized IDS as a necessary addition to most organizations' security infrastructure. No independent installation rate was established in this research pass.",
+    "milestones": [
+      {
+        "date": "1999-11",
+        "event": "NIST published guidance titled Acquiring and Deploying Intrusion Detection Systems."
+      },
+      {
+        "date": "2001-11",
+        "event": "NIST published SP 800-31 on intrusion detection systems."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NIST SP 800-31: Intrusion Detection Systems",
+        "url": "https://csrc.nist.gov/pubs/sp/800/31/final",
+        "kind": "government guidance",
+        "supports": "IDS function, threat context, and NIST's assessment of organizational importance."
+      },
+      {
+        "title": "NIST SP 800-63 Version 1.0 archived guideline",
+        "url": "https://csrc.nist.gov/csrc/media/projects/800-63-4/documents/sp800-63-1.pdf",
+        "kind": "government bibliography",
+        "supports": "NIST's November 1999 publication on acquiring and deploying IDS."
+      },
+      {
+        "title": "NIST SP 800-94: Guide to Intrusion Detection and Prevention Systems",
+        "url": "https://csrc.nist.gov/pubs/sp/800/94/final",
+        "kind": "government guidance",
+        "supports": "Later distinctions among network-based, host-based, and other IDPS technologies."
+      }
+    ]
+  },
+  {
+    "id": "des-aes-transition",
+    "year": 2001,
+    "dateLabel": "EFF demonstration July 1998; DES withdrawn 2005",
+    "title": "AES replaces DES in federal standards",
+    "category": "Software",
+    "status": "retired",
+    "summary": "DES's 56-bit key became vulnerable to practical exhaustive search. EFF's cracker recovered a key in less than three days in July 1998; in January 1999 EFF and Distributed.net won a later challenge in 22 hours 15 minutes using nearly 100,000 networked computers. NIST published AES in November 2001, effective May 2002, then withdrew DES as a federal standard in May 2005. The demonstrations showed the pressure, but did not alone cause AES selection or dictate private systems.",
+    "before": "DES remained a federal encryption standard, even as computing power made its 56-bit key increasingly vulnerable to exhaustive search.",
+    "pressure": "EFF's DES Cracker demonstrated practical key recovery in less than three days in July 1998; EFF and Distributed.net completed a later challenge in 22 hours 15 minutes in January 1999, while NIST had already begun a public competition to select a replacement.",
+    "response": "NIST selected and published AES as FIPS 197 in November 2001. The Secretary of Commerce withdrew DES-related FIPS standards in May 2005 and encouraged agencies to use AES or, for some applications, Triple DES.",
+    "outcome": "DES ceased to be an approved federal encryption algorithm. AES became the federal successor, while some uses continued under Triple DES and private-sector transitions varied.",
+    "scope": "Federal information processing standards and organizations. The change did not automatically reconfigure all commercial products or deployed systems.",
+    "origin": "EFF's public demonstration occurred in January 1999. AES was published November 26, 2001 and became effective May 26, 2002. DES was withdrawn May 19, 2005.",
+    "prevalence": "Clear formal shift within federal standards. The sources establish recommendation and withdrawal, not the completion date for every agency or commercial migration.",
+    "milestones": [
+      {
+        "date": "1998-07-17",
+        "event": "EFF's DES Cracker won DES Challenge II-2 in less than three days."
+      },
+      {
+        "date": "1999-01-19",
+        "event": "EFF and Distributed.net won DES Challenge III in 22 hours 15 minutes."
+      },
+      {
+        "date": "2001-11-26",
+        "event": "NIST published AES as FIPS 197."
+      },
+      {
+        "date": "2002-05-26",
+        "event": "FIPS 197 became effective."
+      },
+      {
+        "date": "2005-05-19",
+        "event": "NIST withdrew DES-related FIPS standards."
+      }
+    ],
+    "sources": [
+      {
+        "title": "EFF DES Cracker record",
+        "url": "https://w2.eff.org/Privacy/Crypto/Crypto_misc/DESCracker/",
+        "kind": "project record",
+        "supports": "The July 1998 under-three-day challenge result and the January 1999 22-hour-15-minute distributed result."
+      },
+      {
+        "title": "FIPS 197: Advanced Encryption Standard",
+        "url": "https://csrc.nist.gov/files/pubs/fips/197/final/docs/fips-197.pdf",
+        "kind": "federal standard",
+        "supports": "AES specifications and effective date."
+      },
+      {
+        "title": "NIST announcement withdrawing FIPS 46-3 and related standards",
+        "url": "https://csrc.nist.gov/News/2005/Withdrawal-of-FIPS-46-3-FIPS-74-and-FIPS-81",
+        "kind": "standards policy announcement",
+        "supports": "The 2005 withdrawal rationale and explicit AES recommendation."
+      }
+    ]
+  },
+  {
+    "id": "outlook-attachment-security",
+    "year": 2000,
+    "dateLabel": "Melissa March 1999; Outlook update announced May 2000",
+    "title": "Email software starts restricting dangerous attachments",
+    "category": "Software",
+    "status": "defense",
+    "summary": "Melissa arrived as a Word document whose macro used Outlook to send infected copies to people in the sender’s address book. In May 2000, after Melissa and the ILOVEYOU outbreak, Microsoft announced an Outlook security update that warned about and restricted access to potentially unsafe attachments. The change affected Outlook users who received the update, not every email program or mail server. Later versions allowed administrators to configure some attachment controls, and malicious files continued to arrive by email.",
+    "before": "Outlook users could open many executable attachments with few built-in warnings or restrictions, while macro-enabled documents could automate actions in Office applications.",
+    "pressure": "Melissa's macro and Outlook automation spread infected Word documents through address books. ILOVEYOU soon used email attachments to spread a script-based worm.",
+    "response": "Microsoft announced the Outlook Email Security Update on May 15, 2000. It added explicit warnings and required users to save some executable attachments before opening them.",
+    "outcome": "Outlook added a client-side barrier to opening risky attachments, changing the default interaction for covered file types. The update did not eliminate email malware or create a universal email policy.",
+    "scope": "Microsoft Outlook installations receiving the update. Other mail clients and server-side filtering products had separate controls and schedules.",
+    "origin": "Melissa was first detected March 26, 1999. Microsoft announced the Outlook security update May 15, 2000; announcement date is not a universal installation date.",
+    "prevalence": "Broad potential within Outlook users, but uptake varied by release, service pack, and administrator configuration. No global installation or effectiveness measure was established here.",
+    "milestones": [
+      {
+        "date": "1999-03-26",
+        "event": "Melissa began spreading through macro-enabled Word documents and Outlook."
+      },
+      {
+        "date": "2000-05-04",
+        "event": "The ILOVEYOU worm spread through a script attachment."
+      },
+      {
+        "date": "2000-05-15",
+        "event": "Microsoft announced the Outlook Email Security Update."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Alert on Macro Virus Issues",
+        "url": "https://news.microsoft.com/source/1999/03/30/alert-on-macro-virus-issues/",
+        "kind": "contemporaneous vendor advisory",
+        "supports": "Melissa's Word macro, Outlook requirements, and immediate user warnings."
+      },
+      {
+        "title": "Melissa Virus",
+        "url": "https://www.fbi.gov/history/cases-and-criminals/melissa-virus",
+        "kind": "government retrospective",
+        "supports": "How Melissa used Outlook and address books to send infected attachments."
+      },
+      {
+        "title": "Microsoft Outlook Email Security Update announcement",
+        "url": "https://news.microsoft.com/source/2000/05/15/microsoft-to-deliver-major-outlook-security-solution-to-help-protect-customers-against-computer-viruses/",
+        "kind": "vendor rollout announcement",
+        "supports": "The attachment warnings and restrictions announced after both Melissa and ILOVEYOU."
+      }
+    ]
+  },
+  {
+    "id": "microsoft-patch-cadence",
+    "year": 2003,
+    "dateLabel": "Monthly security bulletins announced October 1, 2003",
+    "title": "Microsoft gives security updates a predictable schedule",
+    "category": "Software",
+    "status": "defense",
+    "summary": "Code Red and Nimda spread through vulnerabilities for which patches had already been available, exposing how difficult it was for organizations to track fixes and install them in time. Microsoft announced on October 1, 2003 that it would publish security bulletins monthly, giving administrators a more predictable release schedule. The change standardized one major vendor’s process; it did not guarantee that customers installed each fix sooner, and it should not be mistaken for a universal software-industry cadence.",
+    "before": "Microsoft released security fixes when they were ready, leaving administrators to respond to releases on an unpredictable schedule.",
+    "pressure": "Code Red and Nimda exploited flaws despite patches having been available, showing the operational gap between vendor release and administrator deployment. Microsoft also received customer requests for predictable timing.",
+    "response": "Microsoft announced a monthly security bulletin cadence on October 1, 2003, alongside tools intended to help customers scan and deploy updates.",
+    "outcome": "Administrators gained a regular planning date for Microsoft security releases. A predictable release schedule did not itself ensure timely installation or patch compliance.",
+    "scope": "Microsoft products and customers managing those products. Other vendors and organizations used different update schedules.",
+    "origin": "Microsoft announced the monthly schedule on October 1, 2003. The first monthly security update followed in October. The later label Patch Tuesday describes a Microsoft release schedule, not an industry standard.",
+    "prevalence": "The cadence became a durable Microsoft practice, but the sources do not show how many customers installed fixes or how quickly they did so.",
+    "milestones": [
+      {
+        "date": "2001-07",
+        "event": "Code Red spread through a vulnerability for which a patch had already been released."
+      },
+      {
+        "date": "2001-09",
+        "event": "Nimda exploited multiple previously patched vulnerabilities."
+      },
+      {
+        "date": "2003-10-01",
+        "event": "Microsoft announced monthly security bulletins."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NIST SP 800-40: Procedures for Handling Security Patches",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-40.pdf",
+        "kind": "government guidance",
+        "supports": "Code Red and Nimda's use of vulnerabilities with available patches and the need for patch-management procedures."
+      },
+      {
+        "title": "10 years of Update Tuesdays",
+        "url": "https://www.microsoft.com/en-us/msrc/blog/2013/10/10-years-of-update-tuesdays/",
+        "kind": "vendor retrospective",
+        "supports": "The announcement date, monthly schedule, and customer request for predictability."
+      },
+      {
+        "title": "Microsoft Outlines New Initiatives in Ongoing Security Efforts",
+        "url": "https://news.microsoft.com/source/2003/10/09/microsoft-outlines-new-initiatives-in-ongoing-security-efforts-to-help-customers/",
+        "kind": "contemporaneous vendor announcement",
+        "supports": "Microsoft's stated reasons and planned patch scanning/deployment tools."
+      }
+    ]
+  },
+  {
+    "id": "windows-xp-sp2-firewall",
+    "year": 2004,
+    "dateLabel": "Windows XP SP2, August 2004",
+    "title": "Windows XP turns its built-in firewall on by default",
+    "category": "Software",
+    "status": "default",
+    "summary": "Earlier versions of Windows XP included a firewall but left it off by default. After network worms such as Blaster and Sasser exploited exposed services, Windows XP Service Pack 2 turned the built-in firewall on when no third-party firewall was detected. Microsoft released SP2 to manufacturers on August 6, 2004, with consumer availability later that month. The change gave many PCs a baseline barrier before users configured one, though exceptions and enterprise policies still shaped protection.",
+    "before": "Windows XP included Internet Connection Firewall, but the default configuration left it disabled.",
+    "pressure": "Blaster and Sasser spread by exploiting network-accessible Windows services. Microsoft said the firewall default would stop these worms before they reached the PC.",
+    "response": "Windows XP SP2 replaced the earlier firewall with Windows Firewall and enabled it by default when another firewall was not detected.",
+    "outcome": "Many Windows XP systems received inbound traffic filtering without users having to turn it on manually. Existing third-party firewalls, enterprise policies, service exceptions, and configuration differences limited uniformity.",
+    "scope": "Windows XP SP2 installations. It does not describe all Windows versions or every home and enterprise configuration.",
+    "origin": "Microsoft released SP2 to manufacturing on August 6, 2004; consumer distribution followed later in August. The firewall default changed with SP2, not with Windows XP's original release.",
+    "prevalence": "XP had a very large installed base, but Microsoft and NIST describe the feature and defaults rather than reporting a measured fraction of systems protected by the firewall.",
+    "milestones": [
+      {
+        "date": "2003-08",
+        "event": "Blaster spread through exposed Windows RPC services."
+      },
+      {
+        "date": "2004-07",
+        "event": "Microsoft publicly described the SP2 firewall default as a response to Blaster and Sasser."
+      },
+      {
+        "date": "2004-08-06",
+        "event": "Windows XP SP2 was released to manufacturing."
+      },
+      {
+        "date": "2004-08",
+        "event": "Windows XP SP2 reached consumers."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Will Poole: Microsoft Worldwide Partner Conference 2004",
+        "url": "https://news.microsoft.com/speeches/will-poole-microsoft-worldwide-partner-conference-2004/",
+        "kind": "contemporaneous vendor speech",
+        "supports": "Microsoft's direct connection between the default firewall and stopping Blaster/Sasser."
+      },
+      {
+        "title": "NIST SP 800-69: Windows XP Home Edition security checklist",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-69.pdf",
+        "kind": "government configuration guide",
+        "supports": "Pre-SP2 disabled default, SP2 enabled default, and detection of a third-party firewall."
+      },
+      {
+        "title": "Windows XP SP2 released to computer manufacturers",
+        "url": "https://news.microsoft.com/source/2004/08/06/microsoft-releases-windows-xp-service-pack-2-with-advanced-security-technologies-to-computer-manufacturers/",
+        "kind": "vendor release announcement",
+        "supports": "The August 6, 2004 release-to-manufacturing date."
+      }
+    ]
+  },
+  {
+    "id": "dep-nx-windows",
+    "year": 2004,
+    "dateLabel": "Hardware-enforced DEP in Windows XP SP2, August 2004",
+    "title": "Processors begin marking data as non-executable",
+    "category": "Software",
+    "status": "defense",
+    "summary": "Buffer-overflow exploits often tried to place code in memory and execute it. Processor features called NX by AMD and XD by Intel let operating systems mark some memory pages as data that must not run as instructions. Windows XP SP2 added support for hardware-enforced Data Execution Prevention in 2004. Protection depended on a compatible processor, firmware settings, and Windows policy, so this became an additional obstacle for some exploits rather than a universal fix for memory bugs.",
+    "before": "Many systems allowed code to execute from memory regions used to hold ordinary data, leaving some buffer-overflow attacks able to run injected instructions.",
+    "pressure": "Buffer overflows were a common exploit vector, and attackers used them to place and execute code in writable memory.",
+    "response": "AMD and Intel added non-execute processor features, while Windows XP SP2 introduced hardware-enforced DEP support for compatible systems.",
+    "outcome": "The operating system could prevent execution from some data pages, raising the difficulty of certain exploits. DEP depended on processor, BIOS, Windows version, and configuration and did not remove memory-corruption vulnerabilities.",
+    "scope": "Compatible processors running supported Windows versions. Defaults differed between 32-bit and 64-bit programs and across policy settings.",
+    "origin": "AMD announced Enhanced Virus Protection in February 2004; Windows XP SP2 delivered support in August 2004. The term DEP also covers software enforcement, so this entry concerns the hardware-enforced feature.",
+    "prevalence": "Adoption depended on compatible hardware and configuration. The sources establish vendor and OS rollout requirements, not the share of computers with hardware DEP enabled.",
+    "milestones": [
+      {
+        "date": "2004-02-16",
+        "event": "AMD announced processor support for Enhanced Virus Protection, its name for NX-based DEP."
+      },
+      {
+        "date": "2004-08",
+        "event": "Windows XP SP2 introduced hardware-enforced DEP support."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Determine if hardware DEP is available",
+        "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/determine-hardware-dep-available",
+        "kind": "platform documentation",
+        "supports": "Processor, BIOS, operating-system, and configuration requirements for hardware DEP."
+      },
+      {
+        "title": "Security Tips: Minimizing the Code You Expose to Untrusted Users",
+        "url": "https://learn.microsoft.com/en-us/archive/msdn-magazine/2004/november/security-tips-minimizing-the-code-you-expose-to-untrusted-users",
+        "kind": "contemporaneous technical guidance",
+        "supports": "DEP's buffer-overflow rationale and its place among Windows XP SP2 mitigations."
+      },
+      {
+        "title": "AMD Introduces Enhanced Virus Protection",
+        "url": "https://www.amd.com/en/newsroom/press-releases/2004-2-16-amd-introduces-enhanced-virus-pro.html",
+        "kind": "vendor rollout announcement",
+        "supports": "The processor feature and February 2004 launch timing."
+      }
+    ]
+  },
+  {
+    "id": "wep-wpa-transition",
+    "year": 2004,
+    "dateLabel": "WPA 2002; IEEE 802.11i published July 2004",
+    "title": "Wi-Fi moves beyond WEP",
+    "category": "Networks",
+    "status": "ongoing",
+    "summary": "Wired Equivalent Privacy was intended to protect Wi-Fi traffic, but researchers showed practical weaknesses in its use of RC4 in 2001. The Wi-Fi Alliance introduced WPA in October 2002 as an interim security package while IEEE completed a stronger standard. IEEE published 802.11i in July 2004, and the Alliance called its full implementation WPA2. The replacement gave network owners stronger options, but certification and standards did not force old routers and clients to upgrade immediately.",
+    "before": "Wi-Fi networks commonly relied on WEP, whose key scheduling and reuse properties weakened the protection it was meant to provide.",
+    "pressure": "Researchers published practical cryptanalysis of WEP's use of RC4 in 2001, demonstrating that captured wireless traffic could reveal key material.",
+    "response": "The Wi-Fi Alliance introduced WPA in October 2002 as an interim package. IEEE published 802.11i in July 2004, after which the Alliance used WPA2 for products implementing the full standard.",
+    "outcome": "WPA and WPA2 made stronger wireless protection available through interoperable products and standards. Older equipment and misconfigured networks could continue using WEP, so the change was a gradual transition.",
+    "scope": "IEEE 802.11 wireless LAN standards and Wi-Fi Alliance certified products. This transition does not describe every wireless network or imply that WEP was quickly removed everywhere.",
+    "origin": "The cited WEP cryptanalysis appeared in August 2001. WPA was introduced in October 2002. IEEE approved 802.11i on June 24, 2004 and published it July 24, 2004.",
+    "prevalence": "The standards and certification process demonstrate availability and vendor support, not completed migration. Legacy WEP use persisted beyond 2004.",
+    "milestones": [
+      {
+        "date": "2001-08",
+        "event": "A practical attack on WEP's RC4 key scheduling was published."
+      },
+      {
+        "date": "2002-10",
+        "event": "The Wi-Fi Alliance introduced WPA as an interim security program."
+      },
+      {
+        "date": "2004-06-24",
+        "event": "IEEE approved the 802.11i amendment."
+      },
+      {
+        "date": "2004-07-24",
+        "event": "IEEE published 802.11i-2004; WPA2 was the Alliance's label for the full implementation."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Weaknesses in the Key Scheduling Algorithm of RC4",
+        "url": "https://www.cs.cornell.edu/people/egs/615/RC4.pdf",
+        "kind": "cryptanalysis paper",
+        "supports": "The attack on RC4 key scheduling used in WEP and resulting security pressure."
+      },
+      {
+        "title": "IEEE 802.11i-2004 standard record",
+        "url": "https://standards.ieee.org/ieee/802.11i/3127/",
+        "kind": "wireless standard",
+        "supports": "Approval and publication dates and the defined security mechanisms beyond WEP."
+      },
+      {
+        "title": "NIST draft SP 800-94 Revision 1",
+        "url": "https://csrc.nist.gov/files/pubs/sp/800/94/r1/ipd/docs/draft_sp800-94-rev1.pdf",
+        "kind": "government technical guide",
+        "supports": "The WPA interim chronology and WPA2 naming after IEEE 802.11i ratification."
+      }
+    ]
+  }
+]

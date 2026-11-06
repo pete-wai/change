@@ -1,0 +1,648 @@
+[
+  {
+    "id": "smbv1-clean-install-removal",
+    "year": 2017,
+    "dateLabel": "2017–2021",
+    "title": "SMBv1 disappears from new Windows installs",
+    "category": "Networks",
+    "status": "default",
+    "summary": "Windows kept SMBv1 for compatibility after newer SMB versions were available. Wormable attacks, including WannaCry, renewed pressure to remove the old protocol from exposed systems. Starting with Windows 10 and Server version 1709, Microsoft stopped including SMBv1 by default in several editions and later clean installs; SMBv2 and SMBv3 remained available. The change varies by edition and upgrade path, and administrators can still restore SMBv1 on supported systems.",
+    "before": "SMBv1 remained available in Windows installations for legacy file sharing, alongside newer SMB versions.",
+    "pressure": "Wormable attacks and exposed file-sharing services made the old protocol a costly compatibility default.",
+    "response": "Microsoft removed SMBv1 from clean installs in stages, while retaining newer SMB versions and some compatibility paths.",
+    "outcome": "New Windows 11 installs omit client and server components; some earlier editions, upgrades and managed environments retain exceptions.",
+    "scope": "Microsoft Windows client and server editions; clean installs and upgrades differ.",
+    "origin": "Windows 10 and Windows Server version 1709 began the default transition in 2017.",
+    "prevalence": "Broad default change on recent clean installs, with legacy and enterprise upgrade exceptions; not universal retirement.",
+    "milestones": [
+      {
+        "date": "2017-10",
+        "event": "Windows 10 version 1709 and Windows Server version 1709 stop installing SMBv1 by default in several editions."
+      },
+      {
+        "date": "2018-10",
+        "event": "Windows 10 version 1809 removes SMBv1 client by default from clean Pro installs."
+      },
+      {
+        "date": "2021-10",
+        "event": "Windows 11 clean installs omit SMBv1 client and server by default."
+      }
+    ],
+    "sources": [
+      {
+        "title": "SMBv1 not installed by default in Windows Server and Windows",
+        "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/Troubleshoot/smbv1-not-installed-by-default-in-windows",
+        "kind": "vendor documentation",
+        "supports": "Current edition behavior, version timeline, upgrade exceptions and reinstall limits."
+      },
+      {
+        "title": "Detect, enable, and disable SMBv1, SMBv2, and SMBv3",
+        "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3",
+        "kind": "vendor documentation",
+        "supports": "Removal controls and continued SMBv2/3 alternatives."
+      }
+    ]
+  },
+  {
+    "id": "exchange-online-basic-auth-retirement",
+    "year": 2022,
+    "dateLabel": "2022",
+    "title": "Exchange Online turns off Basic Authentication",
+    "category": "Identity",
+    "status": "retired",
+    "summary": "Exchange clients once sent account passwords directly to mail protocols such as POP, IMAP and Exchange ActiveSync. Microsoft disabled Basic Authentication across several Exchange Online protocols and directed customers to Modern Authentication based on OAuth. The service now reports Basic Auth disabled in all tenants, and the old path cannot be re-enabled. This was a cloud-service change: it did not retire Basic Auth in every Microsoft product, on-premises Exchange deployment or consumer mail service.",
+    "before": "Apps and clients could authenticate to Exchange Online with a username and password on each request.",
+    "pressure": "Stored and repeatedly transmitted credentials increased exposure to password theft and account takeover.",
+    "response": "Microsoft shifted supported clients to OAuth-based Modern Authentication and disabled Basic Auth protocol by protocol.",
+    "outcome": "Basic Auth is disabled in Exchange Online tenants and cannot now be re-enabled; affected integrations had to migrate.",
+    "scope": "Exchange Online Outlook, EWS, Remote PowerShell, POP, IMAP and Exchange ActiveSync protocols; exclusions apply outside the service.",
+    "origin": "Microsoft announced deprecation in 2019 and completed staged disablement starting October 2022.",
+    "prevalence": "Service-wide enforcement across tenants; not a universal retirement of the authentication method elsewhere.",
+    "milestones": [
+      {
+        "date": "2019-09-20",
+        "event": "Microsoft announces Exchange Online Basic Auth deprecation."
+      },
+      {
+        "date": "2022-10-01",
+        "event": "Permanent tenant disablement rollout begins."
+      },
+      {
+        "date": "2022-12-31",
+        "event": "Tenant re-enable window ends."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deprecation of Basic Authentication in Exchange Online",
+        "url": "https://learn.microsoft.com/en-us/lifecycle/announcements/basic-auth-deprecation-exchange-online",
+        "kind": "vendor lifecycle notice",
+        "supports": "Protocol scope and planned rollout date."
+      },
+      {
+        "title": "Deprecation of Basic authentication in Exchange Online",
+        "url": "https://learn.microsoft.com/en-nz/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online",
+        "kind": "vendor service documentation",
+        "supports": "Actual disabled state and end of re-enable option."
+      }
+    ]
+  },
+  {
+    "id": "passkeys-default-signin",
+    "year": 2023,
+    "dateLabel": "2023–24",
+    "title": "Passkeys become a default sign-in prompt",
+    "category": "Identity",
+    "status": "defense",
+    "summary": "Password sign-in leaves users exposed to phishing, reuse and credential theft. Passkeys use a device-held credential and local screen lock to authenticate to a specific service. Google made passkeys its default sign-in method on supported devices in October 2023 and reported more than one billion authentications across 400 million Google accounts by May 2024. Those figures show substantial use inside Google's population; passwords remain available and passkeys have not displaced them across the web.",
+    "before": "Online accounts generally presented passwords as the main sign-in method, with other factors often added afterward.",
+    "pressure": "Phishing and reused or stolen passwords remain common account compromise paths.",
+    "response": "FIDO/WebAuthn passkeys use public-key credentials unlocked by a device PIN or biometric; Google changed the prompt order on eligible devices.",
+    "outcome": "Google reported 1B+ passkey authentications across 400M+ accounts within a year; password fallback persists.",
+    "scope": "Google Accounts on supported devices and services implementing passkeys; this is not web-wide password retirement.",
+    "origin": "Google announced default prompts on October 10, 2023 after enabling account support in May.",
+    "prevalence": "High measured use in Google's accounts, but no comparable ecosystem-wide adoption measure in these sources.",
+    "milestones": [
+      {
+        "date": "2023-05",
+        "event": "Google Accounts begin supporting passkey sign-in."
+      },
+      {
+        "date": "2023-10-10",
+        "event": "Passkeys become the default suggested sign-in method on supported devices."
+      },
+      {
+        "date": "2024-05-02",
+        "event": "Google reports more than one billion authentications across 400 million accounts."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Passkeys week is here",
+        "url": "https://developers.googleblog.com/en/passkeys-week-is-here/",
+        "kind": "vendor product announcement",
+        "supports": "Default sign-in prompt date and supported-device condition."
+      },
+      {
+        "title": "Passkeys, Cross-Account Protection and new ways we’re protecting your accounts",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/google-passkeys-update-april-2024/",
+        "kind": "vendor usage report",
+        "supports": "Reported usage totals and Google-account-specific prevalence."
+      }
+    ]
+  },
+  {
+    "id": "github-contributor-mandatory-2fa",
+    "year": 2023,
+    "dateLabel": "2023–24",
+    "title": "GitHub requires 2FA for code contributors",
+    "category": "Identity",
+    "status": "defense",
+    "summary": "A compromised developer account can expose source code and allow an attacker to publish changes under a maintainer's identity. GitHub rolled out required two-factor authentication to groups of code contributors during 2023, beginning with those it considered influential in the software supply chain. In its first-phase report, GitHub said nearly 95% of notified contributors enrolled and overall active-contributor adoption rose 54%. These are platform-reported results for GitHub users, not all software developers.",
+    "before": "Code contributors could maintain GitHub accounts with password-only authentication.",
+    "pressure": "Social engineering and account takeover create routes to malicious code changes and releases.",
+    "response": "GitHub progressively required contributors and administrators in selected groups to enroll in 2FA.",
+    "outcome": "GitHub reported nearly 95% enrollment among contributors notified in 2023 and 54% higher adoption across active contributors.",
+    "scope": "GitHub.com contributors and selected platform populations; staged program and vendor-reported measurement.",
+    "origin": "Rollout began March 13, 2023, after a 2022 commitment to require 2FA by the end of 2023.",
+    "prevalence": "Strong within notified GitHub cohorts; not every user or software repository globally.",
+    "milestones": [
+      {
+        "date": "2023-03-13",
+        "event": "GitHub starts staged enrollment requirements."
+      },
+      {
+        "date": "2023-12",
+        "event": "Initial rollout target for contributors is reached."
+      },
+      {
+        "date": "2024-03",
+        "event": "GitHub reports nearly 95% notified-cohort enrollment and 54% rise among active contributors."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Raising the bar for software security: GitHub 2FA begins March 13",
+        "url": "https://github.blog/news-insights/product-news/raising-the-bar-for-software-security-github-2fa-begins-march-13/",
+        "kind": "platform rollout notice",
+        "supports": "Scope, phased roll-out, and account takeover rationale."
+      },
+      {
+        "title": "Securing millions of developers through 2FA",
+        "url": "https://github.blog/security/supply-chain-security/securing-millions-of-developers-through-2fa/",
+        "kind": "platform adoption report",
+        "supports": "Enrollment and adoption results, with platform-specific scope."
+      }
+    ]
+  },
+  {
+    "id": "pypi-mandatory-2fa",
+    "year": 2024,
+    "dateLabel": "2024",
+    "title": "PyPI makes two-factor authentication mandatory",
+    "category": "Software",
+    "status": "default",
+    "summary": "Package-registry account theft can let an attacker replace software developers expect to trust. PyPI's staged account-security work culminated in a requirement that all users enable two-factor authentication before managing projects or uploading releases. Users can still browse and install packages without signing in. The change covers PyPI accounts, not the Python ecosystem as a whole, and automation may use API tokens or trusted publishing rather than an interactive second-factor prompt.",
+    "before": "PyPI accounts could perform project management and release uploads without universal 2FA enrollment.",
+    "pressure": "Compromised maintainer accounts can be used to upload malicious package versions.",
+    "response": "PyPI required all account holders to enable 2FA before management actions and uploads, following earlier staged requirements.",
+    "outcome": "Mandatory account 2FA went into effect January 1, 2024; browsing and package downloads remain available without accounts.",
+    "scope": "All PyPI accounts and projects; package consumers without accounts are unaffected.",
+    "origin": "The Python Package Index began staged 2FA policy work in 2019 and announced universal enforcement in December 2023.",
+    "prevalence": "Registry-wide rule, but no adoption metric is supplied; this does not cover all language registries.",
+    "milestones": [
+      {
+        "date": "2019",
+        "event": "PyPI begins staged 2FA enforcement measures."
+      },
+      {
+        "date": "2023-12-13",
+        "event": "PyPI announces universal 2FA requirement beginning January 1."
+      },
+      {
+        "date": "2024-01-01",
+        "event": "2FA gate applies to management actions and uploads."
+      }
+    ],
+    "sources": [
+      {
+        "title": "2FA Requirement for PyPI begins 2024-01-01",
+        "url": "https://blog.pypi.org/posts/2023-12-13-2fa-enforcement/",
+        "kind": "registry policy announcement",
+        "supports": "Effective date and distinction between accounts and package consumers."
+      },
+      {
+        "title": "Security and Internals",
+        "url": "https://docs.pypi.org/about/security-and-internals/",
+        "kind": "registry security documentation",
+        "supports": "Current state that PyPI mandates 2FA for all users."
+      }
+    ]
+  },
+  {
+    "id": "aws-imdsv2-transition",
+    "year": 2019,
+    "dateLabel": "2019–24",
+    "title": "AWS adds a token barrier to instance metadata",
+    "category": "Networks",
+    "status": "default",
+    "summary": "Applications on an EC2 instance can query a local metadata endpoint that supplies temporary role credentials. Server-side request forgery can sometimes make an application fetch that endpoint for an attacker. AWS introduced IMDSv2, which requires a session token created through a PUT request, then moved selected launch paths and new instance types to IMDSv2-only defaults. The earlier service remains available on many existing instances unless customers migrate or set an account-level requirement.",
+    "before": "EC2 software could fetch metadata and temporary role credentials through a simple link-local request.",
+    "pressure": "SSRF flaws and misconfigured proxies can let an attacker reach internal metadata endpoints.",
+    "response": "IMDSv2 adds a session-token request pattern; AWS later made it the default or sole option on selected new launch paths.",
+    "outcome": "Newer AWS launch pathways increasingly require IMDSv2, while existing instances and some configurations can still allow IMDSv1.",
+    "scope": "Amazon EC2 metadata service; default varies by AMI, instance type, launch pathway and account policy.",
+    "origin": "IMDSv2 introduced November 2019; default migration milestones continued through mid-2024.",
+    "prevalence": "Increasing on new infrastructure, but not automatically enforced on every existing instance.",
+    "milestones": [
+      {
+        "date": "2019-11-19",
+        "event": "AWS launches IMDSv2 to add defense against several SSRF patterns."
+      },
+      {
+        "date": "2023-11",
+        "event": "AWS console Quick Starts switch to IMDSv2-only."
+      },
+      {
+        "date": "2024-06",
+        "event": "Newly released EC2 instance types use IMDSv2-only by default, with opt-back support."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Add defense in depth against open firewalls, reverse proxies, and SSRF vulnerabilities with enhancements to the EC2 Instance Metadata Service",
+        "url": "https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/",
+        "kind": "cloud security design announcement",
+        "supports": "SSRF pressure and IMDSv2 token design."
+      },
+      {
+        "title": "Amazon EC2 Instance Metadata Service IMDSv2 by default",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-ec2-instance-metadata-service-imdsv2-by-default/",
+        "kind": "cloud rollout record",
+        "supports": "Completed and planned rollout milestones, with opt-back caveat."
+      },
+      {
+        "title": "Transition to using Instance Metadata Service Version 2",
+        "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-metadata-transition-to-version-2.html",
+        "kind": "cloud service documentation",
+        "supports": "Migration requirements and unchanged existing instances."
+      }
+    ]
+  },
+  {
+    "id": "gmail-sender-requirements",
+    "year": 2024,
+    "dateLabel": "2024–25",
+    "title": "Gmail makes sender authentication a delivery condition",
+    "category": "Networks",
+    "status": "default",
+    "summary": "Email's open delivery system lets senders forge identities and makes bulk abuse harder to distinguish from legitimate mail. Google imposed SPF or DKIM requirements for all senders to personal Gmail and stronger SPF, DKIM, DMARC alignment and one-click unsubscribe requirements for bulk senders. Google later began ramping up temporary and permanent rejection of non-compliant mail in November 2025. This is a Gmail delivery policy, and the public sources do not quantify ecosystem-wide compliance or rejection rates.",
+    "before": "Email delivery across providers accepted inconsistent sender authentication and bulk-sender practices.",
+    "pressure": "Forged sender identities and spam campaigns eroded recipient trust and enabled phishing.",
+    "response": "Google tied delivery to baseline sender authentication and stricter bulk-sender requirements, then ramped rejection enforcement.",
+    "outcome": "Requirements apply to mail reaching personal Gmail; Google documents temporary and permanent rejections beginning November 2025.",
+    "scope": "Personal Gmail accounts; senders over 5,000 messages per day face additional requirements. Other mailbox providers set their own policies.",
+    "origin": "Requirements announced October 2023 and took effect February 1, 2024; stronger rejection enforcement began November 2025.",
+    "prevalence": "Large receiving-platform policy with broad sender impact, but no overall compliance rate published in reviewed sources.",
+    "milestones": [
+      {
+        "date": "2023-10-03",
+        "event": "Google announces new bulk sender requirements."
+      },
+      {
+        "date": "2024-02-01",
+        "event": "Sender requirements take effect for personal Gmail delivery."
+      },
+      {
+        "date": "2025-11",
+        "event": "Google ramps up temporary and permanent rejection of non-compliant traffic."
+      }
+    ],
+    "sources": [
+      {
+        "title": "New Gmail protections for a safer, less spammy inbox",
+        "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+        "kind": "platform announcement",
+        "supports": "Threat rationale, 2024 obligations and Google-reported reduction in unauthenticated mail."
+      },
+      {
+        "title": "Email sender guidelines",
+        "url": "https://support.google.com/mail/answer/81126",
+        "kind": "current service policy",
+        "supports": "Active requirements and bulk-sender threshold."
+      },
+      {
+        "title": "Email sender guidelines FAQ",
+        "url": "https://support.google.com/mail/answer/14229414",
+        "kind": "current enforcement notice",
+        "supports": "November 2025 rejection ramp; temporary and permanent rejection scope."
+      }
+    ]
+  },
+  {
+    "id": "office-activex-default-disabled",
+    "year": 2024,
+    "dateLabel": "2024",
+    "title": "Office disables ActiveX controls by default",
+    "category": "Software",
+    "status": "default",
+    "summary": "ActiveX controls embedded in Office documents can run interactive components when users open a file. Microsoft's security guidance warns that attackers use deceptive documents to persuade people to enable controls. Microsoft 365 and Office 2024 now disable ActiveX by default across Word, Excel, PowerPoint and Visio, while allowing users to turn it back on in Trust Center settings. This is a default change on supported Office versions, not removal of ActiveX or a block on every form of document code.",
+    "before": "Windows desktop Office supported ActiveX controls and some configurations allowed them to run in documents.",
+    "pressure": "Malicious attachments and deceptive prompts can trick users into enabling risky embedded controls.",
+    "response": "Microsoft changed the default setting to disable ActiveX controls in Microsoft 365 and Office 2024.",
+    "outcome": "Controls cannot be created or interacted with under the default setting; administrators or users can still enable them.",
+    "scope": "Microsoft 365 and Office 2024 desktop applications on Windows; Mac and web Office do not support ActiveX.",
+    "origin": "Microsoft documents the changed default for Microsoft 365 and Office 2024; exact channel rollout may vary.",
+    "prevalence": "Default across current supported desktop Office versions, with explicit override and legacy behavior remaining.",
+    "milestones": [
+      {
+        "date": "2024",
+        "event": "Microsoft 365 and Office 2024 default ActiveX controls to disabled."
+      }
+    ],
+    "sources": [
+      {
+        "title": "ActiveX controls are disabled by default in Microsoft 365 and Office 2024",
+        "url": "https://support.microsoft.com/en-us/office/vba/activex-controls-are-disabled-by-default-in-microsoft-365-and-office-2024",
+        "kind": "product security documentation",
+        "supports": "Current default, impact and override steps."
+      },
+      {
+        "title": "Add or register an ActiveX control",
+        "url": "https://support.microsoft.com/en-us/excel/add-or-register-an-activex-control",
+        "kind": "product documentation",
+        "supports": "Legacy feature status and current Office version applicability."
+      }
+    ]
+  },
+  {
+    "id": "chrome-site-isolation-spectre",
+    "year": 2018,
+    "dateLabel": "2018–19",
+    "title": "Chrome separates sites into renderer processes",
+    "category": "Web",
+    "status": "defense",
+    "summary": "Browsers often placed pages from different sites in a shared renderer process for efficiency. Spectre showed that speculative execution could expose data across software boundaries, adding pressure to reduce how much unrelated site data shared a process. Chrome enabled Site Isolation by default on desktop in Chrome 67 and later extended a narrower version to logged-in sites on eligible Android devices. The change costs memory and does not eliminate hardware side channels or all browser vulnerabilities.",
+    "before": "Different websites could share a browser renderer process while relying on software rules to keep their data separate.",
+    "pressure": "Spectre and renderer bugs demonstrated that process sharing could expose cross-site information.",
+    "response": "Chrome put sites into separate sandboxed processes on desktop and expanded isolation to selected Android contexts.",
+    "outcome": "Desktop site isolation became a default; Android coverage is limited by device memory and site sign-in conditions.",
+    "scope": "Chrome desktop platforms from version 67; Android devices with at least 2GB RAM from version 77 for signed-in sites.",
+    "origin": "Desktop default shipped in May 2018; Android expansion followed in 2019.",
+    "prevalence": "Default on supported Chrome desktop platforms, narrower on mobile; browser-specific and resource-sensitive.",
+    "milestones": [
+      {
+        "date": "2018-01",
+        "event": "Spectre disclosure increases concern about cross-site data in shared browser processes."
+      },
+      {
+        "date": "2018-05",
+        "event": "Chrome 67 enables Site Isolation for all sites on desktop by default."
+      },
+      {
+        "date": "2019-09",
+        "event": "Chrome 77 enables Site Isolation for logged-in sites on eligible Android devices."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Site Isolation",
+        "url": "https://www.chromium.org/Home/chromium-security/site-isolation/",
+        "kind": "browser architecture documentation",
+        "supports": "Current scope and platform/version rollout."
+      },
+      {
+        "title": "Site Isolation Design Document",
+        "url": "https://www.chromium.org/developers/design-documents/site-isolation/",
+        "kind": "browser design history",
+        "supports": "Process-sharing context, milestones and known scope limits."
+      }
+    ]
+  },
+  {
+    "id": "npm-trusted-publishing",
+    "year": 2025,
+    "dateLabel": "2025",
+    "title": "npm lets CI publish without long-lived tokens",
+    "category": "Software",
+    "status": "defense",
+    "summary": "A stolen package-publishing token can be reused to release malicious software from an authorized account. npm's trusted publishing uses OpenID Connect to authenticate a specifically configured CI workflow with short-lived credentials, and automatically attaches provenance to packages published this way. The feature reached general availability in July 2025 for GitHub-hosted Actions and GitLab shared runners. It is an available safer path, not evidence that the npm ecosystem has broadly stopped using tokens.",
+    "before": "Automated registry publishing commonly relied on stored, reusable access tokens in CI systems.",
+    "pressure": "Credential leaks and maintainer-account attacks enabled unauthorized package releases.",
+    "response": "npm added workflow-specific OIDC trusted publishing and automatic build provenance attestations.",
+    "outcome": "Trusted publishing became generally available July 2025; public adoption levels remain unreported and tokens continue to be supported.",
+    "scope": "npm packages published through GitHub-hosted Actions or GitLab shared runners; private-source provenance is unavailable.",
+    "origin": "npm trusted publishing reached GA on July 31, 2025.",
+    "prevalence": "Available across npm packages, but no measured ecosystem-wide uptake; feature availability should not be called mainstream adoption.",
+    "milestones": [
+      {
+        "date": "2025-07-31",
+        "event": "npm trusted publishing with OIDC becomes generally available."
+      },
+      {
+        "date": "2025-09-22",
+        "event": "GitHub urges broader use after a wave of registry account takeovers."
+      }
+    ],
+    "sources": [
+      {
+        "title": "npm trusted publishing with OIDC is generally available",
+        "url": "https://github.blog/changelog/2025-07-31-npm-trusted-publishing-with-oidc-is-generally-available/",
+        "kind": "registry feature release",
+        "supports": "GA date, supported CI systems and provenance behavior."
+      },
+      {
+        "title": "Our plan for a more secure npm supply chain",
+        "url": "https://github.blog/security/supply-chain-security/our-plan-for-a-more-secure-npm-supply-chain/",
+        "kind": "registry security response",
+        "supports": "Account-takeover pressure and recommendation to migrate; confirms adoption was not yet organic at scale."
+      }
+    ]
+  },
+  {
+    "id": "memory-safe-language-transition",
+    "year": 2024,
+    "dateLabel": "Ongoing, documented 2024",
+    "title": "Large software makers begin moving new low-level code toward memory safety",
+    "category": "Software",
+    "status": "ongoing",
+    "summary": "Memory errors in C and C++ continue to produce exploitable vulnerabilities. Google has described a gradual move toward memory-safe languages such as Rust for new and high-risk components, alongside hardening for existing C++ code. Android reports incremental Rust use in firmware. The evidence supports a real organizational direction and concrete projects, but not a completed migration or industry-wide default: large legacy codebases remain, and Google itself expects some C++ to persist.",
+    "before": "Low-level systems work commonly used C and C++, which leave memory safety largely to programmer discipline and runtime checks.",
+    "pressure": "Memory safety bugs account for a large share of severe vulnerabilities and remain actively exploited.",
+    "response": "Google prioritizes memory-safe languages for selected new and high-risk code while adding mitigations to legacy C++.",
+    "outcome": "Rust is being introduced incrementally in Android firmware and broader systems; the codebase transition remains incomplete and long-term.",
+    "scope": "Google-reported engineering practices and projects; no evidence here establishes broad industry adoption or completed conversion.",
+    "origin": "Google published explicit strategy and implementation guidance in 2024, building on earlier Rust projects.",
+    "prevalence": "Ongoing within selected teams/projects; not yet a common default across systems software.",
+    "milestones": [
+      {
+        "date": "2024-03-04",
+        "event": "Google describes a gradual transition toward memory-safe languages and incremental C++ safety work."
+      },
+      {
+        "date": "2024-09-04",
+        "event": "Android team publishes a path for replacing parts of existing firmware with Rust."
+      },
+      {
+        "date": "2024-10-15",
+        "event": "Google details its two-part strategy of memory-safe language adoption and legacy code hardening."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Secure by Design: Google’s Perspective on Memory Safety",
+        "url": "https://security.googleblog.com/2024/03/secure-by-design-googles-perspective-on.html",
+        "kind": "engineering policy statement",
+        "supports": "Strategic direction and explicit limits of migrating a large C++ base."
+      },
+      {
+        "title": "Deploying Rust in Existing Firmware Codebases",
+        "url": "https://security.googleblog.com/2024/09/deploying-rust-in-existing-firmware.html",
+        "kind": "engineering implementation report",
+        "supports": "Concrete incremental Android firmware practice."
+      },
+      {
+        "title": "Safer with Google: Advancing Memory Safety",
+        "url": "https://security.googleblog.com/2024/10/safer-with-google-advancing-memory.html",
+        "kind": "engineering strategy report",
+        "supports": "Ongoing language transition and legacy-hardening approach."
+      }
+    ]
+  },
+  {
+    "id": "android-unused-permission-reset",
+    "year": 2021,
+    "dateLabel": "2021",
+    "title": "Android revokes permissions from unused apps",
+    "category": "Devices",
+    "status": "default",
+    "summary": "Users often grant apps access to sensitive data and then stop using them, leaving permissions active. Android 11 added automatic reset of runtime permissions for apps that had not been used for several months, with exceptions for some apps and user controls. Android also added one-time permission grants for location, camera and microphone. This makes least privilege easier to maintain on supported devices, though it applies to Android runtime permissions and is not a substitute for careful app review.",
+    "before": "Runtime permissions granted to an app could remain in place after a user stopped opening it.",
+    "pressure": "Dormant apps retain access to personal data and device features after their active use has ended.",
+    "response": "Android 11 introduced automatic permission reset for long-unused apps and one-time grants for sensitive permissions.",
+    "outcome": "Permissions can be revoked automatically after months of inactivity; exclusions and user controls remain.",
+    "scope": "Android 11+ runtime permissions; exact availability varies by app eligibility and device implementation.",
+    "origin": "Android 11 launched in September 2020; broader auto-reset rollout to older supported devices followed in 2021.",
+    "prevalence": "Default OS behavior on eligible devices, but bounded to runtime permissions and qualifying apps.",
+    "milestones": [
+      {
+        "date": "2020-09",
+        "event": "Android 11 launches one-time permissions and auto-reset behavior."
+      },
+      {
+        "date": "2021",
+        "event": "Google expands permission auto-reset to additional supported Android versions."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Android 11 behavior changes: Privacy",
+        "url": "https://developer.android.com/about/versions/11/privacy/permissions",
+        "kind": "platform release documentation",
+        "supports": "Permission auto-reset behavior and eligibility."
+      },
+      {
+        "title": "One-time permissions",
+        "url": "https://support.google.com/android/answer/9431959",
+        "kind": "platform user documentation",
+        "supports": "User-facing one-time location, camera and microphone permission option."
+      }
+    ]
+  },
+  {
+    "id": "tls-10-11-browser-retirement",
+    "year": 2020,
+    "dateLabel": "2020",
+    "title": "Browsers stop negotiating TLS 1.0 and 1.1 by default",
+    "category": "Web",
+    "status": "retired",
+    "summary": "TLS 1.0 and 1.1 protected web connections for years, but their designs retained obsolete cryptographic choices and weaker constructions. Browser makers coordinated a shift to TLS 1.2 or later, giving site operators advance notice and telemetry before changing client behavior. Firefox 78 and Chrome 84 shipped the change in 2020, with temporary exceptions and rollback during the early pandemic period. This retired old versions as browser defaults; it did not mean every server or application stopped supporting them.",
+    "before": "Browsers continued to negotiate TLS 1.0 and 1.1 for compatibility with older servers.",
+    "pressure": "Older versions lacked modern cryptographic options and retained known design weaknesses; most connections already used TLS 1.2 or later.",
+    "response": "Major browser vendors coordinated deprecation notices, telemetry and staged disablement, moving connections toward TLS 1.2+.",
+    "outcome": "Firefox 78 and Chrome 84 disabled legacy TLS by default in 2020; temporary re-enablement and enterprise policies remained during transition.",
+    "scope": "Browser HTTPS connections; browser releases and enterprise policies differed. This does not establish retirement in every operating system or application.",
+    "origin": "Mozilla announced the plan in October 2018; broad browser disablement arrived in 2020.",
+    "prevalence": "Shipped across major browsers, after telemetry showed low use; legacy endpoints and overrides remained.",
+    "milestones": [
+      {
+        "date": "2018-10-15",
+        "event": "Mozilla announces disabling TLS 1.0/1.1 in Firefox in 2020 and reports TLS 1.1 at 0.1% of connections."
+      },
+      {
+        "date": "2020-06-30",
+        "event": "Firefox 78 release disables TLS 1.0 and 1.1."
+      },
+      {
+        "date": "2020-08",
+        "event": "Chrome 84 removes support, following pandemic-related schedule delays."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Removing Old Versions of TLS",
+        "url": "https://blog.mozilla.org/security/2018/10/15/removing-old-versions-of-tls/",
+        "kind": "browser security announcement",
+        "supports": "Protocol rationale, telemetry and planned transition."
+      },
+      {
+        "title": "Firefox 78.0 Release Notes",
+        "url": "https://www.firefox.com/en-US/firefox/78.0/releasenotes/",
+        "kind": "browser release notes",
+        "supports": "Actual Firefox release outcome."
+      },
+      {
+        "title": "Chrome UI for Deprecating Legacy TLS Versions",
+        "url": "https://security.googleblog.com/2019/10/chrome-ui-for-deprecating-legacy-tls.html",
+        "kind": "browser deprecation notice",
+        "supports": "Chrome staged warnings and planned removal with enterprise exception."
+      },
+      {
+        "title": "Remove TLS 1.0 and TLS 1.1",
+        "url": "https://blog.chromium.org/2020/02/",
+        "kind": "browser release record",
+        "supports": "Chrome 83/84 removal and protocol weaknesses."
+      }
+    ]
+  },
+  {
+    "id": "npm-classic-token-revocation",
+    "year": 2025,
+    "dateLabel": "2025",
+    "title": "npm revokes classic publishing tokens and shortens sessions",
+    "category": "Software",
+    "status": "retired",
+    "summary": "Long-lived registry tokens could be stolen from developer machines or build systems and reused to publish or manage packages. npm disabled creation of classic tokens, capped write-enabled granular-token lifetimes and permanently revoked existing classic tokens in December 2025. In July 2026, bypass-2FA tokens also lost the ability to manage accounts, organizations and packages without an interactive challenge. Interactive logins use two-hour sessions; CI still has granular-token exceptions, and the planned January 2027 direct-publish restriction remains future.",
+    "before": "npm publishers could rely on classic long-lived tokens with broad access and no short expiry.",
+    "pressure": "Compromised package-maintainer accounts and stolen registry credentials have enabled malicious package releases.",
+    "response": "npm disabled classic-token creation, limited granular-token lifetimes, revoked old tokens and changed interactive login to two-hour sessions.",
+    "outcome": "Classic tokens no longer authenticate; existing publisher workflows had to migrate. In July 2026, governance actions using bypass-2FA tokens began requiring interactive 2FA. Granular tokens and trusted publishing remain available.",
+    "scope": "npm registry credentials and package maintainers; does not affect GitHub tokens or all package registries.",
+    "origin": "Security changes announced September 29, 2025, followed by staged rollout and final classic-token revocation December 9.",
+    "prevalence": "Enforced across npm classic tokens; token rotation burden and automation exceptions remain. This is a registry-specific outcome.",
+    "milestones": [
+      {
+        "date": "2025-09-29",
+        "event": "GitHub announces phased npm token lifetime and classic-token changes."
+      },
+      {
+        "date": "2025-11-05",
+        "event": "Classic token creation is disabled and write-token defaults/lifetimes change."
+      },
+      {
+        "date": "2025-12-09",
+        "event": "npm permanently revokes classic tokens and changes interactive login to two-hour sessions."
+      },
+      {
+        "date": "2026-07-31",
+        "event": "Tokens configured to bypass 2FA lose sensitive account, organization and package management actions unless the user completes interactive 2FA."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Strengthening npm security: Important changes to authentication and token management",
+        "url": "https://github.blog/changelog/2025-09-29-strengthening-npm-security-important-changes-to-authentication-and-token-management/",
+        "kind": "registry security rollout notice",
+        "supports": "Announced token lifetime caps, 2FA defaults and classic token sunset."
+      },
+      {
+        "title": "npm security update: Classic token creation disabled and granular token changes",
+        "url": "https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes/",
+        "kind": "registry change notice",
+        "supports": "Actual disabled creation and new token constraints."
+      },
+      {
+        "title": "npm classic tokens revoked, session-based auth and CLI token management now available",
+        "url": "https://github.blog/changelog/2025-12-09-npm-classic-tokens-revoked-session-based-auth-and-cli-token-management-now-available/",
+        "kind": "registry completion notice",
+        "supports": "Completed revocation and actual two-hour session behavior."
+      },
+      {
+        "title": "Restricting npm bypass-2FA granular access tokens",
+        "url": "https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/",
+        "kind": "registry enforcement notice",
+        "supports": "Completed governance-action restriction and future direct-publish plan."
+      }
+    ]
+  }
+]

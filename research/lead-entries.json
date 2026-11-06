@@ -1,0 +1,460 @@
+[
+  {
+    "id": "open-relays",
+    "year": 1998,
+    "dateLabel": "1998–1999",
+    "title": "Mail servers stopped forwarding for strangers",
+    "category": "Networks",
+    "status": "default",
+    "summary": "An open mail relay would pass along messages even when neither the sender nor the recipient belonged to its own network. Spammers turned that courtesy into free delivery infrastructure, leaving administrators with full queues and a damaged reputation. Sendmail 8.9 disabled third-party relaying by default in 1998; the following year, Internet best-practice guidance made relay controls explicit.",
+    "before": "Forward mail for unrelated senders and recipients.",
+    "pressure": "Spam operators borrowed other people’s mail servers.",
+    "response": "Refuse unauthorized third-party relaying.",
+    "outcome": "Sending through a server required an authorized route.",
+    "scope": "Sendmail default and Internet operational guidance; not an overnight change to every server.",
+    "origin": "SMTP relay architecture predates the commercial web.",
+    "prevalence": "RFC 2505 describes widespread abuse and operational costs, not a census.",
+    "milestones": [
+      {
+        "date": "1998-05",
+        "event": "Sendmail 8.9 default changed"
+      },
+      {
+        "date": "1999-02",
+        "event": "RFC 2505 published"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sendmail 8.9 release notes",
+        "url": "https://www.sendmail.org/~ca/email/releases/8.9.0.release.html",
+        "kind": "primary",
+        "supports": "Default relay refusal"
+      },
+      {
+        "title": "RFC 2505: anti-spam recommendations",
+        "url": "https://www.rfc-editor.org/rfc/rfc2505.html",
+        "kind": "primary",
+        "supports": "Abuse, consequences and relay policy"
+      }
+    ]
+  },
+  {
+    "id": "lets-encrypt",
+    "year": 2015,
+    "dateLabel": "2015–2020",
+    "title": "Certificates became something servers could renew themselves",
+    "category": "Web",
+    "status": "defense",
+    "summary": "Getting a certificate used to mean more paperwork, expense and manual renewal than many small sites could justify. Let’s Encrypt opened its free, automated service to everyone in December 2015, making it easier to encrypt ordinary pages as well as logins and checkouts. By February 2020 it served nearly 192 million websites, removing a practical obstacle to HTTPS without making every encrypted site trustworthy.",
+    "before": "Buy and manually manage a web certificate.",
+    "pressure": "Unencrypted browsing exposed traffic to interception.",
+    "response": "Provide free certificates with automated issuance and renewal.",
+    "outcome": "HTTPS became easier to maintain on small sites.",
+    "scope": "One enabling change in a broader migration; certificate counts are not unique users.",
+    "origin": "HTTPS predates this service by decades.",
+    "prevalence": "Let’s Encrypt reported nearly 192 million websites in February 2020.",
+    "milestones": [
+      {
+        "date": "2015-12-03",
+        "event": "Public beta opened"
+      },
+      {
+        "date": "2020-02-27",
+        "event": "Billionth certificate issued"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Let’s Encrypt public beta",
+        "url": "https://letsencrypt.org/2015/12/03/entering-public-beta.html",
+        "kind": "primary",
+        "supports": "Availability and automation"
+      },
+      {
+        "title": "A billion certificates",
+        "url": "https://letsencrypt.org/2020/02/27/one-billion-certs.html",
+        "kind": "primary",
+        "supports": "Deployment scale"
+      }
+    ]
+  },
+  {
+    "id": "sha1-certificates",
+    "year": 2017,
+    "dateLabel": "2015–2017",
+    "title": "SHA-1 certificates lost the browser’s trust",
+    "category": "Web",
+    "status": "retired",
+    "summary": "SHA-1 had been a routine ingredient in website certificates, but years of cryptanalysis weakened confidence in its signatures. Browsers were already withdrawing support when researchers demonstrated a practical collision in February 2017. Firefox finished its phase-out that month, so sites still using SHA-1 certificates had to replace them; the attack did not mean every use of SHA-1, or every encrypted connection, had suddenly been cracked.",
+    "before": "Accept SHA-1 signatures in public website certificates.",
+    "pressure": "Collision attacks undermined signature security.",
+    "response": "Reject affected certificates in browsers.",
+    "outcome": "Operators had to migrate to stronger certificate signatures.",
+    "scope": "Public web certificates; other uses of SHA-1 have different migration histories.",
+    "origin": "NIST deprecated SHA-1 for new signatures in 2011.",
+    "prevalence": "Mozilla reported affected sites were under 0.1% of web traffic by February 2017.",
+    "milestones": [
+      {
+        "date": "2015",
+        "event": "Mozilla announced deprecation plan"
+      },
+      {
+        "date": "2017-02-23",
+        "event": "Practical collision announced"
+      },
+      {
+        "date": "2017-02-24",
+        "event": "Firefox phase-out reached all users"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mozilla’s certificate phase-out",
+        "url": "https://blog.mozilla.org/security/2017/02/23/the-end-of-sha-1-on-the-public-web/",
+        "kind": "primary",
+        "supports": "Enforcement and residual prevalence"
+      },
+      {
+        "title": "NIST on the collision result",
+        "url": "https://csrc.nist.gov/News/2017/Research-Results-on-SHA-1-Collisions",
+        "kind": "primary",
+        "supports": "Earlier deprecation and collision significance"
+      }
+    ]
+  },
+  {
+    "id": "http-warning",
+    "year": 2018,
+    "dateLabel": "2018",
+    "title": "The browser began calling plain HTTP unsafe",
+    "category": "Web",
+    "status": "default",
+    "summary": "The padlock once felt like something to look for at the checkout. As encryption spread to the rest of the web, browsers changed how they presented the pages left behind: Chrome 68 marked all HTTP pages “Not secure” in July 2018. Google already counted HTTPS on 81 of the top 100 sites earlier that year; the warning reinforced a migration that was well underway, rather than blocking every unencrypted page.",
+    "before": "Browse ordinary pages over unencrypted HTTP.",
+    "pressure": "Network observers could read or alter the traffic.",
+    "response": "Label every HTTP page “Not secure.”",
+    "outcome": "Lack of encryption became visible in everyday browsing.",
+    "scope": "Chrome 68 interface change; HTTP remained accessible.",
+    "origin": "Earlier Chrome versions warned on selected sensitive HTTP pages.",
+    "prevalence": "Google reported 81 of the top 100 sites used HTTPS by default in February 2018.",
+    "milestones": [
+      {
+        "date": "2018-02-08",
+        "event": "Chrome announced broader warning"
+      },
+      {
+        "date": "2018-07-24",
+        "event": "Chrome 68 stable release"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Chrome’s HTTP warning",
+        "url": "https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html",
+        "kind": "primary",
+        "supports": "Warning scope and adoption figures"
+      },
+      {
+        "title": "Chrome July 2018 releases",
+        "url": "https://chromereleases.googleblog.com/2018/07/",
+        "kind": "primary",
+        "supports": "Release availability"
+      }
+    ]
+  },
+  {
+    "id": "breached-passwords",
+    "year": 2019,
+    "dateLabel": "2019",
+    "title": "The password manager started recognizing stolen passwords",
+    "category": "Identity",
+    "status": "defense",
+    "summary": "A password could meet every complexity rule and still be sitting in a breach dump from another site. Google’s Password Checkup began warning about exposed credentials in 2019, first as an extension and later inside Chrome. In the researchers’ deployment study, 26% of warnings led to a new password, giving people a reason to change a particular login instead of relying only on a routine password reset.",
+    "before": "Reuse a password without knowing it had leaked elsewhere.",
+    "pressure": "Attackers tried stolen credentials across other services.",
+    "response": "Compare logins against known compromised credentials.",
+    "outcome": "Warnings prompted some users to replace exposed passwords.",
+    "scope": "The study measured extension users; warnings did not automatically fix accounts.",
+    "origin": "Password breach services existed before browser integration.",
+    "prevalence": "The 2019 study observed 21 million logins from nearly 670,000 users.",
+    "milestones": [
+      {
+        "date": "2019-02",
+        "event": "Password Checkup extension launched"
+      },
+      {
+        "date": "2019-12-10",
+        "event": "Chrome integration announced"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Password breach alerting study",
+        "url": "https://research.google/pubs/protecting-accounts-from-credential-stuffing-with-password-breach-alerting/",
+        "kind": "primary",
+        "supports": "Threat and measured response"
+      },
+      {
+        "title": "Chrome password protections",
+        "url": "https://blog.google/products-and-platforms/products/chrome/better-password-protections/",
+        "kind": "primary",
+        "supports": "Integration and rollout"
+      }
+    ]
+  },
+  {
+    "id": "flash",
+    "year": 2021,
+    "dateLabel": "2017–2021",
+    "title": "Flash stopped running",
+    "category": "Web",
+    "status": "retired",
+    "summary": "Games, video players and whole websites once asked you to install Flash. Its security problems became harder to justify as browsers gained built-in alternatives, and daily Flash use among desktop Chrome users fell from 80% in 2014 to 17% in 2017. After a long phase-out, Adobe ended support in December 2020 and blocked Flash content in January 2021, leaving old sites to migrate or rely on preservation tools.",
+    "before": "Install a plug-in to play web video, games and applications.",
+    "pressure": "Security exposure persisted while native web alternatives matured.",
+    "response": "Remove browser support and block the old player.",
+    "outcome": "Flash pages no longer worked in ordinary supported browsers.",
+    "scope": "Adobe’s general-distribution player; specialist legacy arrangements and emulators differ.",
+    "origin": "Flash was a major web platform for roughly two decades.",
+    "prevalence": "Chrome’s daily-user figures fell from 80% to 17% over three years.",
+    "milestones": [
+      {
+        "date": "2017-07",
+        "event": "Retirement announced"
+      },
+      {
+        "date": "2020-12-31",
+        "event": "Adobe support ended"
+      },
+      {
+        "date": "2021-01-12",
+        "event": "Adobe blocked content execution"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Adobe Flash end of life",
+        "url": "https://www.adobe.com/support/flashplayer/",
+        "kind": "primary",
+        "supports": "Support end, block and replacement technologies"
+      },
+      {
+        "title": "Chrome’s Flash transition",
+        "url": "https://blog.google/products-and-platforms/products/chrome/saying-goodbye-flash-chrome/",
+        "kind": "primary",
+        "supports": "Prevalence and security rationale"
+      }
+    ]
+  },
+  {
+    "id": "mass-mfa",
+    "year": 2021,
+    "dateLabel": "2021–2022",
+    "title": "A second sign-in step became the default for millions",
+    "category": "Identity",
+    "status": "default",
+    "summary": "Two-step verification had existed for years, but users often had to find it and switch it on themselves. With stolen passwords and phishing feeding account takeovers, Google began enrolling eligible users automatically and reported more than 150 million enrollments during 2021. It subsequently reported a 50% fall in compromised accounts following that effort, a substantial result within its own rollout rather than proof that every kind of MFA defeats phishing.",
+    "before": "Protect an account with a password unless the user opted into more.",
+    "pressure": "Breached passwords and phishing enabled account takeovers.",
+    "response": "Automatically enroll eligible accounts in two-step verification.",
+    "outcome": "Many more users encountered a second check at sign-in.",
+    "scope": "Google’s eligible accounts and vendor-reported outcome; MFA methods differ.",
+    "origin": "Two-step verification long predates automatic enrollment.",
+    "prevalence": "Google reported over 150 million auto-enrollments in 2021.",
+    "milestones": [
+      {
+        "date": "2021",
+        "event": "Mass automatic enrollment"
+      },
+      {
+        "date": "2022-02-08",
+        "event": "Google reported results"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Google’s enrollment results",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2022/",
+        "kind": "primary",
+        "supports": "Scale and reported reduction"
+      },
+      {
+        "title": "Research on account hijacking defenses",
+        "url": "https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html",
+        "kind": "primary",
+        "supports": "Threats and differences between defenses"
+      }
+    ]
+  },
+  {
+    "id": "internet-macros",
+    "year": 2022,
+    "dateLabel": "2022–2023",
+    "title": "Downloaded Office macros hit a harder stop",
+    "category": "Software",
+    "status": "default",
+    "summary": "The “Enable Content” button became a familiar part of malicious invoices and other booby-trapped documents. Starting in 2022, Microsoft replaced that easy route for internet-sourced VBA macros with a block in Office on Windows, rolling the change through its update channels into 2023. Macros still had legitimate users and ways to be trusted, but an emailed document could no longer rely on the same one-click invitation to run code.",
+    "before": "Click “Enable Content” to run a downloaded document’s macros.",
+    "pressure": "Phishing documents persuaded users to enable malicious VBA.",
+    "response": "Block internet-origin macros by default.",
+    "outcome": "The familiar enable button no longer bypassed this block.",
+    "scope": "Affected Office apps on Windows, with origin marks and trust exceptions; not a ban on all macros.",
+    "origin": "Malicious macros date to the 1990s.",
+    "prevalence": "NCSC describes macros as widely embedded in business workflows and attacks.",
+    "milestones": [
+      {
+        "date": "2022-07-27",
+        "event": "Current Channel rollout started"
+      },
+      {
+        "date": "2023-01-10",
+        "event": "Semi-Annual Enterprise Channel change"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Microsoft’s rollout and exceptions",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+        "kind": "primary",
+        "supports": "Affected versions, dates and behavior"
+      },
+      {
+        "title": "NCSC macro security guidance",
+        "url": "https://www.ncsc.gov.uk/guidance/macro-security-for-microsoft-office",
+        "kind": "primary",
+        "supports": "Legitimate use and malicious document tactics"
+      }
+    ]
+  },
+  {
+    "id": "s3-public-access",
+    "year": 2023,
+    "dateLabel": "2018–2023",
+    "title": "New storage buckets gained a guard against accidental exposure",
+    "category": "Software",
+    "status": "default",
+    "summary": "S3 buckets were private by default from the beginning, yet a mistaken policy or access-control setting could still expose their contents. AWS introduced Block Public Access in 2018 to prevent those accidental openings. In April 2023 it enabled that guard and disabled ACLs for all newly created buckets, adding an extra step before storage could be made public without silently changing existing buckets.",
+    "before": "A policy or ACL could make a private bucket publicly accessible.",
+    "pressure": "Mistakes in access settings exposed stored data.",
+    "response": "Enable Block Public Access and disable ACLs on new buckets.",
+    "outcome": "Public sharing required an explicit configuration change.",
+    "scope": "New buckets across AWS Regions; existing buckets were not retroactively changed.",
+    "origin": "S3 always started private; the additional guard arrived in 2018.",
+    "prevalence": "Default coverage applies to every newly created bucket, not a measured share of existing storage.",
+    "milestones": [
+      {
+        "date": "2018-11-15",
+        "event": "Block Public Access launched"
+      },
+      {
+        "date": "2023-04-05",
+        "event": "New default rollout began"
+      },
+      {
+        "date": "2023-04-27",
+        "event": "AWS reported completion in all Regions"
+      }
+    ],
+    "sources": [
+      {
+        "title": "AWS’s guard and completed rollout",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-s3-block-public-access-another-layer-of-protection-for-your-accounts-and-buckets/",
+        "kind": "primary",
+        "supports": "Original privacy, rationale, completion"
+      },
+      {
+        "title": "AWS rollout announcement",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-s3-two-security-best-practices-buckets-default/",
+        "kind": "primary",
+        "supports": "Default changes and new-bucket scope"
+      }
+    ]
+  },
+  {
+    "id": "http-permission",
+    "year": 2026,
+    "dateLabel": "2026",
+    "title": "Plain HTTP began needing permission",
+    "category": "Web",
+    "status": "default",
+    "summary": "The small “Not secure” label appeared only after a browser had already made an unencrypted connection. In October 2026, Google reported that Chrome now asks permission before connecting to public sites that cannot use HTTPS. The warning can be bypassed, remembers recently approved sites, and normally excludes local addresses and intranets, so this is a stronger default rather than the end of HTTP.",
+    "before": "Connect over HTTP, then show a warning in the address bar.",
+    "pressure": "An attacker could intercept the first request, including a redirect to HTTPS.",
+    "response": "Ask before making an insecure connection to a public site.",
+    "outcome": "Public HTTP access became a deliberate exception.",
+    "scope": "Chrome default; bypasses, remembered approvals and local-network exceptions remain.",
+    "origin": "An opt-in secure-connection setting preceded the default.",
+    "prevalence": "Google’s rollout report says nearly 95% of desktop users saw no HTTP warning in a given week.",
+    "milestones": [
+      {
+        "date": "2025-10-28",
+        "event": "Default change announced"
+      },
+      {
+        "date": "2026-10-21",
+        "event": "Google reported default rollout completed"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Chrome’s completed rollout",
+        "url": "https://blog.google/security/chrome-now-warns-before-insecure-http-connections/",
+        "kind": "primary",
+        "supports": "Actual rollout, exceptions and warning rates"
+      },
+      {
+        "title": "The preceding HTTPS plan",
+        "url": "https://blog.google/security/https-by-defau/",
+        "kind": "primary",
+        "supports": "Earlier behavior, threat and announced scope"
+      }
+    ]
+  },
+  {
+    "id": "internet-wide-scanning",
+    "year": 2013,
+    "dateLabel": "2009–2013",
+    "title": "Exposed services became searchable at Internet scale",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "A service did not need a popular website to be found. Shodan made Internet-facing devices searchable, and ZMap demonstrated a single-port scan of public IPv4 space in under 45 minutes in 2013. The same visibility helped researchers measure vulnerable systems and let administrators inventory their exposure; it also made clear why an obscure address was a poor substitute for access controls.",
+    "before": "Finding exposed services at Internet scale was slower and more laborious.",
+    "pressure": "Unprotected services could remain reachable without their owners noticing.",
+    "response": "Searchable service indexes and high-speed scanning made exposure easier to audit.",
+    "outcome": "Internet-wide measurement became practical for researchers and security products.",
+    "scope": "Dual-use visibility tools, not a claim that scanners created vulnerabilities or that all IPv6 space was scanned.",
+    "origin": "Shodan’s service indexing and ZMap’s 2013 research are separate developments.",
+    "prevalence": "The ZMap authors’ 2024 retrospective documents hundreds of research papers and commercial security adoption.",
+    "milestones": [
+      {
+        "date": "2013-08",
+        "event": "ZMap research demonstrated Internet-wide scanning."
+      },
+      {
+        "date": "2024",
+        "event": "Authors documented a decade of research and commercial adoption."
+      }
+    ],
+    "sources": [
+      {
+        "title": "ZMap’s original research",
+        "url": "https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/durumeric",
+        "kind": "primary",
+        "supports": "Performance, single-port scope and dual use"
+      },
+      {
+        "title": "What Shodan indexes",
+        "url": "https://help.shodan.io/the-basics/what-is-shodan",
+        "kind": "primary",
+        "supports": "Device indexing and defensive inventory"
+      },
+      {
+        "title": "Ten Years of ZMap",
+        "url": "https://arxiv.org/abs/2406.15585",
+        "kind": "primary",
+        "supports": "Subsequent research and commercial adoption"
+      }
+    ]
+  }
+]

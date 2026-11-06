@@ -1,0 +1,11 @@
+{
+  "project": "change",
+  "mode": "read",
+  "buildPath": "code-led",
+  "colors": {"paper":"#f5f2e9","ink":"#202d32","muted":"#526066","rule":"#c7c9bf","accent":"#a83b2d","teal":"#155c59","dark":"#203a40","darkSecondary":"#d7e4df"},
+  "typography": {"display":"Newsreader","body":"Arial, Helvetica, sans-serif","bodySize":"17px","bodyLineHeight":1.6},
+  "layout": {"outerMax":"1328px","padding":"clamp(20px, 4.5vw, 64px)","stackBreakpoint":"800px","mobileBreakpoint":"600px","dateRail":"190px"},
+  "controls": {"minHeight":"44px","radius":"4px","focus":"3px solid #155c59"},
+  "assets": {"font":"public/fonts/newsreader.ttf","fontLicense":"public/fonts/OFL.txt"},
+  "review": "reviews/site-review.md"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "flash",
+    "label": "Flash in the browser",
+    "date": "2021",
+    "input": "A site with Flash content",
+    "target": "Flash Player",
+    "before": "The plug-in could run the site's Flash content.",
+    "after": "Adobe blocked Flash content from running in Flash Player on January 12, 2021.",
+    "beforeAction": "Content can run",
+    "afterAction": "Content blocked",
+    "change": "blocked"
+  },
+  {
+    "id": "internet-macros",
+    "label": "Office macros from the internet",
+    "date": "2022–23",
+    "input": "An internet-marked Office file",
+    "target": "VBA macros",
+    "before": "A familiar warning offered an Enable Content button for macros in an untrusted file.",
+    "after": "Affected Office apps on Windows block these macros by default. Trust settings and managed exceptions still matter.",
+    "beforeAction": "Enable Content offered",
+    "afterAction": "Blocked by default",
+    "change": "blocked"
+  },
+  {
+    "id": "open-relays",
+    "label": "Mail for strangers",
+    "date": "1998",
+    "input": "Mail from an outside sender",
+    "target": "Another outside recipient",
+    "before": "An open mail relay would forward mail between outsiders, a useful courtesy that spammers could abuse.",
+    "after": "Sendmail 8.9 refused third-party relaying by default. Administrators could still authorize their own users and networks.",
+    "beforeAction": "Relay accepts the mail",
+    "afterAction": "Relaying refused by default",
+    "change": "blocked"
+  },
+  {
+    "id": "http-permission",
+    "label": "Opening an HTTP site",
+    "date": "2026",
+    "input": "A public HTTP address",
+    "target": "An unencrypted connection",
+    "before": "Chrome could label the connection insecure while still opening the page.",
+    "after": "Chrome's default warning now asks before connecting to public HTTP sites. Chrome remembers recent approvals and generally skips the warning for local addresses and intranets.",
+    "beforeAction": "Page opens with a warning label",
+    "afterAction": "Permission comes first",
+    "change": "permission"
+  }
+]

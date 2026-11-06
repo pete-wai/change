@@ -1,0 +1,110 @@
+Boot-sector viruses and disk scanning
+Morris worm and CERT coordination
+Password sniffing and SSH
+Open SMTP relays
+DES brute force and AES
+Macro viruses and Office prompts
+Melissa and Outlook attachment restrictions
+ILOVEYOU and script attachments
+Perimeter firewalls
+Network IDS and IPS
+Windows XP SP2 firewall
+Automatic security updates
+Patch Tuesday
+DEP and non-executable memory
+ASLR
+Stack canaries
+Windows Vista UAC
+Unix privilege separation
+Web browser process sandboxes
+Mobile application sandboxing
+Signed mobile apps and app stores
+Android runtime permissions
+Gatekeeper and downloaded software
+Secure Boot
+Full-disk encryption
+USB AutoRun restrictions
+BadUSB
+USB restricted mode
+WEP to WPA/WPA2
+KRACK and wireless patches
+WPA3 and password guessing
+Bluetooth discoverability
+Router default passwords
+Mirai and IoT defaults
+UPnP exposure
+DNS cache poisoning and source port randomization
+DNSSEC
+DNS over HTTPS
+BGP route validation and RPKI
+NTP amplification
+DNS amplification and response rate limiting
+SYN cookies
+DDoS mitigation services
+Shodan searchable services
+ZMap Internet-wide scanning
+SMBv1 removal
+RDP network level authentication
+Telnet removal from devices
+FTP removal from browsers
+rlogin and rsh replacement
+SSLv2 retirement
+SSLv3 and POODLE
+TLS 1.0/1.1 retirement
+RC4 retirement
+MD5 certificate collision
+SHA-1 certificate retirement
+Export-grade crypto FREAK/Logjam
+HTTPS everywhere
+Let's Encrypt certificate automation
+HSTS and SSL stripping
+Mixed-content blocking
+Certificate Transparency
+DigiNotar distrust
+Symantec certificate distrust
+Shorter certificate lifetimes
+Flash retirement
+Java/NPAPI retirement
+ActiveX retirement
+Internet Explorer retirement
+Browser popup blocking
+Safe Browsing and malicious site warnings
+Extension signing and store requirements
+Content Security Policy
+SameSite cookies
+Cross-site request forgery tokens
+SQL injection and parameterized queries
+Password hashing with salts and work factors
+Password expiration guidance changes
+Password managers
+Credential stuffing and breached-password checks
+Mass MFA enrollment
+SMS MFA limitations
+Passkeys and security keys
+Legacy Basic authentication retirement
+OAuth third-party access
+OAuth PKCE
+Email SPF/DKIM/DMARC
+Gmail bulk sender requirements
+Remote email images blocked
+Office Protected View
+Internet macros blocked
+ActiveX Office defaults
+Antivirus integrated into Windows
+EDR and behavioral detection
+Ransomware and immutable backups
+Cloud storage public access defaults
+Cloud metadata IMDSv2
+Software dependency scanning
+Reproducible builds
+Package signing and provenance
+Registry mandatory MFA
+Short-lived package publishing credentials
+Memory-safe language adoption
+Spectre and browser isolation
+Meltdown and kernel page-table isolation
+Hardware-backed credentials
+TLS forward secrecy
+QUIC encryption
+Post-quantum cryptography deployment
+AI prompt injection defenses

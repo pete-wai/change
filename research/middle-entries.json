@@ -1,0 +1,562 @@
+[
+  {
+    "id": "windows-dep",
+    "year": 2004,
+    "dateLabel": "Windows XP SP2, August 2004",
+    "title": "Windows adds non-executable memory protection",
+    "category": "Software",
+    "status": "defense",
+    "summary": "Windows XP Service Pack 2 introduced Data Execution Prevention, using processor support to mark memory pages as non-executable and stop some injected code from running. DEP shifted exploit defense toward preventing execution even when an attacker found a way to place data in memory. Its reach depended on compatible hardware and the selected Windows policy; the XP default covered Windows components and services, with broader coverage available to administrators.",
+    "before": "Memory corruption could allow data written into memory to be executed as code.",
+    "pressure": "Code injection and buffer-overflow exploits made execution control a needed layer beyond patching vulnerable software.",
+    "response": "XP SP2 used NX-capable processors and software policy to deny execution from protected memory pages.",
+    "outcome": "DEP raised the cost of some exploits and became one layer in later exploit-mitigation stacks; it did not fix memory errors or stop return-oriented techniques on its own.",
+    "scope": "Windows XP SP2 and compatible hardware; the default configuration was opt-in for Windows components and services, while administrators could opt out or enable broader protection.",
+    "origin": "Hardware NX support came from processor vendors; Microsoft integrated DEP into XP SP2.",
+    "prevalence": "Shipped to XP SP2 users, but actual hardware capability and DEP policy varied. No population adoption rate established here.",
+    "milestones": [
+      {
+        "date": "2004-08-25",
+        "event": "Windows XP Service Pack 2 released with DEP."
+      },
+      {
+        "date": "2004-08",
+        "event": "Microsoft documented the default OptIn policy and hardware requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Determine if hardware DEP is available",
+        "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/determine-hardware-dep-available",
+        "kind": "vendor documentation",
+        "supports": "Hardware requirements, XP SP2 availability, and default OptIn policy."
+      },
+      {
+        "title": "Data Execution Prevention",
+        "url": "https://learn.microsoft.com/en-us/windows/win32/memory/data-execution-prevention",
+        "kind": "vendor documentation",
+        "supports": "The memory-execution mitigation and its limits."
+      }
+    ]
+  },
+  {
+    "id": "windows-uac",
+    "year": 2006,
+    "dateLabel": "Windows Vista, November 2006 onward",
+    "title": "Windows makes elevation visible",
+    "category": "Software",
+    "status": "default",
+    "summary": "Windows Vista introduced User Account Control, giving administrator accounts a restricted token for ordinary work and asking for elevation when an operation needed greater privilege. Compatibility virtualization also let some older applications run without unrestricted administrator access. This changed the expected Windows workflow, though people could suppress prompts, and the design's effectiveness depended on accounts, settings, and users' responses to repeated dialogs.",
+    "before": "Many Windows users and applications operated with administrator privileges for routine tasks.",
+    "pressure": "Malware running as the logged-in user could make persistent system-wide changes, while legacy software often assumed it could write to protected locations.",
+    "response": "Vista introduced split tokens, consent or credential prompts, and compatibility features intended to make standard-user operation more practical.",
+    "outcome": "UAC brought elevation into ordinary desktop use and pushed developers toward privilege-aware software, while prompt fatigue and compatibility issues led to criticism and configuration changes.",
+    "scope": "Windows Vista and later Windows versions; exact prompt behavior depends on account type and policy.",
+    "origin": "Microsoft's Windows Vista engineering program, building on least-privilege operating-system design.",
+    "prevalence": "Shipped with Vista and persisted in later Windows releases. The sources establish availability and design, not the share of users running standard accounts or leaving prompts enabled.",
+    "milestones": [
+      {
+        "date": "2006-11-30",
+        "event": "Windows Vista became available to business customers."
+      },
+      {
+        "date": "2007-01-30",
+        "event": "Windows Vista general availability began."
+      }
+    ],
+    "sources": [
+      {
+        "title": "User Account Control overview",
+        "url": "https://learn.microsoft.com/en-us/windows-server/security/user-account-control/user-account-control-overview",
+        "kind": "vendor documentation",
+        "supports": "Elevation behavior and administrative operations requiring greater permissions."
+      },
+      {
+        "title": "Windows Vista application development requirements for UAC",
+        "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/user-account-control",
+        "kind": "vendor documentation",
+        "supports": "UAC introduction and requirements for standard-user applications."
+      }
+    ]
+  },
+  {
+    "id": "usb-autorun",
+    "year": 2009,
+    "dateLabel": "Windows 7 release candidate, April 2009",
+    "title": "Windows stops USB drives from launching AutoRun",
+    "category": "Devices",
+    "status": "default",
+    "summary": "Windows 7 changed AutoPlay so a USB mass-storage drive could no longer use its autorun.inf file to launch a program automatically. Microsoft linked the change to a rise in malware spreading through removable media, including Conficker, and carried the behavior to later updates for Windows XP and Vista. CDs and DVDs retained AutoRun behavior, and devices that presented themselves as optical drives could still fall outside the rule.",
+    "before": "Windows could offer or launch programs described by autorun.inf when removable media was inserted, creating a path for malware propagation and misleading prompts.",
+    "pressure": "Microsoft reported increased malware abuse of AutoRun through USB media in early 2009, with Conficker as a prominent example.",
+    "response": "Windows 7 removed AutoRun execution from non-optical removable media and clarified when a program came from external media.",
+    "outcome": "USB insertion no longer triggered the same automatic launch path by default, though optical media and some devices identifying as CD/DVD remained exceptions.",
+    "scope": "Windows 7 and later XP/Vista updates; non-optical removable media. Not a universal ban on AutoPlay or CD/DVD AutoRun.",
+    "origin": "Microsoft Windows engineering and MSRC in response to changing removable-media malware behavior.",
+    "prevalence": "Became a Windows default with Windows 7 and was backported. Sources document intended behavior, not measured infection reduction.",
+    "milestones": [
+      {
+        "date": "2009-04-28",
+        "event": "Microsoft announced the AutoRun change for Windows 7 Release Candidate and planned XP/Vista updates."
+      },
+      {
+        "date": "2009-10-22",
+        "event": "Windows 7 reached general availability."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AutoRun changes in Windows 7",
+        "url": "https://www.microsoft.com/en-us/msrc/blog/2009/04/autorun-changes-in-windows-7/",
+        "kind": "vendor engineering blog",
+        "supports": "Distinguishes AutoRun from AutoPlay, names Conficker, describes behavior change and optical-media exception."
+      },
+      {
+        "title": "Changes in Windows to Meet Changes in Threat Landscape",
+        "url": "https://www.microsoft.com/en-us/msrc/blog/2009/04/changes-in-windows-to-meet-changes-in-threat-landscape",
+        "kind": "vendor security blog",
+        "supports": "Connects the default change to observed increase in removable-media malware."
+      }
+    ]
+  },
+  {
+    "id": "chromium-sandbox",
+    "year": 2008,
+    "dateLabel": "Chromium announced, September 2008",
+    "title": "Chrome contains browser code in a sandbox",
+    "category": "Web",
+    "status": "defense",
+    "summary": "Chromium's launch-era security design put complex page rendering in a restricted process that had to ask a more privileged browser process for access to files and the network. The containment goal was to limit what a successful renderer exploit could do on the computer. This became a defining browser defense, although it did not stop phishing or web application flaws and could not prevent every attack that escaped the sandbox.",
+    "before": "A browser code-execution flaw could give the exploited component broad access to a user's files and operating-system resources.",
+    "pressure": "Web content exposed large parsing and scripting engines to untrusted input, making complete prevention of code-execution flaws unrealistic.",
+    "response": "Chromium separated renderer and browser processes and restricted renderer resource access through a sandbox policy.",
+    "outcome": "The browser gained a containment layer after code execution. Later sandbox escapes and platform-specific limitations show why it remained one layer rather than a full boundary guarantee.",
+    "scope": "Chrome/Chromium; sandbox capabilities and restrictions vary by operating system and browser version.",
+    "origin": "Chromium project, publicly described alongside the 2008 browser launch.",
+    "prevalence": "Adopted as a core Chrome design and subsequently common across major browser architectures; no market adoption statistic included here.",
+    "milestones": [
+      {
+        "date": "2008-09-02",
+        "event": "Google announced the Chrome beta and its security architecture."
+      },
+      {
+        "date": "2008-09-10",
+        "event": "Chromium published a technical explanation of its sandbox model."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Security Architecture",
+        "url": "https://blog.chromium.org/2008/09/security-architecture.html",
+        "kind": "vendor engineering blog",
+        "supports": "Original purpose, process division, access mediation, and limits."
+      },
+      {
+        "title": "Chromium Sandbox FAQ",
+        "url": "https://github.com/chromium/chromium/blob/main/docs/design/sandbox_faq.md",
+        "kind": "project technical documentation",
+        "supports": "What sandboxing restricts and which harms it does not prevent."
+      }
+    ]
+  },
+  {
+    "id": "android-runtime-permissions",
+    "year": 2015,
+    "dateLabel": "Android 6.0, October 2015",
+    "title": "Android asks for sensitive permissions at runtime",
+    "category": "Devices",
+    "status": "default",
+    "summary": "Android 6.0 moved dangerous permissions from a single install-time grant to prompts shown when an app needed access, and users could later revoke individual permissions. The change gave people more control over access to contacts, location, and other protected resources while requiring developers to handle denials. The model applied to apps targeting the new API level; handset update delays and compatibility behavior meant users did not all encounter it at once.",
+    "before": "Earlier Android releases grouped permissions at install, so installing or updating an app could grant broad access without a later in-context decision.",
+    "pressure": "Users had limited visibility into why an app needed sensitive data and little control over individual grants after installation.",
+    "response": "Android 6.0 introduced runtime requests and individual grant/revoke controls for apps targeting API 23 or higher.",
+    "outcome": "Permission decisions became visible at point of use and developers had to account for refusal. Prompt timing, habituation, and delayed OS upgrades limited the change's uniform effect.",
+    "scope": "Android Marshmallow and later; runtime model applies to target API 23+ apps, with legacy target behavior differing.",
+    "origin": "Google's Android platform, introduced with Android 6.0 Marshmallow.",
+    "prevalence": "Available with Android 6.0 from October 2015, but rollout to existing handsets depended on manufacturers and carriers. No installed-base adoption measure included.",
+    "milestones": [
+      {
+        "date": "2015-05-28",
+        "event": "Google announced Android M and runtime permissions at Google I/O."
+      },
+      {
+        "date": "2015-10-05",
+        "event": "Android 6.0 Marshmallow began release."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Android 6.0 Changes",
+        "url": "https://developer.android.com/about/versions/marshmallow/android-6.0-changes",
+        "kind": "platform release documentation",
+        "supports": "The runtime permissions model and API 23 targeting condition."
+      },
+      {
+        "title": "Request runtime permissions",
+        "url": "https://developer.android.com/training/permissions/requesting",
+        "kind": "developer documentation",
+        "supports": "User grant/revoke and application behavior requirements."
+      }
+    ]
+  },
+  {
+    "id": "gatekeeper",
+    "year": 2012,
+    "dateLabel": "OS X Mountain Lion, July 2012",
+    "title": "Mac adds a default check on downloaded apps",
+    "category": "Software",
+    "status": "default",
+    "summary": "OS X Mountain Lion introduced Gatekeeper with a default setting that allowed software from the Mac App Store and from developers identified by Apple. A developer signature let the system check the publisher identity and whether the app had changed since signing. Users could choose stricter or looser policies, so Gatekeeper made trust more visible without certifying that signed software was harmless or eliminating malicious downloads.",
+    "before": "Mac users could download and run applications from many sources without an operating-system default that filtered by publisher identity.",
+    "pressure": "Internet-distributed malware made it harder for users to judge where software came from and whether a download had been altered.",
+    "response": "Mountain Lion added Gatekeeper, defaulting to Mac App Store and identified developers, with user-selectable stricter or looser settings.",
+    "outcome": "Mac software distribution gained a built-in publisher and integrity check. Users could override it, and a valid signature did not establish that software was safe.",
+    "scope": "OS X Mountain Lion and compatible Macs; settings could be changed and older software was affected by the new default.",
+    "origin": "Apple, introduced during the OS X Mountain Lion release cycle.",
+    "prevalence": "Shipped in Mountain Lion in July 2012; source documents the default but does not measure how often users overrode it or prevented malware.",
+    "milestones": [
+      {
+        "date": "2012-02-16",
+        "event": "Apple previewed Gatekeeper and its three selectable policies."
+      },
+      {
+        "date": "2012-07-25",
+        "event": "OS X Mountain Lion became available."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mountain Lion Available in July From Mac App Store",
+        "url": "https://www.apple.com/newsroom/2012/06/11Mountain-Lion-Available-in-July-From-Mac-App-Store/",
+        "kind": "vendor release announcement",
+        "supports": "Release timing and default identified-developer policy."
+      },
+      {
+        "title": "OS X Mountain Lion Core Technologies Overview",
+        "url": "https://www.apple.com/media/us/osx/2012/docs/OSX_MountainLion_Core_Technologies_Overview.pdf",
+        "kind": "vendor technical document",
+        "supports": "Developer ID signing and the settings users could choose."
+      }
+    ]
+  },
+  {
+    "id": "dns-forgery-resistance",
+    "year": 2009,
+    "dateLabel": "RFC 5452, January 2009",
+    "title": "DNS resolvers add unpredictable query details",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "RFC 5452 required DNS resolvers to match replies against the original query and use unpredictable source ports, making forged answers harder to guess. The guidance followed years of cache-poisoning research and helped address the weakness of relying on a small transaction ID alone. It changed resolver expectations rather than creating one universal deployment event; DNSSEC adds a separate cryptographic check, and resolver implementations did not all change on the same schedule.",
+    "before": "Some resolvers used predictable source ports and limited response matching, giving attackers a better chance to inject forged DNS answers into caches.",
+    "pressure": "Researchers demonstrated that attackers could exploit the limited entropy of DNS query identifiers to poison caches and redirect users.",
+    "response": "RFC 5452 standardized strict query-response matching and required unpredictable source ports as additional entropy.",
+    "outcome": "Resolver implementations gained a widely applicable defense against off-path forgery. It raises attacker cost but does not authenticate DNS data as DNSSEC does.",
+    "scope": "Recursive DNS resolver software and operations; it does not guarantee that each deployed resolver follows the standard.",
+    "origin": "IETF DNS Extensions Working Group, responding to DNS cache poisoning research and attacks.",
+    "prevalence": "Standards requirement published in January 2009; specific resolver deployment and conformance rates are not established by the RFC.",
+    "milestones": [
+      {
+        "date": "2008-07-08",
+        "event": "Dan Kaminsky publicly presented DNS cache-poisoning risk and coordinated mitigation work."
+      },
+      {
+        "date": "2009-01",
+        "event": "RFC 5452 published resolver forgery-resistance requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 5452: Measures for Making DNS More Resilient against Forged Answers",
+        "url": "https://www.rfc-editor.org/rfc/rfc5452",
+        "kind": "IETF standards document",
+        "supports": "Resolver requirements, source-port randomization and their security rationale."
+      },
+      {
+        "title": "DNS cache poisoning issue",
+        "url": "https://www.doxpara.com/DMK_BO2K8.ppt",
+        "kind": "research presentation",
+        "supports": "Contemporary public disclosure of cache-poisoning risk; link and slides should be checked for archival stability."
+      }
+    ]
+  },
+  {
+    "id": "hsts",
+    "year": 2012,
+    "dateLabel": "RFC 6797, November 2012",
+    "title": "Browsers remember when a site requires HTTPS",
+    "category": "Web",
+    "status": "defense",
+    "summary": "HTTP Strict Transport Security let a site tell browsers to use HTTPS for future visits and refuse connections with certificate errors. This closes a downgrade path after the browser has received the policy securely, while preload lists can protect first visits to included sites. HSTS became a deployable browser defense, but a site must configure it correctly and an unlisted first visit can still be exposed to interception.",
+    "before": "A user entering a site's HTTP address or following an insecure link could be kept on plaintext HTTP by an active network attacker.",
+    "pressure": "SSL stripping and mixed transport allowed attackers to downgrade some users before they reached the site's secure endpoint.",
+    "response": "The IETF standardized HSTS, allowing servers to declare a policy that browsers persist and enforce; browser vendors later maintained preload lists.",
+    "outcome": "Returning users and preloaded sites can avoid insecure HTTP negotiation. Initial visits without preload and misconfigured subdomains remain limitations.",
+    "scope": "Participating browsers and sites that deploy HSTS correctly; preload only covers domains accepted into a browser's list.",
+    "origin": "Developed by web security practitioners and standardized by the IETF; browser preload lists added an implementation path for first visits.",
+    "prevalence": "Implemented across major browsers, but RFC publication and support do not measure site deployment. Preload adoption varies by domain and browser.",
+    "milestones": [
+      {
+        "date": "2009",
+        "event": "Early HSTS implementation appeared in browsers and at major sites."
+      },
+      {
+        "date": "2012-11",
+        "event": "RFC 6797 standardized HSTS."
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 6797: HTTP Strict Transport Security",
+        "url": "https://www.rfc-editor.org/rfc/rfc6797",
+        "kind": "IETF standards document",
+        "supports": "Threat model, persistent policy, forced HTTPS, and certificate-error behavior."
+      },
+      {
+        "title": "HTTP Strict Transport Security (HSTS) preload",
+        "url": "https://chromium.org/hsts/",
+        "kind": "browser project documentation",
+        "supports": "Preload mechanism and requirements for first-visit protection."
+      }
+    ]
+  },
+  {
+    "id": "npapi-retirement",
+    "year": 2017,
+    "dateLabel": "Firefox 52, March 2017",
+    "title": "Browsers remove most embedded plugins",
+    "category": "Web",
+    "status": "retired",
+    "summary": "Browser makers withdrew support for the NPAPI interface used by Java, Silverlight, and other embedded plugins as web standards gained the same media and application capabilities. Firefox 52 removed NPAPI support other than Flash after earlier click-to-activate steps and a public phase-out schedule. The change retired a broad class of always-installed browser extensions, though enterprise and extended-support releases delayed some migrations and Flash followed its own timeline.",
+    "before": "Websites could load native-code plugins inside the browser, expanding the attack surface and exposing users to separate plugin update cycles.",
+    "pressure": "Plugin vulnerabilities, crashes, and maintenance burdens accumulated as browsers added standard APIs for video, audio, and interactive content.",
+    "response": "Browser vendors phased out NPAPI; Firefox 52 removed support for plugins other than Flash in March 2017.",
+    "outcome": "Java and similar plugins stopped running in mainstream Firefox, and sites moved toward Web APIs. Some enterprise users stayed on older or extended-support versions.",
+    "scope": "Major desktop browsers and NPAPI plugins; Flash was excluded from the Firefox 52 removal and retired separately later.",
+    "origin": "Browser vendors, with Mozilla announcing its phase-out while web APIs replaced plugin use cases.",
+    "prevalence": "Removal reached mainstream Firefox in 2017 and Chrome earlier; remaining usage was concentrated in legacy workflows and managed exceptions.",
+    "milestones": [
+      {
+        "date": "2015-10-08",
+        "event": "Mozilla announced the NPAPI phase-out and schedule."
+      },
+      {
+        "date": "2017-03-07",
+        "event": "Firefox 52 removed NPAPI support other than Flash."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NPAPI plugins in Firefox",
+        "url": "https://blog.mozilla.org/futurereleases/2015/10/08/npapi-plugins-in-firefox/",
+        "kind": "browser roadmap announcement",
+        "supports": "Phase-out schedule and transition context."
+      },
+      {
+        "title": "Firefox 52.0 release notes",
+        "url": "https://www.mozilla.org/en-US/firefox/52.0/releasenotes/",
+        "kind": "vendor release notes",
+        "supports": "Removal of NPAPI support except Flash in the shipped release."
+      }
+    ]
+  },
+  {
+    "id": "ssl3-retirement",
+    "year": 2015,
+    "dateLabel": "RFC 7568, June 2015",
+    "title": "The Internet formally retires SSL 3.0",
+    "category": "Networks",
+    "status": "retired",
+    "summary": "The IETF prohibited SSL 3.0 after a long record of protocol weaknesses and the POODLE attack made the danger of fallback visible to administrators. RFC 7568 required clients and servers to refuse SSLv3 negotiation, even when compatibility code might otherwise step down from TLS. Browser and server changes followed on separate schedules, so the standards milestone did not instantly remove SSLv3 from every legacy endpoint.",
+    "before": "Some clients and servers still allowed SSLv3 negotiation or fallback despite TLS having replaced it years earlier.",
+    "pressure": "SSLv3's weaknesses accumulated over time, and POODLE showed how downgrade behavior could expose plaintext under practical conditions.",
+    "response": "RFC 7568 prohibited SSLv3 and backward fallback; browser and server vendors disabled it in subsequent releases.",
+    "outcome": "SSLv3 became a protocol implementations were directed to reject. Older appliances and servers required upgrades or configuration changes.",
+    "scope": "TLS clients and servers following the standard; legacy endpoints and compatibility products could remain exposed until changed.",
+    "origin": "IETF TLS Working Group, following cryptographic analysis and POODLE disclosure.",
+    "prevalence": "Standards prohibition in 2015, with major browser enforcement around the same period; no single universal retirement date for servers.",
+    "milestones": [
+      {
+        "date": "2014-10-14",
+        "event": "Google disclosed the POODLE attack against SSLv3."
+      },
+      {
+        "date": "2015-06",
+        "event": "RFC 7568 prohibited SSLv3 negotiation and fallback."
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 7568: Deprecating Secure Sockets Layer Version 3.0",
+        "url": "https://www.rfc-editor.org/rfc/rfc7568",
+        "kind": "IETF standards document",
+        "supports": "Protocol prohibition, fallback rule, and weaknesses of SSLv3."
+      },
+      {
+        "title": "This POODLE bites: exploiting the SSL 3.0 fallback",
+        "url": "https://security.googleblog.com/2014/10/this-poodle-bites-exploiting-ssl-30.html",
+        "kind": "research disclosure",
+        "supports": "Attack pressure and downgrade mechanism."
+      }
+    ]
+  },
+  {
+    "id": "rc4-tls-retirement",
+    "year": 2015,
+    "dateLabel": "RFC 7465, February 2015",
+    "title": "TLS stops negotiating RC4",
+    "category": "Networks",
+    "status": "retired",
+    "summary": "After years of statistical attacks against RC4, the IETF required TLS clients and servers to stop offering or selecting RC4 cipher suites. The rule applied across TLS versions and made a formerly common compatibility option unacceptable for secure sessions. The change required client and server updates, so outdated systems could still negotiate weak suites until operators changed them; RC4's retirement is distinct from the retirement of SSL protocol versions.",
+    "before": "TLS implementations continued to use RC4 in some cipher suites despite known statistical weaknesses in the stream cipher.",
+    "pressure": "Research made plaintext recovery increasingly practical when enough encrypted traffic was available, eroding confidence in RC4 for TLS.",
+    "response": "RFC 7465 prohibited clients from offering and servers from selecting RC4 cipher suites.",
+    "outcome": "RC4 ceased to be an acceptable TLS choice in standards-compliant implementations, while unpatched and legacy endpoints could persist.",
+    "scope": "TLS clients and servers; this entry concerns cipher suites, not the retirement of SSL/TLS protocol versions or every other use of RC4.",
+    "origin": "IETF TLS Working Group, with the RFC authored by Alexey Popov at Microsoft.",
+    "prevalence": "Standards prohibition published in 2015; vendor updates followed, but compliance across all servers was not immediate.",
+    "milestones": [
+      {
+        "date": "2013-03-12",
+        "event": "Researchers published a practical TLS attack exploiting RC4 biases."
+      },
+      {
+        "date": "2015-02",
+        "event": "RFC 7465 prohibited RC4 cipher suite negotiation."
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 7465: Prohibiting RC4 Cipher Suites",
+        "url": "https://www.rfc-editor.org/rfc/rfc7465",
+        "kind": "IETF standards document",
+        "supports": "Explicit client/server prohibition and rationale."
+      },
+      {
+        "title": "On the Security of RC4 in TLS",
+        "url": "https://www.isg.rhul.ac.uk/tls/",
+        "kind": "cryptographic research",
+        "supports": "Practical attack evidence against RC4 in TLS."
+      }
+    ]
+  },
+  {
+    "id": "certificate-transparency",
+    "year": 2013,
+    "dateLabel": "RFC 6962, June 2013",
+    "title": "Certificate issuance becomes publicly auditable",
+    "category": "Web",
+    "status": "defense",
+    "summary": "Certificate Transparency created append-only public logs where certificate authorities could record issued certificates and monitors could search for unexpected ones. The system made misissuance easier to discover and gave site owners a way to watch certificates issued for their domains. Browser policies later required logged certificates for selected cases, but logging does not prevent a certificate from being issued and coverage has varied across clients and certificate types.",
+    "before": "A misissued certificate could be used without a public mechanism for owners or researchers to learn that a certificate authority had issued it.",
+    "pressure": "Trust failures and rogue certificate incidents exposed how difficult it was to monitor the global certificate authority system centrally.",
+    "response": "The IETF specified public, append-only Certificate Transparency logs, with monitors and browser policies encouraging or requiring logged certificates.",
+    "outcome": "Issuance gained a public audit trail and monitoring ecosystem; detection still depends on log coverage and active monitoring.",
+    "scope": "Public Web PKI certificates and participating logs, monitors, and browsers; it does not cover all private PKI or block issuance itself.",
+    "origin": "Google proposal followed by IETF specification and browser-vendor enforcement policies.",
+    "prevalence": "Chrome policies expanded CT requirements over time; scope depends on certificate type and client. No claim of universal certificate transparency.",
+    "milestones": [
+      {
+        "date": "2008",
+        "event": "Google publicly proposed Certificate Transparency after CA trust failures."
+      },
+      {
+        "date": "2013-06",
+        "event": "RFC 6962 published the first CT protocol specification."
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 6962: Certificate Transparency",
+        "url": "https://www.rfc-editor.org/rfc/rfc6962",
+        "kind": "IETF standards document",
+        "supports": "Log architecture and intended auditability."
+      },
+      {
+        "title": "Chrome Certificate Transparency policy",
+        "url": "https://googlechrome.github.io/CertificateTransparency/ct_policy.html",
+        "kind": "browser policy",
+        "supports": "Browser enforcement scope and rollout conditions."
+      }
+    ]
+  },
+  {
+    "id": "chrome-site-isolation",
+    "year": 2018,
+    "dateLabel": "Chrome 67, May 2018",
+    "title": "Chrome separates sites into browser processes",
+    "category": "Web",
+    "status": "defense",
+    "summary": "Chrome 67 enabled Site Isolation by default on desktop, placing pages from different websites into separate sandboxed processes. The design limited how much sensitive cross-site data a compromised renderer could receive, responding to the risk of speculative-execution attacks such as Spectre. It strengthened browser boundaries after the processor flaw, but imposed memory costs and did not remove Spectre or prevent every way data could leak.",
+    "before": "Browsers relied heavily on same-origin enforcement inside shared processes, leaving a risk that a renderer flaw could expose data from other sites.",
+    "pressure": "Spectre showed that processor speculation could leak information across boundaries the browser's scripting model had treated as safe.",
+    "response": "Chrome 67 enabled Site Isolation by default for desktop platforms, assigning different sites to separate sandboxed processes and limiting sensitive data delivery.",
+    "outcome": "Cross-site data exposure became harder after a renderer compromise, with additional memory use and later platform-specific rollout decisions.",
+    "scope": "Chrome desktop rollout in 2018; mobile availability and constraints followed a separate path. It is a mitigation, not a complete Spectre fix.",
+    "origin": "Google Chrome/Chromium security engineering following Spectre disclosure.",
+    "prevalence": "Enabled by default in Chrome 67 on Windows, macOS, Linux, and Chrome OS; the source describes product rollout, not all browser populations.",
+    "milestones": [
+      {
+        "date": "2018-01-03",
+        "event": "Public disclosure of Spectre and Meltdown changed browser threat models."
+      },
+      {
+        "date": "2018-05-29",
+        "event": "Chrome 67 stable release enabled Site Isolation by default on desktop."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Site Isolation",
+        "url": "https://www.chromium.org/Home/chromium-security/site-isolation/",
+        "kind": "browser project documentation",
+        "supports": "Process separation, sensitive data protections, and Spectre motivation."
+      },
+      {
+        "title": "Chrome Stable Channel Update for Desktop, May 29 2018",
+        "url": "https://chromereleases.googleblog.com/2018/05/stable-channel-update-for-desktop_58.html",
+        "kind": "vendor release notes",
+        "supports": "Chrome 67 release and Site Isolation as a Spectre mitigation."
+      }
+    ]
+  },
+  {
+    "id": "android-sandbox",
+    "year": 2008,
+    "dateLabel": "Android 1.0, September 2008",
+    "title": "Android isolates each app at the operating-system level",
+    "category": "Devices",
+    "status": "defense",
+    "summary": "Android used Linux user identifiers to run applications with separate identities and restrict their access to other apps and system resources. This made application isolation part of the phone's operating-system structure rather than relying only on an app store's review. The sandbox became a baseline for Android security, while permissions, shared components, and explicit data-sharing services provide controlled ways for apps to interact.",
+    "before": "A mobile platform that ran third-party software needed a way to keep one app's process and files from being freely accessible to another.",
+    "pressure": "Phones were becoming general-purpose app platforms with access to user data, sensors, and network connections.",
+    "response": "Android assigned each application a unique Linux UID and ran it in a process governed by kernel-level access controls.",
+    "outcome": "Apps received default isolation from one another and limited OS access, with explicit permissions and IPC used for shared functions.",
+    "scope": "Android platform; shared UIDs and explicit inter-process sharing can alter isolation boundaries.",
+    "origin": "Android platform security architecture, using Linux process and user protections.",
+    "prevalence": "The sandbox has been a core Android security property across releases. Current AOSP documentation explains the model, but first-release historical timing needs a contemporaneous corroborating source before public use.",
+    "milestones": [
+      {
+        "date": "2008-09-23",
+        "event": "Android 1.0 SDK and first commercial device became available."
+      },
+      {
+        "date": "2026-11-06",
+        "event": "AOSP security documentation describes the current UID-based sandbox model."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Android Application Sandbox",
+        "url": "https://source.android.com/docs/security/app-sandbox",
+        "kind": "platform security documentation",
+        "supports": "Unique UID, process isolation and default access boundaries."
+      },
+      {
+        "title": "Android Security Overview",
+        "url": "https://source.android.com/docs/security/overview",
+        "kind": "platform security documentation",
+        "supports": "Layered Android security model and application isolation."
+      }
+    ]
+  }
+]

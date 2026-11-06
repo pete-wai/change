@@ -1,0 +1,3 @@
+# Change
+
+Independent static history project. User authorizes public GitHub repository pete-wai/change and GitHub Pages publication. Work here, never in the FedRAMP source tree. Research precedes design. Follow research/methodology.md. Luna agents research omissions after initial pass; Sol agents review facts and writing. Preserve source provenance and review findings. Never invent adoption dates, causal connections or statistics. Public prose must be concrete and natural; use pinned .agents/skills/humanizer/SKILL.md. No production analytics. Pin Node with mise and npm with packageManager; commit lockfile. Keep research outside build output. Run keyboard, mobile, no-JS and accessibility checks. Do not publish unverified entries.

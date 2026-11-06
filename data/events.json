@@ -1,0 +1,2224 @@
+[
+  {
+    "id": "early-pc-antivirus-scanning",
+    "year": 1987,
+    "dateLabel": "1986–1992",
+    "title": "Floppy disks got a virus check",
+    "category": "Software",
+    "status": "defense",
+    "summary": "The Brain virus could spread from a floppy disk when an IBM PC booted up. ESET dates its first DOS detector to 1987 and its first retail sale to 1990 in Austria. By then, NIST was recommending virus checks before new software went into use; its 1992 guide helped organizations choose from a range of available tools.",
+    "before": "IBM PC users exchanged floppy disks and software without a well-established scanner category or routine screening practice documented in federal guidance.",
+    "pressure": "Boot-sector viruses such as Brain could spread when a computer booted from an infected diskette. As viruses multiplied, organizations needed ways to detect and contain infected software before sharing it.",
+    "response": "NIST's 1989 management guide recommended antivirus software to test new software before wider release and advised controls on disk use. By December 1992, NIST described a variety of commercial and emerging antivirus tools and published criteria for choosing among them. One vendor's retrospective dates its first DOS detector to 1987 and its first retail sale to Austria in 1990.",
+    "outcome": "Antivirus scanners became an identifiable product class and part of federal guidance for managing PC software. The evidence establishes availability and recommended practice, not widespread installation or compliance.",
+    "scope": "IBM PC and other personal computer environments, especially organizations selecting antivirus tools. Brain and ESET illustrate specific cases, not all virus families or vendors.",
+    "origin": "NIST dates Brain's appearance to 1986. ESET retrospectively dates its detector to 1987 and retail sale in Austria to 1990. NIST guidance appeared in August 1989 and its dedicated tool-selection guide in December 1992.",
+    "prevalence": "The 1992 NIST guide states that a variety of antivirus tools were available, while the 1989 and 1992 documents recommend or help choose use. Neither gives market share or installation rates. ESET's evidence concerns one vendor and a regional first sale.",
+    "milestones": [
+      {
+        "date": "1986",
+        "event": "The Brain IBM PC boot-sector virus appeared; NIST later describes floppy exchange as a PC-virus propagation route."
+      },
+      {
+        "date": "1987",
+        "event": "ESET's founders retrospectively date an MS-DOS virus-detection program to this year."
+      },
+      {
+        "date": "1989-08",
+        "event": "NIST published a management guide recommending antivirus checks and controls for software and disks."
+      },
+      {
+        "date": "1990",
+        "event": "ESET retrospectively dates its first retail sale, in Austria under the STOPVIR name, to this year."
+      },
+      {
+        "date": "1992-12",
+        "event": "NIST published a dedicated guide for selecting among antivirus tools and techniques."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Computer Viruses and Related Threats: A Management Guide",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication500-166.pdf",
+        "kind": "government guidance",
+        "supports": "Contemporaneous 1989 recommendations for antivirus testing of new software, disk controls, and organizational response."
+      },
+      {
+        "title": "A Guide to the Selection of Anti-Virus Tools and Techniques",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-5.pdf",
+        "kind": "government technical guide",
+        "supports": "December 1992 statement that a variety of antivirus tools were available and criteria for selecting scanners and related products."
+      },
+      {
+        "title": "30 years of IT Security Innovation",
+        "url": "https://www.eset.com/nz/about/30-years-it-security-anniversary/",
+        "kind": "vendor retrospective",
+        "supports": "ESET's own retrospective on a 1987 NOD detection program and first Austrian retail sale in 1990; single-vendor evidence only."
+      },
+      {
+        "title": "History of Viruses",
+        "url": "https://csrc.nist.rip/publications/nistir/threats/subsubsection3_3_1_1.html",
+        "kind": "government retrospective",
+        "supports": "Brain's 1986 origin, its boot-sector behavior, and the role of disk exchange in PC-virus spread."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "morris-worm-cert",
+    "year": 1988,
+    "dateLabel": "1988",
+    "title": "The Morris worm leads to CERT/CC",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "When the Morris worm spread in November 1988, it disrupted the same research network people needed to coordinate their response. DARPA asked Carnegie Mellon’s Software Engineering Institute to establish CERT/CC, giving responders a standing point of contact to share information and coordinate with vendors.",
+    "before": "Network administrators and researchers relied on informal contacts and disconnected local responses when a new threat spread across the ARPANET.",
+    "pressure": "The worm replicated across networked Unix systems, consumed system resources, and made some communication paths unavailable just as responders needed them.",
+    "response": "DARPA commissioned SEI to create a central coordination capability. CERT/CC was established in 1988 and distributed incident information and response guidance.",
+    "outcome": "Incident response gained a standing coordination point. CERT/CC later helped other organizations form response teams, although the scale of the 1988 outbreak remains disputed across sources.",
+    "scope": "CERT/CC initially served research and government Internet users. It later helped national and organizational response teams.",
+    "origin": "The incident began November 2, 1988. DARPA's decision followed a post-incident review. CMU/SEI sources give differing month labels for the center's establishment, so the year 1988 is used here.",
+    "prevalence": "The initial impact was significant within the small connected research Internet, but sources vary between approximately 4,000 affected systems and estimates of 5-10% of roughly 60,000-80,000 hosts. The later response-team network grew over decades.",
+    "milestones": [
+      {
+        "date": "1988-11-02",
+        "event": "The Morris worm began spreading."
+      },
+      {
+        "date": "1988",
+        "event": "DARPA established the CERT Coordination Center at SEI in response to the incident."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Fostering Growth in Professional Cyber Incident Management",
+        "url": "https://www.sei.cmu.edu/history-of-innovation/fostering-growth-in-professional-cyber-incident-management/",
+        "kind": "institutional history",
+        "supports": "SEI states that DARPA asked it to establish CERT/CC in the aftermath of the Morris worm."
+      },
+      {
+        "title": "Tracking and Tracing",
+        "url": "https://resources.sei.cmu.edu/asset_files/SpecialReport/2002_003_001_13928.pdf",
+        "kind": "research report",
+        "supports": "Dates the center to 1988 and provides CERT incident counts through 2001."
+      },
+      {
+        "title": "The President's Commission on Critical Infrastructure Protection Internet Report",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Network%20Group%20Internet%20Report_1999.pdf",
+        "kind": "government report",
+        "supports": "Provides a distinct later estimate of roughly 4,000 affected computers and about five percent of connected systems."
+      },
+      {
+        "title": "U.S. Department of Homeland Security Announces Partnership with Carnegie Mellon's CERT Coordination Center",
+        "url": "https://www.cmu.edu/cmnews/extra/030915_cyberpartner.html",
+        "kind": "institutional announcement",
+        "supports": "Dates CERT/CC's formation to November 1988, in contrast to a later SEI report's December date; the public entry therefore uses year only."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "perimeter-firewalls",
+    "year": 1990,
+    "dateLabel": "Early 1990s–2002",
+    "title": "A firewall at the edge of the network",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "As organizations connected their internal networks to the internet, firewalls let them control which traffic crossed that boundary. By 1992, a USENIX paper described gateways already in use at AT&T and Digital Equipment Corporation. The IETF documented expected firewall behavior in 2000, and NIST published a deployment guide in 2002. A firewall at the edge left traffic between internal machines to other controls.",
+    "before": "Connected organizations had to decide which network services could cross between internal systems and less trusted external networks.",
+    "pressure": "Internet connectivity exposed internal services to remote access and attack, while unrestricted inbound traffic made every service harder to protect individually.",
+    "response": "Network administrators installed packet filters, proxies, and gateway firewalls at network boundaries, with rules defining which traffic could pass.",
+    "outcome": "Perimeter filtering became an established layer of organizational security. It did not detect every attack and could not stop traffic that moved only between internal hosts.",
+    "scope": "Organizational network security, with different firewall technologies and policies across organizations. Evidence establishes an established field by 2000-2002, not a universal installation date.",
+    "origin": "AT&T and DEC were among the organizations already operating gateways documented by 1992.",
+    "prevalence": "The guidance establishes firewalls as a standard organizational concern but does not provide a measured share of organizations deploying them.",
+    "milestones": [
+      {
+        "date": "1992",
+        "event": "A USENIX paper documents application gateways in use at AT&T, DEC, and other organizations."
+      },
+      {
+        "date": "2000-10",
+        "event": "RFC 2979 documented firewall behavior and interoperability expectations."
+      },
+      {
+        "date": "2002-01",
+        "event": "NIST published SP 800-41 guidance on firewall selection, deployment, and policy."
+      },
+      {
+        "date": "2009",
+        "event": "NIST described the limits of perimeter-only placement and the use of internal controls."
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 2979: Behavior of and Requirements for Internet Firewalls",
+        "url": "https://www.rfc-editor.org/rfc/rfc2979.html",
+        "kind": "IETF informational RFC",
+        "supports": "Firewall behavior and interoperability expectations by October 2000."
+      },
+      {
+        "title": "NIST SP 800-41: Guidelines on Firewalls and Firewall Policy",
+        "url": "https://csrc.nist.gov/pubs/sp/800/41/final",
+        "kind": "government guidance",
+        "supports": "Firewall selection, deployment, management, and policy were established organizational practices by January 2002."
+      },
+      {
+        "title": "Protecting Information Systems with Firewalls",
+        "url": "https://csrc.nist.gov/pubs/itlb/2009/10/protecting-information-systems-with-firewalls-revi/final",
+        "kind": "government retrospective",
+        "supports": "NIST's retrospective on perimeter placement, blind spots, and later internal network controls."
+      },
+      {
+        "title": "Network (In)Security Through IP Packet Filtering",
+        "url": "https://www.usenix.org/legacy/publications/library/proceedings/sec92/full_papers/chapman.pdf",
+        "kind": "primary",
+        "supports": "Documents operational gateways at AT&T, DEC, and other organizations."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "ssh-remote-login",
+    "year": 1995,
+    "dateLabel": "1995–1999",
+    "title": "SSH brings encryption to remote logins",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "After a password-sniffing incident at his university, Tatu Ylönen developed Secure Shell in 1995. SSH let people log in and copy files over an untrusted network without sending the session in plain text, and gave them a way to check which server they were connecting to. OpenBSD included the free OpenSSH implementation in 1999, years before the IETF standardized SSH’s architecture in 2006.",
+    "before": "Telnet, rlogin, and related tools often carried login credentials and session data in clear text across shared networks.",
+    "pressure": "A packet sniffer on a university network captured passwords, demonstrating that attackers who could observe traffic could reuse those credentials.",
+    "response": "Ylönen wrote and released SSH in 1995. OpenBSD incorporated the open-source OpenSSH implementation in 1999; the IETF later published SSH as a standards-track protocol in 2006.",
+    "outcome": "Encrypted remote administration became a common cross-platform practice. SSH did not immediately remove clear-text protocols, and host-key verification remained necessary to resist impersonation.",
+    "scope": "Administrators, researchers, and later general users of Unix-like systems and other platforms. The initial incident and implementation history are creator-reported.",
+    "origin": "Ylönen dates the first SSH implementation to 1995 and links its origin to password sniffing. OpenBSD's OpenSSH release history begins in 1999; RFC 4251 was published in January 2006.",
+    "prevalence": "SSH became broadly used, but the cited standards and project histories do not quantify adoption or prove that Telnet and rlogin disappeared.",
+    "milestones": [
+      {
+        "date": "1995",
+        "event": "Ylönen developed and distributed the first SSH implementation."
+      },
+      {
+        "date": "1999",
+        "event": "OpenBSD integrated OpenSSH."
+      },
+      {
+        "date": "2006-01",
+        "event": "The IETF published SSH architecture as RFC 4251."
+      }
+    ],
+    "sources": [
+      {
+        "title": "History of SSH",
+        "url": "https://www.ssh.com/academy/ssh",
+        "kind": "creator history",
+        "supports": "Ylönen's account of the password-sniffing incident, SSH's 1995 origin, and early distribution."
+      },
+      {
+        "title": "OpenSSH History",
+        "url": "https://www.openssh.org/history.html",
+        "kind": "project history",
+        "supports": "OpenBSD's incorporation and distribution of OpenSSH beginning in 1999."
+      },
+      {
+        "title": "RFC 4251: The Secure Shell Protocol Architecture",
+        "url": "https://www.rfc-editor.org/rfc/rfc4251.html",
+        "kind": "standards-track specification",
+        "supports": "The protocol's security design, publication date, and the need to verify host keys."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "intrusion-detection-systems",
+    "year": 1996,
+    "dateLabel": "1996–2001",
+    "title": "Network operators start watching for intrusions",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "In 1996, Lawrence Berkeley National Laboratory deployed Bro to watch live network traffic for signs of intrusion. Bro could flag suspicious connections for investigation. By 2001, NIST was explaining how organizations could add intrusion detection to both hosts and networks.",
+    "before": "Many organizations relied on access controls and perimeter devices that could not reveal all suspicious activity within systems or across allowed network paths.",
+    "pressure": "Network attacks increased in number and severity, creating demand for ways to monitor events and identify possible intrusions.",
+    "response": "Berkeley Lab deployed live monitoring in 1996. NIST described host and network intrusion detection in 2001.",
+    "outcome": "Operators at Berkeley Lab could investigate alerts from passive monitoring. Later NIST guidance helped organizations evaluate IDS.",
+    "scope": "Organizational information systems and networks, as described by NIST. The guide's claim that IDS was necessary for most organizations reflects NIST's assessment, not measured deployment prevalence.",
+    "origin": "Berkeley Lab began operational deployment of Bro in 1996.",
+    "prevalence": "Bro establishes operational use at Berkeley Lab. NIST guidance gives no industry deployment rate.",
+    "milestones": [
+      {
+        "date": "1996",
+        "event": "Berkeley Lab begins operational deployment of Bro."
+      },
+      {
+        "date": "1998",
+        "event": "USENIX publishes the Bro research."
+      },
+      {
+        "date": "2001-11",
+        "event": "NIST publishes its guide to host and network intrusion detection."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NIST SP 800-31: Intrusion Detection Systems",
+        "url": "https://csrc.nist.gov/pubs/sp/800/31/final",
+        "kind": "government guidance",
+        "supports": "IDS function, threat context, and NIST's assessment of organizational importance."
+      },
+      {
+        "title": "NIST SP 800-94: Guide to Intrusion Detection and Prevention Systems",
+        "url": "https://csrc.nist.gov/pubs/sp/800/94/final",
+        "kind": "government guidance",
+        "supports": "Later distinctions among network-based, host-based, and other IDPS technologies."
+      },
+      {
+        "title": "Bro project history",
+        "url": "https://old.zeek.org/manual/2.5.5/intro/index.html",
+        "kind": "primary",
+        "supports": "Dates the operational deployment at Berkeley Lab to 1996."
+      },
+      {
+        "title": "Bro: A System for Detecting Network Intruders in Real-Time",
+        "url": "https://static.usenix.org/publications/library/proceedings/sec98/paxson.html",
+        "kind": "primary",
+        "supports": "Contemporaneous account of passive network monitoring."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "open-relays",
+    "year": 1998,
+    "dateLabel": "1998–1999",
+    "title": "Sendmail stopped relaying mail for strangers by default",
+    "category": "Networks",
+    "status": "default",
+    "summary": "An open mail relay would pass along messages even when neither the sender nor the recipient belonged to its own network. Spammers turned that courtesy into free delivery infrastructure, leaving administrators with full queues and a damaged reputation. Sendmail 8.9 disabled third-party relaying by default in 1998; the following year, Internet best-practice guidance made relay controls explicit.",
+    "before": "Forward mail for unrelated senders and recipients.",
+    "pressure": "Spam operators borrowed other people’s mail servers.",
+    "response": "Refuse unauthorized third-party relaying.",
+    "outcome": "Sending through a server required an authorized route.",
+    "scope": "Sendmail default and Internet operational guidance; not an overnight change to every server.",
+    "origin": "SMTP relay architecture predates the commercial web.",
+    "prevalence": "RFC 2505 describes widespread abuse and operational costs, not a census.",
+    "milestones": [
+      {
+        "date": "1998-05",
+        "event": "Sendmail 8.9 default changed"
+      },
+      {
+        "date": "1999-02",
+        "event": "RFC 2505 published"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Sendmail 8.9 release notes",
+        "url": "https://www.sendmail.org/~ca/email/releases/8.9.0.release.html",
+        "kind": "primary",
+        "supports": "Default relay refusal"
+      },
+      {
+        "title": "RFC 2505: anti-spam recommendations",
+        "url": "https://www.rfc-editor.org/rfc/rfc2505.html",
+        "kind": "primary",
+        "supports": "Abuse, consequences and relay policy"
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "outlook-attachment-security",
+    "year": 2000,
+    "dateLabel": "1999–2001",
+    "title": "Outlook blocks executable attachments",
+    "category": "Software",
+    "status": "defense",
+    "summary": "Melissa spread through Word macros and Outlook address books. After the ILOVEYOU outbreak, Microsoft released an update for Outlook 98 and 2000 in June 2000. It blocked access to certain executable attachments and prompted users when another program tried to send mail or read the address book. Outlook 2002 incorporated the controls.",
+    "before": "Outlook users could open many executable attachments with few built-in warnings or restrictions, while macro-enabled documents could automate actions in Office applications.",
+    "pressure": "Melissa's macro and Outlook automation spread infected Word documents through address books. ILOVEYOU soon used email attachments to spread a script-based worm.",
+    "response": "The June 2000 update blocked access to specified executable attachments and added prompts for programmatic sending and address book access.",
+    "outcome": "The controls shipped as an update and were incorporated into Outlook 2002.",
+    "scope": "Microsoft Outlook installations receiving the update. Other mail clients and server-side filtering products had separate controls and schedules.",
+    "origin": "Melissa was first detected in March 1999. Microsoft announced the Outlook update in May 2000 and released it in June.",
+    "prevalence": "Broad potential within Outlook users, but uptake varied by release, service pack, and administrator configuration. No global installation or effectiveness measure was established here.",
+    "milestones": [
+      {
+        "date": "1999-03-26",
+        "event": "Melissa began spreading through macro-enabled Word documents and Outlook."
+      },
+      {
+        "date": "2000-05-04",
+        "event": "The ILOVEYOU worm spread through a script attachment."
+      },
+      {
+        "date": "2000-05-15",
+        "event": "Microsoft announced the Outlook Email Security Update."
+      },
+      {
+        "date": "2000-06-08",
+        "event": "Microsoft releases the Outlook Email Security Update for download."
+      },
+      {
+        "date": "2001",
+        "event": "Outlook 2002 incorporates the protections."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Alert on Macro Virus Issues",
+        "url": "https://news.microsoft.com/source/1999/03/30/alert-on-macro-virus-issues/",
+        "kind": "contemporaneous vendor advisory",
+        "supports": "Melissa's Word macro, Outlook requirements, and immediate user warnings."
+      },
+      {
+        "title": "Microsoft Outlook Email Security Update announcement",
+        "url": "https://news.microsoft.com/source/2000/05/15/microsoft-to-deliver-major-outlook-security-solution-to-help-protect-customers-against-computer-viruses/",
+        "kind": "vendor rollout announcement",
+        "supports": "The attachment warnings and restrictions announced after both Melissa and ILOVEYOU."
+      },
+      {
+        "title": "Steven Sinofsky’s account of the Outlook update",
+        "url": "https://hardcoresoftware.learningbyshipping.com/p/060-iloveyou",
+        "kind": "primary",
+        "supports": "The Microsoft Office executive overseeing the response dates actual availability to June 8, 2000."
+      },
+      {
+        "title": "Microsoft Security Bulletin MS01-038",
+        "url": "https://learn.microsoft.com/en-us/security-updates/securitybulletins/2001/ms01-038",
+        "kind": "primary",
+        "supports": "Confirms the protections were integrated into Outlook 2002."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "des-aes-transition",
+    "year": 2001,
+    "dateLabel": "1998–2005",
+    "title": "AES replaced DES in federal standards",
+    "category": "Software",
+    "status": "retired",
+    "summary": "In July 1998, the Electronic Frontier Foundation’s Deep Crack machine recovered a 56-bit DES key in about 56 hours. The following January, Deep Crack and distributed.net cut that to 22 hours and 15 minutes. NIST published AES in November 2001, and the government withdrew DES as a federal standard in 2005. Some federal applications could still use Triple DES.",
+    "before": "DES remained a federal encryption standard, even as computing power made its 56-bit key increasingly vulnerable to exhaustive search.",
+    "pressure": "EFF's DES Cracker demonstrated practical key recovery in less than three days in July 1998; EFF and Distributed.net completed a later challenge in 22 hours 15 minutes in January 1999, while NIST had already begun a public competition to select a replacement.",
+    "response": "NIST selected and published AES as FIPS 197 in November 2001. The Secretary of Commerce withdrew DES-related FIPS standards in May 2005 and encouraged agencies to use AES or, for some applications, Triple DES.",
+    "outcome": "DES ceased to be an approved federal encryption algorithm. AES became the federal successor, while some uses continued under Triple DES and private-sector transitions varied.",
+    "scope": "Federal information processing standards and organizations. The change did not automatically reconfigure all commercial products or deployed systems.",
+    "origin": "EFF's public demonstration occurred in January 1999. AES was published November 26, 2001 and became effective May 26, 2002. DES was withdrawn May 19, 2005.",
+    "prevalence": "Clear formal shift within federal standards. The sources establish recommendation and withdrawal, not the completion date for every agency or commercial migration.",
+    "milestones": [
+      {
+        "date": "1998-07-17",
+        "event": "EFF's DES Cracker won DES Challenge II-2 in less than three days."
+      },
+      {
+        "date": "1999-01-19",
+        "event": "EFF and Distributed.net won DES Challenge III in 22 hours 15 minutes."
+      },
+      {
+        "date": "2001-11-26",
+        "event": "NIST published AES as FIPS 197."
+      },
+      {
+        "date": "2002-05-26",
+        "event": "FIPS 197 became effective."
+      },
+      {
+        "date": "2005-05-19",
+        "event": "NIST withdrew DES-related FIPS standards."
+      }
+    ],
+    "sources": [
+      {
+        "title": "EFF DES Cracker record",
+        "url": "https://w2.eff.org/Privacy/Crypto/Crypto_misc/DESCracker/",
+        "kind": "project record",
+        "supports": "The July 1998 under-three-day challenge result and the January 1999 22-hour-15-minute distributed result."
+      },
+      {
+        "title": "FIPS 197: Advanced Encryption Standard",
+        "url": "https://csrc.nist.gov/files/pubs/fips/197/final/docs/fips-197.pdf",
+        "kind": "federal standard",
+        "supports": "AES specifications and effective date."
+      },
+      {
+        "title": "NIST announcement withdrawing FIPS 46-3 and related standards",
+        "url": "https://csrc.nist.gov/News/2005/Withdrawal-of-FIPS-46-3-FIPS-74-and-FIPS-81",
+        "kind": "standards policy announcement",
+        "supports": "The 2005 withdrawal rationale and explicit AES recommendation."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "microsoft-patch-cadence",
+    "year": 2003,
+    "dateLabel": "2003",
+    "title": "Microsoft put security bulletins on a monthly schedule",
+    "category": "Software",
+    "status": "defense",
+    "summary": "Code Red and Nimda spread through vulnerabilities that already had patches. Administrators also told Microsoft they needed predictable release dates. In October 2003, Microsoft moved security bulletins to a monthly schedule so customers could plan testing and installation.",
+    "before": "Microsoft released security fixes when they were ready, leaving administrators to respond to releases on an unpredictable schedule.",
+    "pressure": "Code Red and Nimda exploited flaws despite patches having been available, showing the operational gap between vendor release and administrator deployment. Microsoft also received customer requests for predictable timing.",
+    "response": "Microsoft announced a monthly security bulletin cadence on October 1, 2003, alongside tools intended to help customers scan and deploy updates.",
+    "outcome": "Administrators gained a regular planning date for Microsoft security releases. A predictable release schedule did not itself ensure timely installation or patch compliance.",
+    "scope": "Microsoft products and customers managing those products. Other vendors and organizations used different update schedules.",
+    "origin": "Microsoft announced the monthly schedule on October 1, 2003. The first monthly security update followed in October. The later label Patch Tuesday describes a Microsoft release schedule, not an industry standard.",
+    "prevalence": "The cadence became a durable Microsoft practice, but the sources do not show how many customers installed fixes or how quickly they did so.",
+    "milestones": [
+      {
+        "date": "2001-07",
+        "event": "Code Red spread through a vulnerability for which a patch had already been released."
+      },
+      {
+        "date": "2001-09",
+        "event": "Nimda exploited multiple previously patched vulnerabilities."
+      },
+      {
+        "date": "2003-10-01",
+        "event": "Microsoft announced monthly security bulletins."
+      }
+    ],
+    "sources": [
+      {
+        "title": "NIST SP 800-40: Procedures for Handling Security Patches",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-40.pdf",
+        "kind": "government guidance",
+        "supports": "Code Red and Nimda's use of vulnerabilities with available patches and the need for patch-management procedures."
+      },
+      {
+        "title": "10 years of Update Tuesdays",
+        "url": "https://www.microsoft.com/en-us/msrc/blog/2013/10/10-years-of-update-tuesdays/",
+        "kind": "vendor retrospective",
+        "supports": "The announcement date, monthly schedule, and customer request for predictability."
+      },
+      {
+        "title": "Microsoft Outlines New Initiatives in Ongoing Security Efforts",
+        "url": "https://news.microsoft.com/source/2003/10/09/microsoft-outlines-new-initiatives-in-ongoing-security-efforts-to-help-customers/",
+        "kind": "contemporaneous vendor announcement",
+        "supports": "Microsoft's stated reasons and planned patch scanning/deployment tools."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "dep-nx-windows",
+    "year": 2004,
+    "dateLabel": "2004",
+    "title": "Windows XP prevents code from running in protected memory",
+    "category": "Software",
+    "status": "defense",
+    "summary": "Buffer-overflow exploits could place instructions in memory and then run them. In 2004, Windows XP Service Pack 2 added hardware-enforced Data Execution Prevention on compatible PCs. The default covered essential Windows programs and services, and administrators could enable broader coverage.",
+    "before": "Many systems allowed code to execute from memory regions used to hold ordinary data, leaving some buffer-overflow attacks able to run injected instructions.",
+    "pressure": "Buffer overflows were a common exploit vector, and attackers used them to place and execute code in writable memory.",
+    "response": "Windows XP SP2 added hardware-enforced Data Execution Prevention on compatible hardware and used an OptIn default for essential Windows programs and services.",
+    "outcome": "The operating system could prevent execution from some data pages, raising the difficulty of certain exploits. DEP depended on processor, BIOS, Windows version, and configuration and did not remove memory-corruption vulnerabilities.",
+    "scope": "Compatible processors running supported Windows versions. Defaults differed between 32-bit and 64-bit programs and across policy settings.",
+    "origin": "Windows XP Service Pack 2 introduced hardware-enforced DEP support in 2004.",
+    "prevalence": "Hardware enforcement required processor and firmware support. XP’s default covered essential Windows programs and services.",
+    "milestones": [
+      {
+        "date": "2004-08",
+        "event": "Windows XP Service Pack 2 ships with hardware-enforced DEP support on compatible systems."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Determine if hardware DEP is available",
+        "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/determine-hardware-dep-available",
+        "kind": "platform documentation",
+        "supports": "Processor, BIOS, operating-system, and configuration requirements for hardware DEP."
+      },
+      {
+        "title": "Security Tips: Minimizing the Code You Expose to Untrusted Users",
+        "url": "https://learn.microsoft.com/en-us/archive/msdn-magazine/2004/november/security-tips-minimizing-the-code-you-expose-to-untrusted-users",
+        "kind": "contemporaneous technical guidance",
+        "supports": "DEP's buffer-overflow rationale and its place among Windows XP SP2 mitigations."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "wep-wpa-transition",
+    "year": 2004,
+    "dateLabel": "2001–2010",
+    "title": "Wi-Fi got a replacement for WEP",
+    "category": "Networks",
+    "status": "ongoing",
+    "summary": "Researchers showed in 2001 that captured Wi-Fi traffic could reveal a WEP key. WPA offered an interim replacement, and WPA2 followed the stronger IEEE standard in 2004. The payment card industry set a deadline for wireless networks in scope: existing installations had to stop using WEP after June 30, 2010.",
+    "before": "Wi-Fi networks commonly relied on WEP, whose key scheduling and reuse properties weakened the protection it was meant to provide.",
+    "pressure": "Researchers published practical cryptanalysis of WEP's use of RC4 in 2001, demonstrating that captured wireless traffic could reveal key material.",
+    "response": "The Wi-Fi Alliance offered WPA as an interim option and WPA2 for IEEE 802.11i. PCI DSS set scoped WEP retirement deadlines.",
+    "outcome": "Network owners gained replacement options. PCI DSS prohibited WEP on existing wireless implementations in its cardholder data scope after June 30, 2010.",
+    "scope": "IEEE 802.11 wireless LAN standards and Wi-Fi Alliance certified products. This transition does not describe every wireless network or imply that WEP was quickly removed everywhere.",
+    "origin": "The cited WEP cryptanalysis appeared in August 2001. WPA was introduced in October 2002. IEEE approved 802.11i on June 24, 2004 and published it July 24, 2004.",
+    "prevalence": "The deadlines applied to wireless networks that transmitted cardholder data or connected to the cardholder data environment. Consumer adoption varied.",
+    "milestones": [
+      {
+        "date": "2001-08",
+        "event": "Researchers demonstrate a practical WEP key recovery attack."
+      },
+      {
+        "date": "2002-10",
+        "event": "The Wi-Fi Alliance publishes interim WPA."
+      },
+      {
+        "date": "2004",
+        "event": "IEEE publishes 802.11i and WPA2 follows."
+      },
+      {
+        "date": "2009-03-31",
+        "event": "PCI DSS deadline for new wireless implementations in scope to avoid WEP."
+      },
+      {
+        "date": "2010-06-30",
+        "event": "PCI DSS deadline for existing wireless implementations in scope to stop using WEP."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Establishing Wireless Robust Security Networks",
+        "url": "https://csrc.nist.gov/pubs/sp/800/97/final",
+        "kind": "primary",
+        "supports": "Explains WEP weaknesses and the WPA/802.11i transition."
+      },
+      {
+        "title": "PCI DSS v1.2.1, requirement 4.1.1",
+        "url": "https://listings.pcisecuritystandards.org/minisite/en/docs/pci_dss_v1-2.pdf",
+        "kind": "primary",
+        "supports": "Establishes WEP retirement deadlines for wireless networks in the payment card scope."
+      },
+      {
+        "title": "Using the Fluhrer, Mantin, and Shamir Attack to Break WEP",
+        "url": "https://www.ndss-symposium.org/wp-content/uploads/2017/09/Using-the-Fluhrer-Mantin-and-Shamir-Attack-to-Break-WEP-Adam-Stubbefild.pdf",
+        "kind": "primary",
+        "supports": "Documents practical key recovery on a network with permission."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "windows-xp-sp2-firewall",
+    "year": 2004,
+    "dateLabel": "2004",
+    "title": "Windows XP turned its firewall on by default",
+    "category": "Software",
+    "status": "default",
+    "summary": "Earlier releases of Windows XP came with a firewall and left it off. After network worms such as Blaster and Sasser exploited exposed services, Service Pack 2 turned on the built-in firewall by default in August 2004 when it found no third-party firewall. Administrators could still set exceptions or change the policy.",
+    "before": "Windows XP included Internet Connection Firewall, but the default configuration left it disabled.",
+    "pressure": "Blaster and Sasser spread by exploiting network-accessible Windows services. Microsoft said the firewall default would stop these worms before they reached the PC.",
+    "response": "Windows XP SP2 replaced the earlier firewall with Windows Firewall and enabled it by default when another firewall was not detected.",
+    "outcome": "Many Windows XP systems received inbound traffic filtering without users having to turn it on manually. Existing third-party firewalls, enterprise policies, service exceptions, and configuration differences limited uniformity.",
+    "scope": "Windows XP SP2 installations. It does not describe all Windows versions or every home and enterprise configuration.",
+    "origin": "Microsoft released SP2 to manufacturing on August 6, 2004; consumer distribution followed later in August. The firewall default changed with SP2, not with Windows XP's original release.",
+    "prevalence": "XP had a very large installed base, but Microsoft and NIST describe the feature and defaults rather than reporting a measured fraction of systems protected by the firewall.",
+    "milestones": [
+      {
+        "date": "2003-08",
+        "event": "Blaster spread through exposed Windows RPC services."
+      },
+      {
+        "date": "2004-07",
+        "event": "Microsoft publicly described the SP2 firewall default as a response to Blaster and Sasser."
+      },
+      {
+        "date": "2004-08-06",
+        "event": "Windows XP SP2 was released to manufacturing."
+      },
+      {
+        "date": "2004-08",
+        "event": "Windows XP SP2 reached consumers."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Will Poole: Microsoft Worldwide Partner Conference 2004",
+        "url": "https://news.microsoft.com/speeches/will-poole-microsoft-worldwide-partner-conference-2004/",
+        "kind": "contemporaneous vendor speech",
+        "supports": "Microsoft's direct connection between the default firewall and stopping Blaster/Sasser."
+      },
+      {
+        "title": "NIST SP 800-69: Windows XP Home Edition security checklist",
+        "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-69.pdf",
+        "kind": "government configuration guide",
+        "supports": "Pre-SP2 disabled default, SP2 enabled default, and detection of a third-party firewall."
+      },
+      {
+        "title": "Windows XP SP2 released to computer manufacturers",
+        "url": "https://news.microsoft.com/source/2004/08/06/microsoft-releases-windows-xp-service-pack-2-with-advanced-security-technologies-to-computer-manufacturers/",
+        "kind": "vendor release announcement",
+        "supports": "The August 6, 2004 release-to-manufacturing date."
+      }
+    ],
+    "researchBatch": "early"
+  },
+  {
+    "id": "windows-uac",
+    "year": 2006,
+    "dateLabel": "2006–2007",
+    "title": "Windows Vista asked before giving a program admin access",
+    "category": "Software",
+    "status": "default",
+    "summary": "With Windows Vista’s User Account Control, even an administrator did everyday work with reduced privileges. A program that needed more access could bring up a prompt, and some older apps could keep working through compatibility features without getting full administrator rights. Users could suppress the prompts, and the protection depended in part on what they approved.",
+    "before": "Many Windows users and applications operated with administrator privileges for routine tasks.",
+    "pressure": "Malware running as the logged-in user could make persistent system-wide changes, while legacy software often assumed it could write to protected locations.",
+    "response": "Vista introduced split tokens, consent or credential prompts, and compatibility features intended to make standard-user operation more practical.",
+    "outcome": "UAC brought elevation into ordinary desktop use and pushed developers toward privilege-aware software, while prompt fatigue and compatibility issues led to criticism and configuration changes.",
+    "scope": "Windows Vista and later Windows versions; exact prompt behavior depends on account type and policy.",
+    "origin": "Microsoft's Windows Vista engineering program, building on least-privilege operating-system design.",
+    "prevalence": "Shipped with Vista and persisted in later Windows releases. The sources establish availability and design, not the share of users running standard accounts or leaving prompts enabled.",
+    "milestones": [
+      {
+        "date": "2006-11-30",
+        "event": "Windows Vista became available to business customers."
+      },
+      {
+        "date": "2007-01-30",
+        "event": "Windows Vista general availability began."
+      }
+    ],
+    "sources": [
+      {
+        "title": "User Account Control overview",
+        "url": "https://learn.microsoft.com/en-us/windows-server/security/user-account-control/user-account-control-overview",
+        "kind": "vendor documentation",
+        "supports": "Elevation behavior and administrative operations requiring greater permissions."
+      },
+      {
+        "title": "Windows Vista application development requirements for UAC",
+        "url": "https://learn.microsoft.com/en-us/windows/win32/secauthz/user-account-control",
+        "kind": "vendor documentation",
+        "supports": "UAC introduction and requirements for standard-user applications."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "chromium-sandbox",
+    "year": 2008,
+    "dateLabel": "2008",
+    "title": "Chrome put web pages in a sandbox",
+    "category": "Web",
+    "status": "defense",
+    "summary": "From the start, Chrome rendered pages in a restricted process that had to go through the browser to get at files and the network. A bug in the code that drew a page could still give an attacker control of that process, but the sandbox was designed to limit what the attacker could reach from there.",
+    "before": "A browser code-execution flaw could give the exploited component broad access to a user's files and operating-system resources.",
+    "pressure": "Web content exposed large parsing and scripting engines to untrusted input, making complete prevention of code-execution flaws unrealistic.",
+    "response": "Chromium separated renderer and browser processes and restricted renderer resource access through a sandbox policy.",
+    "outcome": "The browser gained a containment layer after code execution. Later sandbox escapes and platform-specific limitations show why it remained one layer rather than a full boundary guarantee.",
+    "scope": "Chrome/Chromium; sandbox capabilities and restrictions vary by operating system and browser version.",
+    "origin": "Chromium project, publicly described alongside the 2008 browser launch.",
+    "prevalence": "Adopted as a core Chrome design and subsequently common across major browser architectures; no market adoption statistic included here.",
+    "milestones": [
+      {
+        "date": "2008-09-02",
+        "event": "Google announced the Chrome beta and its security architecture."
+      },
+      {
+        "date": "2008-09-10",
+        "event": "Chromium published a technical explanation of its sandbox model."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Security Architecture",
+        "url": "https://blog.chromium.org/2008/09/security-architecture.html",
+        "kind": "vendor engineering blog",
+        "supports": "Original purpose, process division, access mediation, and limits."
+      },
+      {
+        "title": "Chromium Sandbox FAQ",
+        "url": "https://github.com/chromium/chromium/blob/main/docs/design/sandbox_faq.md",
+        "kind": "project technical documentation",
+        "supports": "What sandboxing restricts and which harms it does not prevent."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "dns-forgery-resistance",
+    "year": 2008,
+    "dateLabel": "2008–2009",
+    "title": "DNS replies became harder to forge",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "A forged DNS reply could send people to the wrong server even while their browser showed the address they expected. After researchers showed how easily attackers could poison a DNS cache, vendors issued coordinated patches in 2008 that made requests harder to guess, in part by varying which port they came from. An IETF specification the next year spelled out stricter checks on replies; cryptographic authentication was a separate defense.",
+    "before": "Some resolvers used predictable source ports and limited response matching, giving attackers a better chance to inject forged DNS answers into caches.",
+    "pressure": "Researchers demonstrated that attackers could exploit the limited entropy of DNS query identifiers to poison caches and redirect users.",
+    "response": "RFC 5452 standardized strict query-response matching and required unpredictable source ports as additional entropy.",
+    "outcome": "Resolver implementations gained a widely applicable defense against off-path forgery. It raises attacker cost but does not authenticate DNS data as DNSSEC does.",
+    "scope": "Recursive DNS resolver software and operations; it does not guarantee that each deployed resolver follows the standard.",
+    "origin": "IETF DNS Extensions Working Group, responding to DNS cache poisoning research and attacks.",
+    "prevalence": "CERT lists affected implementations and vendor fixes; installed patch coverage is not quantified.",
+    "milestones": [
+      {
+        "date": "2008-07-08",
+        "event": "Coordinated advisory and vendor patch release."
+      },
+      {
+        "date": "2009-01",
+        "event": "RFC 5452 published resolver forgery-resistance requirements."
+      }
+    ],
+    "sources": [
+      {
+        "title": "CERT’s coordinated DNS advisory",
+        "url": "https://kb.cert.org/vuls/id/800113",
+        "kind": "primary",
+        "supports": "Vendor patches, fixed ports and cache poisoning"
+      },
+      {
+        "title": "RFC 5452: Measures for Making DNS More Resilient against Forged Answers",
+        "url": "https://www.rfc-editor.org/rfc/rfc5452",
+        "kind": "IETF standards document",
+        "supports": "Resolver requirements, source-port randomization and their security rationale."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "usb-autorun",
+    "year": 2009,
+    "dateLabel": "2009–2011",
+    "title": "Windows took away AutoRun for ordinary USB drives",
+    "category": "Devices",
+    "status": "default",
+    "summary": "Malware such as Conficker spread through removable drives. Windows 7 removed the drive’s AutoRun program from the AutoPlay menu for USB mass storage. Microsoft later offered the change through automatic updates for Windows XP and Vista. CDs and DVDs kept their AutoRun behavior.",
+    "before": "Windows could offer or launch programs described by autorun.inf when removable media was inserted, creating a path for malware propagation and misleading prompts.",
+    "pressure": "Microsoft reported increased malware abuse of AutoRun through USB media in early 2009, with Conficker as a prominent example.",
+    "response": "Windows 7 removed the AutoRun-supplied task from AutoPlay for non-optical removable media.",
+    "outcome": "USB insertion no longer triggered the same automatic launch path by default, though optical media and some devices identifying as CD/DVD remained exceptions.",
+    "scope": "Windows 7 and later XP/Vista updates; non-optical removable media. Not a universal ban on AutoPlay or CD/DVD AutoRun.",
+    "origin": "Microsoft Windows engineering and MSRC in response to changing removable-media malware behavior.",
+    "prevalence": "Became a Windows default with Windows 7 and was backported. Sources document intended behavior, not measured infection reduction.",
+    "milestones": [
+      {
+        "date": "2009-04-28",
+        "event": "Microsoft announced the AutoRun change for Windows 7 Release Candidate and planned XP/Vista updates."
+      },
+      {
+        "date": "2009-10-22",
+        "event": "Windows 7 reached general availability."
+      },
+      {
+        "date": "2011-02",
+        "event": "Microsoft offers KB971029 through automatic updates for older Windows versions."
+      }
+    ],
+    "sources": [
+      {
+        "title": "AutoRun changes in Windows 7",
+        "url": "https://www.microsoft.com/en-us/msrc/blog/2009/04/autorun-changes-in-windows-7/",
+        "kind": "vendor engineering blog",
+        "supports": "Distinguishes AutoRun from AutoPlay, names Conficker, describes behavior change and optical-media exception."
+      },
+      {
+        "title": "Changes in Windows to Meet Changes in Threat Landscape",
+        "url": "https://www.microsoft.com/en-us/msrc/blog/2009/04/changes-in-windows-to-meet-changes-in-threat-landscape",
+        "kind": "vendor security blog",
+        "supports": "Connects the default change to observed increase in removable-media malware."
+      },
+      {
+        "title": "Microsoft Security Advisory 967940",
+        "url": "https://learn.microsoft.com/en-us/security-updates/securityadvisories/2009/967940",
+        "kind": "primary",
+        "supports": "Documents KB971029 availability in 2009 and automatic update offering in 2011."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "hsts",
+    "year": 2011,
+    "dateLabel": "2011–2012",
+    "title": "Browsers could remember to use HTTPS",
+    "category": "Web",
+    "status": "defense",
+    "summary": "With HSTS, a site could tell a browser to use HTTPS on future visits and to refuse connections with certificate errors. The browser learned the rule over a secure connection, so an unprotected first visit could still be intercepted. Preload lists gave browsers a way to know the rule before visiting included sites.",
+    "before": "A user entering a site's HTTP address or following an insecure link could be kept on plaintext HTTP by an active network attacker.",
+    "pressure": "SSL stripping and mixed transport allowed attackers to downgrade some users before they reached the site's secure endpoint.",
+    "response": "Browsers enforced site HTTPS policies, and Chromium documented preload support in 2011. The IETF standardized HSTS in 2012.",
+    "outcome": "Returning users and preloaded sites can avoid insecure HTTP negotiation. Initial visits without preload and misconfigured subdomains remain limitations.",
+    "scope": "Participating browsers and sites that deploy HSTS correctly; preload only covers domains accepted into a browser's list.",
+    "origin": "Chromium documented preload support in 2011. The IETF published RFC 6797 in 2012.",
+    "prevalence": "Implemented across major browsers, but RFC publication and support do not measure site deployment. Preload adoption varies by domain and browser.",
+    "milestones": [
+      {
+        "date": "2011-06",
+        "event": "Chromium 12 documents user-specified HSTS preloads."
+      },
+      {
+        "date": "2012-11",
+        "event": "RFC 6797 standardizes HTTP Strict Transport Security."
+      }
+    ],
+    "sources": [
+      {
+        "title": "RFC 6797: HTTP Strict Transport Security",
+        "url": "https://www.rfc-editor.org/rfc/rfc6797",
+        "kind": "IETF standards document",
+        "supports": "Threat model, persistent policy, forced HTTPS, and certificate-error behavior."
+      },
+      {
+        "title": "HTTP Strict Transport Security (HSTS) preload",
+        "url": "https://chromium.org/hsts/",
+        "kind": "browser project documentation",
+        "supports": "Preload mechanism and requirements for first-visit protection."
+      },
+      {
+        "title": "New Chromium security features, June 2011",
+        "url": "https://blog.chromium.org/2011/06/new-chromium-security-features-june.html?hl=hu",
+        "kind": "primary",
+        "supports": "Confirms HSTS preload capabilities in Chromium 12 before RFC publication."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "gatekeeper",
+    "year": 2012,
+    "dateLabel": "2012",
+    "title": "The Mac checked who signed a downloaded app",
+    "category": "Software",
+    "status": "default",
+    "summary": "With OS X Mountain Lion, Gatekeeper allowed apps from the Mac App Store and from developers identified by Apple by default. A signature let the system check who signed an app and whether it had changed since. Users could tighten or loosen the rule.",
+    "before": "Mac users could download and run applications from many sources without an operating-system default that filtered by publisher identity.",
+    "pressure": "Internet-distributed malware made it harder for users to judge where software came from and whether a download had been altered.",
+    "response": "Mountain Lion added Gatekeeper, defaulting to Mac App Store and identified developers, with user-selectable stricter or looser settings.",
+    "outcome": "Mac software distribution gained a built-in publisher and integrity check. Users could override it, and a valid signature did not establish that software was safe.",
+    "scope": "OS X Mountain Lion and compatible Macs; settings could be changed and older software was affected by the new default.",
+    "origin": "Apple, introduced during the OS X Mountain Lion release cycle.",
+    "prevalence": "Shipped in Mountain Lion in July 2012; source documents the default but does not measure how often users overrode it or prevented malware.",
+    "milestones": [
+      {
+        "date": "2012-02-16",
+        "event": "Apple previewed Gatekeeper and its three selectable policies."
+      },
+      {
+        "date": "2012-07-25",
+        "event": "OS X Mountain Lion became available."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mountain Lion Available in July From Mac App Store",
+        "url": "https://www.apple.com/newsroom/2012/06/11Mountain-Lion-Available-in-July-From-Mac-App-Store/",
+        "kind": "vendor release announcement",
+        "supports": "Release timing and default identified-developer policy."
+      },
+      {
+        "title": "OS X Mountain Lion Core Technologies Overview",
+        "url": "https://www.apple.com/media/us/osx/2012/docs/OSX_MountainLion_Core_Technologies_Overview.pdf",
+        "kind": "vendor technical document",
+        "supports": "Developer ID signing and the settings users could choose."
+      },
+      {
+        "title": "Mountain Lion Available Today From the Mac App Store",
+        "url": "https://www.apple.com/newsroom/2012/07/25Mountain-Lion-Available-Today-From-the-Mac-App-Store/",
+        "kind": "primary",
+        "supports": "Confirms July 25, 2012 availability with Gatekeeper."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "internet-wide-scanning",
+    "year": 2013,
+    "dateLabel": "2009–2013",
+    "title": "An obscure address was no longer much of a hiding place",
+    "category": "Networks",
+    "status": "defense",
+    "summary": "Shodan made public services searchable in 2009. In 2013, ZMap showed that one machine on a fast connection could scan public IPv4 addresses for a single service in under 45 minutes. Researchers and security companies used that visibility to measure vulnerable systems and monitor exposure. Attackers could use the same tools to find targets.",
+    "before": "Finding exposed services at Internet scale was slower and more laborious.",
+    "pressure": "Unprotected services could remain reachable without their owners noticing.",
+    "response": "Searchable service indexes and high-speed scanning made exposure easier to audit.",
+    "outcome": "Internet-wide measurement became practical for researchers and security products.",
+    "scope": "Dual-use visibility tools, not a claim that scanners created vulnerabilities or that all IPv6 space was scanned.",
+    "origin": "Shodan’s service indexing and ZMap’s 2013 research are separate developments.",
+    "prevalence": "The ZMap authors’ 2024 retrospective documents hundreds of research papers and commercial security adoption.",
+    "milestones": [
+      {
+        "date": "2009",
+        "event": "Shodan launches its searchable index of public devices and services."
+      },
+      {
+        "date": "2013-08",
+        "event": "ZMap research demonstrated Internet-wide scanning."
+      },
+      {
+        "date": "2024",
+        "event": "Authors documented a decade of research and commercial adoption."
+      }
+    ],
+    "sources": [
+      {
+        "title": "ZMap’s original research",
+        "url": "https://www.usenix.org/conference/usenixsecurity13/technical-sessions/paper/durumeric",
+        "kind": "primary",
+        "supports": "Performance, single-port scope and dual use"
+      },
+      {
+        "title": "What Shodan indexes",
+        "url": "https://help.shodan.io/the-basics/what-is-shodan",
+        "kind": "primary",
+        "supports": "Device indexing and defensive inventory"
+      },
+      {
+        "title": "Ten Years of ZMap",
+        "url": "https://arxiv.org/abs/2406.15585",
+        "kind": "primary",
+        "supports": "Subsequent research and commercial adoption"
+      },
+      {
+        "title": "Shodan founder’s ten-year retrospective",
+        "url": "https://blog.shodan.io/happy-10-year-anniversary/",
+        "kind": "primary",
+        "supports": "Dates the service to 2009 and describes documented network-monitoring use."
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "ssl3-retirement",
+    "year": 2014,
+    "dateLabel": "2014–2015",
+    "title": "Browsers dropped the SSL fallback",
+    "category": "Networks",
+    "status": "retired",
+    "summary": "An attacker could force some browsers to fall back from TLS to SSL 3.0. The October 2014 POODLE disclosure showed how that downgrade could expose plaintext. Firefox 34 disabled SSL 3.0 that December, and the IETF prohibited the protocol in June 2015.",
+    "before": "Some clients and servers still allowed SSLv3 negotiation or fallback despite TLS having replaced it years earlier.",
+    "pressure": "SSLv3's weaknesses accumulated over time, and POODLE showed how downgrade behavior could expose plaintext under practical conditions.",
+    "response": "Firefox disabled SSLv3 in December 2014; the IETF prohibition followed in 2015.",
+    "outcome": "SSLv3 became a protocol implementations were directed to reject. Older appliances and servers required upgrades or configuration changes.",
+    "scope": "TLS clients and servers following the standard; legacy endpoints and compatibility products could remain exposed until changed.",
+    "origin": "IETF TLS Working Group, following cryptographic analysis and POODLE disclosure.",
+    "prevalence": "An enforced Firefox default followed by protocol standardization, not simultaneous removal from all servers.",
+    "milestones": [
+      {
+        "date": "2014-10-14",
+        "event": "Google disclosed the POODLE attack against SSLv3."
+      },
+      {
+        "date": "2015-06",
+        "event": "RFC 7568 prohibited SSLv3 negotiation and fallback."
+      },
+      {
+        "date": "2014-12-01",
+        "event": "Firefox 34 disabled SSLv3."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Firefox 34 release notes",
+        "url": "https://www.firefox.com/en-US/firefox/34.0/releasenotes/",
+        "kind": "primary",
+        "supports": "Shipped SSLv3 disablement"
+      },
+      {
+        "title": "RFC 7568: Deprecating Secure Sockets Layer Version 3.0",
+        "url": "https://www.rfc-editor.org/rfc/rfc7568",
+        "kind": "IETF standards document",
+        "supports": "Protocol prohibition, fallback rule, and weaknesses of SSLv3."
+      },
+      {
+        "title": "This POODLE bites: exploiting the SSL 3.0 fallback",
+        "url": "https://security.googleblog.com/2014/10/this-poodle-bites-exploiting-ssl-30.html",
+        "kind": "research disclosure",
+        "supports": "Attack pressure and downgrade mechanism."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "android-runtime-permissions",
+    "year": 2015,
+    "dateLabel": "2015",
+    "title": "Android apps began asking for access when they needed it",
+    "category": "Devices",
+    "status": "default",
+    "summary": "Android 6.0 let apps ask for sensitive permissions when users tried to use a feature, such as finding their location. Apps targeting the new API had to request those permissions at runtime and handle refusals. Users could also revoke individual permissions later in settings.",
+    "before": "Earlier Android releases grouped permissions at install, so installing or updating an app could grant broad access without a later in-context decision.",
+    "pressure": "Users had limited visibility into why an app needed sensitive data and little control over individual grants after installation.",
+    "response": "Android 6.0 introduced runtime requests and individual grant/revoke controls for apps targeting API 23 or higher.",
+    "outcome": "Permission decisions became visible at point of use and developers had to account for refusal. Prompt timing, habituation, and delayed OS upgrades limited the change's uniform effect.",
+    "scope": "Android Marshmallow and later; runtime model applies to target API 23+ apps, with legacy target behavior differing.",
+    "origin": "Google's Android platform, introduced with Android 6.0 Marshmallow.",
+    "prevalence": "Available with Android 6.0 from October 2015, but rollout to existing handsets depended on manufacturers and carriers. No installed-base adoption measure included.",
+    "milestones": [
+      {
+        "date": "2015-05-28",
+        "event": "Google announced Android M and runtime permissions at Google I/O."
+      },
+      {
+        "date": "2015-10-05",
+        "event": "Android 6.0 Marshmallow began release."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Android 6.0 Changes",
+        "url": "https://developer.android.com/about/versions/marshmallow/android-6.0-changes",
+        "kind": "platform release documentation",
+        "supports": "The runtime permissions model and API 23 targeting condition."
+      },
+      {
+        "title": "Request runtime permissions",
+        "url": "https://developer.android.com/training/permissions/requesting",
+        "kind": "developer documentation",
+        "supports": "User grant/revoke and application behavior requirements."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "lets-encrypt",
+    "year": 2015,
+    "dateLabel": "2015–2020",
+    "title": "Websites got free certificates they could renew automatically",
+    "category": "Web",
+    "status": "defense",
+    "summary": "Getting an HTTPS certificate could mean paying for it and handling renewals by hand. Let’s Encrypt opened its free, automated service to everyone in December 2015, making it easier for small sites to encrypt ordinary pages as well as logins and checkouts. By February 2020 the service reported serving nearly 192 million websites.",
+    "before": "Buy and manually manage a web certificate.",
+    "pressure": "Unencrypted browsing exposed traffic to interception.",
+    "response": "Provide free certificates with automated issuance and renewal.",
+    "outcome": "HTTPS became easier to maintain on small sites.",
+    "scope": "One enabling change in a broader migration; certificate counts are not unique users.",
+    "origin": "HTTPS predates this service by decades.",
+    "prevalence": "Let’s Encrypt reported nearly 192 million websites in February 2020.",
+    "milestones": [
+      {
+        "date": "2015-12-03",
+        "event": "Public beta opened"
+      },
+      {
+        "date": "2020-02-27",
+        "event": "Billionth certificate issued"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Let’s Encrypt public beta",
+        "url": "https://letsencrypt.org/2015/12/03/entering-public-beta.html",
+        "kind": "primary",
+        "supports": "Availability and automation"
+      },
+      {
+        "title": "A billion certificates",
+        "url": "https://letsencrypt.org/2020/02/27/one-billion-certs.html",
+        "kind": "primary",
+        "supports": "Deployment scale"
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "npapi-retirement",
+    "year": 2015,
+    "dateLabel": "2015–2017",
+    "title": "Java applets lost their place in the browser",
+    "category": "Web",
+    "status": "retired",
+    "summary": "Java applets and Silverlight needed browser plug-ins, each with its own bugs and updates. As browsers gained built-in alternatives, Chrome dropped the old NPAPI plug-in interface in 2015 and Firefox followed in 2017. Firefox kept a temporary exception for Flash, and enterprise arrangements gave some older applications longer to migrate.",
+    "before": "Websites could load native-code plugins inside the browser, expanding the attack surface and exposing users to separate plugin update cycles.",
+    "pressure": "Plugin vulnerabilities, crashes, and maintenance burdens accumulated as browsers added standard APIs for video, audio, and interactive content.",
+    "response": "Browser vendors phased out NPAPI; Firefox 52 removed support for plugins other than Flash in March 2017.",
+    "outcome": "Java and similar plugins stopped running in mainstream Firefox, and sites moved toward Web APIs. Some enterprise users stayed on older or extended-support versions.",
+    "scope": "Major desktop browsers and NPAPI plugins; Flash was excluded from the Firefox 52 removal and retired separately later.",
+    "origin": "Browser vendors, with Mozilla announcing its phase-out while web APIs replaced plugin use cases.",
+    "prevalence": "Removal reached mainstream Firefox in 2017 and Chrome earlier; remaining usage was concentrated in legacy workflows and managed exceptions.",
+    "milestones": [
+      {
+        "date": "2015-10-08",
+        "event": "Mozilla announced the NPAPI phase-out and schedule."
+      },
+      {
+        "date": "2017-03-07",
+        "event": "Firefox 52 removed NPAPI support other than Flash."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Chromium’s NPAPI phase-out",
+        "url": "https://blog.chromium.org/2014/11/the-final-countdown-for-npapi.html",
+        "kind": "primary",
+        "supports": "Chrome schedule and rationale"
+      },
+      {
+        "title": "NPAPI plugins in Firefox",
+        "url": "https://blog.mozilla.org/futurereleases/2015/10/08/npapi-plugins-in-firefox/",
+        "kind": "browser roadmap announcement",
+        "supports": "Phase-out schedule and transition context."
+      },
+      {
+        "title": "Firefox 52.0 release notes",
+        "url": "https://www.mozilla.org/en-US/firefox/52.0/releasenotes/",
+        "kind": "vendor release notes",
+        "supports": "Removal of NPAPI support except Flash in the shipped release."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "rc4-tls-retirement",
+    "year": 2016,
+    "dateLabel": "2015–2016",
+    "title": "Firefox stopped offering RC4 for HTTPS",
+    "category": "Networks",
+    "status": "retired",
+    "summary": "RC4 stayed available for compatibility even as attacks against the cipher improved. The IETF prohibited RC4 cipher suites for TLS in 2015, and Firefox 44 disabled them by default in January 2016. Sites that offered only RC4 had to change their encryption settings.",
+    "before": "TLS implementations continued to use RC4 in some cipher suites despite known statistical weaknesses in the stream cipher.",
+    "pressure": "Research made plaintext recovery increasingly practical when enough encrypted traffic was available, eroding confidence in RC4 for TLS.",
+    "response": "RFC 7465 prohibited clients from offering and servers from selecting RC4 cipher suites.",
+    "outcome": "RC4 ceased to be an acceptable TLS choice in standards-compliant implementations, while unpatched and legacy endpoints could persist.",
+    "scope": "TLS clients and servers; this entry concerns cipher suites, not the retirement of SSL/TLS protocol versions or every other use of RC4.",
+    "origin": "IETF TLS Working Group, with the RFC authored by Alexey Popov at Microsoft.",
+    "prevalence": "Standards prohibition published in 2015; vendor updates followed, but compliance across all servers was not immediate.",
+    "milestones": [
+      {
+        "date": "2013-03-12",
+        "event": "Researchers published a practical TLS attack exploiting RC4 biases."
+      },
+      {
+        "date": "2015-02",
+        "event": "RFC 7465 prohibited RC4 cipher suite negotiation."
+      },
+      {
+        "date": "2016-01-26",
+        "event": "Firefox 44 disabled RC4 by default."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Firefox 44 developer release notes",
+        "url": "https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Releases/44",
+        "kind": "primary",
+        "supports": "Actual release default and date"
+      },
+      {
+        "title": "RFC 7465: Prohibiting RC4 Cipher Suites",
+        "url": "https://www.rfc-editor.org/rfc/rfc7465",
+        "kind": "IETF standards document",
+        "supports": "Explicit client/server prohibition and rationale."
+      },
+      {
+        "title": "On the Security of RC4 in TLS",
+        "url": "https://www.isg.rhul.ac.uk/tls/",
+        "kind": "cryptographic research",
+        "supports": "Practical attack evidence against RC4 in TLS."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "sha1-certificates",
+    "year": 2017,
+    "dateLabel": "2015–2017",
+    "title": "Firefox stopped trusting public SHA-1 certificates",
+    "category": "Web",
+    "status": "retired",
+    "summary": "Browsers were already moving away from certificates signed with SHA-1 when researchers demonstrated a practical collision in February 2017. Firefox completed its phase-out for publicly trusted certificate chains that month. Sites still using those certificates needed replacements, while manually imported roots remained an exception.",
+    "before": "Accept SHA-1 signatures in public website certificates.",
+    "pressure": "Collision attacks undermined signature security.",
+    "response": "Reject affected certificates in browsers.",
+    "outcome": "Operators had to migrate to stronger certificate signatures.",
+    "scope": "Firefox enforcement covered publicly trusted certificate chains. Manually imported roots were exempt.",
+    "origin": "NIST deprecated SHA-1 for new signatures in 2011.",
+    "prevalence": "Mozilla reported affected sites were under 0.1% of web traffic by February 2017.",
+    "milestones": [
+      {
+        "date": "2015",
+        "event": "Mozilla announced deprecation plan"
+      },
+      {
+        "date": "2017-02-23",
+        "event": "Practical collision announced"
+      },
+      {
+        "date": "2017-02-24",
+        "event": "Firefox phase-out reached all users"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mozilla’s certificate phase-out",
+        "url": "https://blog.mozilla.org/security/2017/02/23/the-end-of-sha-1-on-the-public-web/",
+        "kind": "primary",
+        "supports": "Enforcement and residual prevalence"
+      },
+      {
+        "title": "NIST on the collision result",
+        "url": "https://csrc.nist.gov/News/2017/Research-Results-on-SHA-1-Collisions",
+        "kind": "primary",
+        "supports": "Earlier deprecation and collision significance"
+      },
+      {
+        "title": "Mozilla’s public trust policy and exceptions",
+        "url": "https://blog.mozilla.org/security/2016/10/18/phasing-out-sha-1-on-the-public-web/",
+        "kind": "primary",
+        "supports": "Establishes the manually imported root exception."
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "smbv1-clean-install-removal",
+    "year": 2017,
+    "dateLabel": "2017–2021",
+    "title": "New Windows installs began leaving out SMBv1",
+    "category": "Networks",
+    "status": "default",
+    "summary": "Windows kept its old file-sharing protocol around for compatibility after newer versions were available. WannaCry and other wormable attacks made the cost of leaving SMBv1 available harder to ignore. Starting with Windows 10 and Server version 1709, Microsoft left SMBv1 out of some clean installations by default while keeping SMBv2 and SMBv3 available. Editions and upgrade paths differed, and administrators could still reinstall SMBv1 where supported.",
+    "before": "SMBv1 remained available in Windows installations for legacy file sharing, alongside newer SMB versions.",
+    "pressure": "Wormable attacks and exposed file-sharing services made the old protocol a costly compatibility default.",
+    "response": "Microsoft removed SMBv1 from clean installs in stages, while retaining newer SMB versions and some compatibility paths.",
+    "outcome": "New Windows 11 installs omit client and server components; some earlier editions, upgrades and managed environments retain exceptions.",
+    "scope": "Microsoft Windows client and server editions; clean installs and upgrades differ.",
+    "origin": "Windows 10 and Windows Server version 1709 began the default transition in 2017.",
+    "prevalence": "Broad default change on recent clean installs, with legacy and enterprise upgrade exceptions; not universal retirement.",
+    "milestones": [
+      {
+        "date": "2017-10",
+        "event": "Windows 10 version 1709 and Windows Server version 1709 stop installing SMBv1 by default in several editions."
+      },
+      {
+        "date": "2018-10",
+        "event": "Windows 10 version 1809 removes SMBv1 client by default from clean Pro installs."
+      },
+      {
+        "date": "2021-10",
+        "event": "Windows 11 clean installs omit SMBv1 client and server by default."
+      }
+    ],
+    "sources": [
+      {
+        "title": "SMBv1 not installed by default in Windows Server and Windows",
+        "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/Troubleshoot/smbv1-not-installed-by-default-in-windows",
+        "kind": "vendor documentation",
+        "supports": "Current edition behavior, version timeline, upgrade exceptions and reinstall limits."
+      },
+      {
+        "title": "Detect, enable, and disable SMBv1, SMBv2, and SMBv3",
+        "url": "https://learn.microsoft.com/en-us/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3",
+        "kind": "vendor documentation",
+        "supports": "Removal controls and continued SMBv2/3 alternatives."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "certificate-transparency",
+    "year": 2018,
+    "dateLabel": "2013–2018",
+    "title": "Chrome required a public record for website certificates",
+    "category": "Web",
+    "status": "defense",
+    "summary": "A certificate authority could issue a certificate for your site without giving you an easy way to find out. Certificate Transparency added public logs where domain owners and researchers could look for unexpected certificates. Chrome made logging a condition of trust for publicly trusted certificates issued after April 2018.",
+    "before": "A misissued certificate could be used without a public mechanism for owners or researchers to learn that a certificate authority had issued it.",
+    "pressure": "Trust failures and rogue certificate incidents exposed how difficult it was to monitor the global certificate authority system centrally.",
+    "response": "The IETF specified public, append-only Certificate Transparency logs, with monitors and browser policies encouraging or requiring logged certificates.",
+    "outcome": "Issuance gained a public audit trail and monitoring ecosystem; detection still depends on log coverage and active monitoring.",
+    "scope": "Public Web PKI certificates and participating logs, monitors, and browsers; it does not cover all private PKI or block issuance itself.",
+    "origin": "The first CT RFC was published in 2013; browser enforcement expanded later.",
+    "prevalence": "Chrome requires CT for publicly trusted certificates issued after April 30, 2018.",
+    "milestones": [
+      {
+        "date": "2013-06",
+        "event": "RFC 6962 specified CT."
+      },
+      {
+        "date": "2018-04-30",
+        "event": "Certificate issuance cutoff for Chrome’s general CT requirement."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Certificate Transparency in Chrome",
+        "url": "https://googlechrome.github.io/CertificateTransparency/",
+        "kind": "primary",
+        "supports": "Actual general enforcement and issuance cutoff"
+      },
+      {
+        "title": "RFC 6962: Certificate Transparency",
+        "url": "https://www.rfc-editor.org/rfc/rfc6962",
+        "kind": "IETF standards document",
+        "supports": "Log architecture and intended auditability."
+      },
+      {
+        "title": "Chrome Certificate Transparency policy",
+        "url": "https://googlechrome.github.io/CertificateTransparency/ct_policy.html",
+        "kind": "browser policy",
+        "supports": "Browser enforcement scope and rollout conditions."
+      }
+    ],
+    "researchBatch": "middle"
+  },
+  {
+    "id": "chrome-site-isolation-spectre",
+    "year": 2018,
+    "dateLabel": "2018–19",
+    "title": "Chrome gave different sites separate renderer processes",
+    "category": "Web",
+    "status": "defense",
+    "summary": "Chrome used to let pages from different sites share a renderer process. Spectre raised the urgency of work already underway to separate them. In July 2018, Google reported that Chrome 67 had enabled Site Isolation for 99% of supported desktop users. Chrome 77 later extended a narrower version to sites where users signed in on eligible Android devices.",
+    "before": "Different websites could share a browser renderer process while relying on software rules to keep their data separate.",
+    "pressure": "Spectre and renderer bugs demonstrated that process sharing could expose cross-site information.",
+    "response": "Chrome 67 separated cross-site documents into different renderer processes for most supported desktop users. Chrome 77 expanded the protection against compromised renderers on desktop and introduced narrower Android coverage.",
+    "outcome": "Desktop site isolation became a default; Android coverage is limited by device memory and site sign-in conditions.",
+    "scope": "Chrome desktop platforms from version 67; Android devices with at least 2GB RAM from version 77 for signed-in sites.",
+    "origin": "Desktop default shipped in May 2018; Android expansion followed in 2019.",
+    "prevalence": "Google reported 99% of supported desktop users in July 2018. Chrome 77 covered sites where users signed in on eligible Android devices.",
+    "milestones": [
+      {
+        "date": "2018-01",
+        "event": "Spectre disclosure increases urgency of the existing Site Isolation project."
+      },
+      {
+        "date": "2018-07-11",
+        "event": "Google reports Site Isolation enabled for 99% of supported Chrome 67 desktop users."
+      },
+      {
+        "date": "2019-09",
+        "event": "Chrome 77 adds further desktop protections and isolates sites where users sign in on eligible Android devices."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Site Isolation",
+        "url": "https://www.chromium.org/Home/chromium-security/site-isolation/",
+        "kind": "browser architecture documentation",
+        "supports": "Current scope and platform/version rollout."
+      },
+      {
+        "title": "Site Isolation Design Document",
+        "url": "https://www.chromium.org/developers/design-documents/site-isolation/",
+        "kind": "browser design history",
+        "supports": "Process-sharing context, milestones and known scope limits."
+      },
+      {
+        "title": "Mitigating Spectre with Site Isolation in Chrome",
+        "url": "https://security.googleblog.com/2018/07/mitigating-spectre-with-site-isolation.html?hl=el",
+        "kind": "primary",
+        "supports": "Documents July rollout, original design, and additional phases."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "http-warning",
+    "year": 2018,
+    "dateLabel": "2018",
+    "title": "Chrome started labeling plain HTTP “Not secure”",
+    "category": "Web",
+    "status": "default",
+    "summary": "In July 2018, Chrome 68 began labeling HTTP pages “Not secure” in the address bar. Anyone who could observe or intercept an HTTP connection could read or change the traffic. Google had already counted 81 of the top 100 sites using HTTPS by default earlier that year.",
+    "before": "Browse ordinary pages over unencrypted HTTP.",
+    "pressure": "Network observers could read or alter the traffic.",
+    "response": "Label every HTTP page “Not secure.”",
+    "outcome": "Lack of encryption became visible in everyday browsing.",
+    "scope": "Chrome 68 interface change; HTTP remained accessible.",
+    "origin": "Earlier Chrome versions warned on selected sensitive HTTP pages.",
+    "prevalence": "Google reported 81 of the top 100 sites used HTTPS by default in February 2018.",
+    "milestones": [
+      {
+        "date": "2018-02-08",
+        "event": "Chrome announced broader warning"
+      },
+      {
+        "date": "2018-07-24",
+        "event": "Chrome 68 stable release"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Chrome’s HTTP warning",
+        "url": "https://security.googleblog.com/2018/02/a-secure-web-is-here-to-stay.html",
+        "kind": "primary",
+        "supports": "Warning scope and adoption figures"
+      },
+      {
+        "title": "Chrome July 2018 releases",
+        "url": "https://chromereleases.googleblog.com/2018/07/",
+        "kind": "primary",
+        "supports": "Release availability"
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "aws-imdsv2-transition",
+    "year": 2019,
+    "dateLabel": "2019–2023",
+    "title": "Some new EC2 instances began requiring a token for metadata",
+    "category": "Networks",
+    "status": "default",
+    "summary": "A flaw that lets attackers make a server fetch an arbitrary URL can expose the temporary credentials available from an EC2 instance’s metadata service. AWS introduced IMDSv2 in 2019, requiring a session token for metadata requests. In November 2023, AWS made IMDSv2 the default for new launches through the console’s Quick Start options.",
+    "before": "EC2 software could fetch metadata and temporary role credentials through a simple link-local request.",
+    "pressure": "SSRF flaws and misconfigured proxies can let an attacker reach internal metadata endpoints.",
+    "response": "AWS introduced token-based IMDSv2 and made it the default for new Quick Start launches.",
+    "outcome": "Console Quick Start launches gained an IMDSv2-only default. Existing instances can still require a customer migration.",
+    "scope": "Amazon EC2 metadata service; default varies by AMI, instance type, launch pathway and account policy.",
+    "origin": "IMDSv2 introduced November 2019; default migration milestones continued through mid-2024.",
+    "prevalence": "AWS confirmed the default for console Quick Start launches in November 2023.",
+    "milestones": [
+      {
+        "date": "2019-11-19",
+        "event": "AWS introduces IMDSv2."
+      },
+      {
+        "date": "2023-11",
+        "event": "AWS switches console Quick Start launches to IMDSv2-only."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Add defense in depth against open firewalls, reverse proxies, and SSRF vulnerabilities with enhancements to the EC2 Instance Metadata Service",
+        "url": "https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/",
+        "kind": "cloud security design announcement",
+        "supports": "SSRF pressure and IMDSv2 token design."
+      },
+      {
+        "title": "Amazon EC2 Instance Metadata Service IMDSv2 by default",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-ec2-instance-metadata-service-imdsv2-by-default/",
+        "kind": "cloud rollout record",
+        "supports": "Completed and planned rollout milestones, with opt-back caveat."
+      },
+      {
+        "title": "Transition to using Instance Metadata Service Version 2",
+        "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-metadata-transition-to-version-2.html",
+        "kind": "cloud service documentation",
+        "supports": "Migration requirements and unchanged existing instances."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "breached-passwords",
+    "year": 2019,
+    "dateLabel": "2019",
+    "title": "Chrome started warning about passwords exposed in breaches",
+    "category": "Identity",
+    "status": "defense",
+    "summary": "Attackers try username and password pairs from one breach on other sites. Google’s Password Checkup began warning users about exposed credentials through a Chrome extension in 2019. In a study of that extension, users changed their passwords after 26% of warnings. Google later added the check to Chrome.",
+    "before": "Reuse a password without knowing it had leaked elsewhere.",
+    "pressure": "Attackers tried stolen credentials across other services.",
+    "response": "Compare logins against known compromised credentials.",
+    "outcome": "Warnings prompted some users to replace exposed passwords.",
+    "scope": "The study measured extension users; warnings did not automatically fix accounts.",
+    "origin": "Password breach services existed before browser integration.",
+    "prevalence": "The 2019 study observed 21 million logins from nearly 670,000 users.",
+    "milestones": [
+      {
+        "date": "2019-02",
+        "event": "Password Checkup extension launched"
+      },
+      {
+        "date": "2019-12-10",
+        "event": "Chrome integration announced"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Password breach alerting study",
+        "url": "https://research.google/pubs/protecting-accounts-from-credential-stuffing-with-password-breach-alerting/",
+        "kind": "primary",
+        "supports": "Threat and measured response"
+      },
+      {
+        "title": "Chrome password protections",
+        "url": "https://blog.google/products-and-platforms/products/chrome/better-password-protections/",
+        "kind": "primary",
+        "supports": "Integration and rollout"
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "android-unused-permission-reset",
+    "year": 2020,
+    "dateLabel": "2020",
+    "title": "Android began taking permissions back from unused apps",
+    "category": "Devices",
+    "status": "default",
+    "summary": "Android 11 began resetting sensitive permissions for apps targeting Android 11 or later after several months of disuse. It also introduced one-time grants for location, camera, and microphone access. People could give an app access for one use and grant it again when needed.",
+    "before": "Runtime permissions granted to an app could remain in place after a user stopped opening it.",
+    "pressure": "Dormant apps retain access to personal data and device features after their active use has ended.",
+    "response": "Android 11 introduced automatic permission reset for long-unused apps and one-time grants for sensitive permissions.",
+    "outcome": "Permissions can be revoked automatically after months of inactivity; exclusions and user controls remain.",
+    "scope": "Android 11+ runtime permissions; exact availability varies by app eligibility and device implementation.",
+    "origin": "Android 11 shipped auto-reset and one-time grants in 2020.",
+    "prevalence": "At launch, automatic reset targeted unused apps built for Android 11 or later.",
+    "milestones": [
+      {
+        "date": "2020-09",
+        "event": "Android 11 ships one-time permission grants and auto-reset for eligible unused apps."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Android 11 behavior changes: Privacy",
+        "url": "https://developer.android.com/about/versions/11/privacy/permissions",
+        "kind": "platform release documentation",
+        "supports": "Permission auto-reset behavior and eligibility."
+      },
+      {
+        "title": "One-time permissions",
+        "url": "https://support.google.com/android/answer/9431959",
+        "kind": "platform user documentation",
+        "supports": "User-facing one-time location, camera and microphone permission option."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "tls-10-11-browser-retirement",
+    "year": 2020,
+    "dateLabel": "2020",
+    "title": "Firefox drops TLS 1.0 and 1.1 by default",
+    "category": "Web",
+    "status": "retired",
+    "summary": "Older versions of TLS lacked modern cryptographic options. Browser makers gave site operators advance notice that they were moving to TLS 1.2 or later. In June 2020, Firefox 78 disabled TLS 1.0 and 1.1 by default, and sites relying on them began showing an error page.",
+    "before": "Browsers continued to negotiate TLS 1.0 and 1.1 for compatibility with older servers.",
+    "pressure": "Older versions lacked modern cryptographic options and retained known design weaknesses; most connections already used TLS 1.2 or later.",
+    "response": "Firefox 78 disabled TLS 1.0 and 1.1 by default after coordinated browser deprecation announcements.",
+    "outcome": "Firefox users encountered errors on sites unable to use TLS 1.2 or later.",
+    "scope": "Firefox HTTPS connections and related browser deprecation announcements.",
+    "origin": "Mozilla announced the plan in October 2018 and confirmed disablement in the Firefox 78 release notes in June 2020.",
+    "prevalence": "The Firefox 78 release notes confirm shipped disablement. Browser vendors used different schedules.",
+    "milestones": [
+      {
+        "date": "2018-10-15",
+        "event": "Mozilla announces its TLS 1.0 and 1.1 deprecation plan."
+      },
+      {
+        "date": "2020-06-30",
+        "event": "Firefox 78 disables TLS 1.0 and TLS 1.1 by default."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Removing Old Versions of TLS",
+        "url": "https://blog.mozilla.org/security/2018/10/15/removing-old-versions-of-tls/",
+        "kind": "browser security announcement",
+        "supports": "Protocol rationale, telemetry and planned transition."
+      },
+      {
+        "title": "Firefox 78.0 Release Notes",
+        "url": "https://www.firefox.com/en-US/firefox/78.0/releasenotes/",
+        "kind": "browser release notes",
+        "supports": "Actual Firefox release outcome."
+      },
+      {
+        "title": "Chrome UI for Deprecating Legacy TLS Versions",
+        "url": "https://security.googleblog.com/2019/10/chrome-ui-for-deprecating-legacy-tls.html",
+        "kind": "browser deprecation notice",
+        "supports": "Chrome staged warnings and planned removal with enterprise exception."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "flash",
+    "year": 2021,
+    "dateLabel": "2017–2021",
+    "title": "Flash stopped running",
+    "category": "Web",
+    "status": "retired",
+    "summary": "In 2014, 80% of desktop Chrome users visited a site containing Flash each day. Google put that figure at 17% in 2017 as sites moved to built-in web technologies. Adobe ended support for Flash Player on December 31, 2020, and blocked Flash content from running in the player on January 12, 2021.",
+    "before": "People installed a browser plug-in to play web video, games and applications.",
+    "pressure": "Security exposure persisted while native web alternatives matured.",
+    "response": "Browser vendors removed Flash support, and Adobe blocked content from running in its general-distribution player.",
+    "outcome": "Flash pages no longer worked in ordinary supported browsers.",
+    "scope": "Adobe’s general-distribution player; specialist legacy arrangements and emulators differ.",
+    "origin": "Flash was a major web platform for roughly two decades.",
+    "prevalence": "Google reported that the share of desktop Chrome users visiting a site containing Flash each day fell from 80% in 2014 to 17% in 2017.",
+    "milestones": [
+      {
+        "date": "2017-07",
+        "event": "Retirement announced"
+      },
+      {
+        "date": "2020-12-31",
+        "event": "Adobe support ended"
+      },
+      {
+        "date": "2021-01-12",
+        "event": "Adobe blocked content execution"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Adobe Flash end of life",
+        "url": "https://www.adobe.com/products/flashplayer/end-of-life.html",
+        "kind": "primary",
+        "supports": "Support end, block and replacement technologies"
+      },
+      {
+        "title": "Chrome’s Flash transition",
+        "url": "https://blog.google/products-and-platforms/products/chrome/saying-goodbye-flash-chrome/",
+        "kind": "primary",
+        "supports": "Prevalence and security rationale"
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "mass-mfa",
+    "year": 2021,
+    "dateLabel": "2021–2022",
+    "title": "Google turned on two-step verification for millions of accounts",
+    "category": "Identity",
+    "status": "default",
+    "summary": "Google began turning on two-step verification automatically for eligible accounts in 2021. It reported enrolling more than 150 million people and seeing a 50% drop in compromised accounts after the rollout.",
+    "before": "Protect an account with a password unless the user opted into more.",
+    "pressure": "Breached passwords and phishing enabled account takeovers.",
+    "response": "Automatically enroll eligible accounts in two-step verification.",
+    "outcome": "Many more users encountered a second check at sign-in.",
+    "scope": "Google’s eligible accounts and vendor-reported outcome; MFA methods differ.",
+    "origin": "Two-step verification long predates automatic enrollment.",
+    "prevalence": "Google reported over 150 million auto-enrollments in 2021.",
+    "milestones": [
+      {
+        "date": "2021",
+        "event": "Mass automatic enrollment"
+      },
+      {
+        "date": "2022-02-08",
+        "event": "Google reported results"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Google’s enrollment results",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/safer-internet-day-2022/",
+        "kind": "primary",
+        "supports": "Scale and reported reduction"
+      },
+      {
+        "title": "Research on account hijacking defenses",
+        "url": "https://security.googleblog.com/2019/05/new-research-how-effective-is-basic.html",
+        "kind": "primary",
+        "supports": "Threats and differences between defenses"
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "exchange-online-basic-auth-retirement",
+    "year": 2022,
+    "dateLabel": "2022–2023",
+    "title": "Older mail clients lost their password sign-in to Exchange Online",
+    "category": "Identity",
+    "status": "retired",
+    "summary": "Older Exchange clients could use a reusable account password for each request. Microsoft began turning off Basic Authentication for protocols including POP, IMAP, and Exchange ActiveSync in October 2022. It disabled the protocols for remaining extension tenants starting in early 2023, sending affected clients to OAuth. SMTP AUTH followed a separate schedule.",
+    "before": "Apps and clients could authenticate to Exchange Online with a username and password on each request.",
+    "pressure": "Stored and repeatedly transmitted credentials increased exposure to password theft and account takeover.",
+    "response": "Microsoft shifted supported clients to OAuth-based Modern Authentication and disabled Basic Auth protocol by protocol.",
+    "outcome": "Basic Auth cannot be re-enabled for affected protocols. Affected integrations had to migrate.",
+    "scope": "Affected Exchange Online protocols and tenants. SMTP AUTH and on-premises Exchange follow separate policies.",
+    "origin": "Microsoft announced deprecation in 2019 and completed staged disablement starting October 2022.",
+    "prevalence": "Microsoft confirmed enforcement across tenants for the protocols covered by this rollout.",
+    "milestones": [
+      {
+        "date": "2019-09-20",
+        "event": "Microsoft announces Exchange Online Basic Auth deprecation."
+      },
+      {
+        "date": "2022-10-01",
+        "event": "Permanent tenant disablement rollout begins."
+      },
+      {
+        "date": "2022-12-31",
+        "event": "Tenant re-enable window ends."
+      },
+      {
+        "date": "2023",
+        "event": "Microsoft disables Basic Authentication for remaining extension tenants on affected protocols."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Deprecation of Basic Authentication in Exchange Online",
+        "url": "https://learn.microsoft.com/en-us/lifecycle/announcements/basic-auth-deprecation-exchange-online",
+        "kind": "vendor lifecycle notice",
+        "supports": "Protocol scope and planned rollout date."
+      },
+      {
+        "title": "Deprecation of Basic authentication in Exchange Online",
+        "url": "https://learn.microsoft.com/en-nz/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online",
+        "kind": "vendor service documentation",
+        "supports": "Actual disabled state and end of re-enable option."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "internet-macros",
+    "year": 2022,
+    "dateLabel": "2022–2023",
+    "title": "Office blocked macros in files from the internet",
+    "category": "Software",
+    "status": "default",
+    "summary": "Malicious Office attachments often asked people to click “Enable Content” to run a macro. Starting in 2022, Microsoft rolled out a default block on VBA macros in files Windows marked as coming from the internet. The block reached Office update channels into 2023. Organizations could still use trusted files and locations.",
+    "before": "Click “Enable Content” to run a downloaded document’s macros.",
+    "pressure": "Phishing documents persuaded users to enable malicious VBA.",
+    "response": "Block internet-origin macros by default.",
+    "outcome": "The familiar enable button no longer bypassed this block.",
+    "scope": "Affected Office apps on Windows, with origin marks and trust exceptions; not a ban on all macros.",
+    "origin": "Malicious macros date to the 1990s.",
+    "prevalence": "NCSC describes macros as widely embedded in business workflows and attacks.",
+    "milestones": [
+      {
+        "date": "2022-07-27",
+        "event": "Current Channel rollout started"
+      },
+      {
+        "date": "2023-01-10",
+        "event": "Semi-Annual Enterprise Channel change"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Microsoft’s rollout and exceptions",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+        "kind": "primary",
+        "supports": "Affected versions, dates and behavior"
+      },
+      {
+        "title": "NCSC macro security guidance",
+        "url": "https://www.ncsc.gov.uk/guidance/macro-security-for-microsoft-office",
+        "kind": "primary",
+        "supports": "Legitimate use and malicious document tactics"
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "memory-safe-language-transition",
+    "year": 2022,
+    "dateLabel": "2022–2024",
+    "title": "Android ships more new code in memory-safe languages",
+    "category": "Software",
+    "status": "ongoing",
+    "summary": "Memory errors in C and C++ can give attackers a way to compromise a device. In 2022, Google reported that Android 13 shipped with a majority of newly added code written in memory-safe languages, and that Rust accounted for about 21% of new native code. Android used Rust in components such as Keystore2 and its ultra-wideband stack. Google continued to harden its existing C++ code.",
+    "before": "Android used C and C++ for many low-level components.",
+    "pressure": "Memory safety bugs remained a significant source of exploitable Android vulnerabilities.",
+    "response": "Google used Rust for selected new Android components and hardened existing C++.",
+    "outcome": "Android 13 shipped Rust in Keystore2, ultra-wideband, and other components.",
+    "scope": "Android platform code and Google engineering practice.",
+    "origin": "Google documented Android 13 adoption in 2022 and subsequent expansion and hardening work in 2024.",
+    "prevalence": "Google reported that a majority of new Android 13 code used memory-safe languages, with Rust at about 21% of new native code.",
+    "milestones": [
+      {
+        "date": "2022-12",
+        "event": "Google documents memory-safe code and Rust components shipped in Android 13."
+      },
+      {
+        "date": "2024-10",
+        "event": "Google describes further adoption and continued C++ hardening."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Secure by Design: Google’s Perspective on Memory Safety",
+        "url": "https://security.googleblog.com/2024/03/secure-by-design-googles-perspective-on.html",
+        "kind": "engineering policy statement",
+        "supports": "Strategic direction and explicit limits of migrating a large C++ base."
+      },
+      {
+        "title": "Deploying Rust in Existing Firmware Codebases",
+        "url": "https://security.googleblog.com/2024/09/deploying-rust-in-existing-firmware.html",
+        "kind": "engineering implementation report",
+        "supports": "Concrete incremental Android firmware practice."
+      },
+      {
+        "title": "Safer with Google: Advancing Memory Safety",
+        "url": "https://security.googleblog.com/2024/10/safer-with-google-advancing-memory.html",
+        "kind": "engineering strategy report",
+        "supports": "Ongoing language transition and legacy-hardening approach."
+      },
+      {
+        "title": "Memory Safe Languages in Android 13",
+        "url": "https://security.googleblog.com/2022/12/memory-safe-languages-in-android-13.html?hl=cs",
+        "kind": "primary",
+        "supports": "Documents measured Android 13 code composition and shipped Rust components."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "github-contributor-mandatory-2fa",
+    "year": 2023,
+    "dateLabel": "2023–24",
+    "title": "GitHub began requiring two-factor sign-in for contributors",
+    "category": "Identity",
+    "status": "defense",
+    "summary": "A stolen developer account can give attackers a way to publish code under a maintainer’s name. GitHub began requiring two-factor authentication for groups of code contributors in March 2023. It reported that nearly 95% of contributors notified that year enrolled, and adoption among all active contributors rose 54% relative to its previous level.",
+    "before": "Code contributors could maintain GitHub accounts with password-only authentication.",
+    "pressure": "Social engineering and account takeover create routes to malicious code changes and releases.",
+    "response": "GitHub progressively required contributors and administrators in selected groups to enroll in 2FA.",
+    "outcome": "GitHub reported nearly 95% enrollment among contributors notified in 2023 and 54% higher adoption across active contributors.",
+    "scope": "GitHub.com contributors and selected platform populations; staged program and vendor-reported measurement.",
+    "origin": "Rollout began March 13, 2023, after a 2022 commitment to require 2FA by the end of 2023.",
+    "prevalence": "Strong within notified GitHub cohorts; not every user or software repository globally.",
+    "milestones": [
+      {
+        "date": "2023-03-13",
+        "event": "GitHub starts staged enrollment requirements."
+      },
+      {
+        "date": "2023-12",
+        "event": "Initial rollout target for contributors is reached."
+      },
+      {
+        "date": "2024-03",
+        "event": "GitHub reports nearly 95% notified-cohort enrollment and 54% rise among active contributors."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Raising the bar for software security: GitHub 2FA begins March 13",
+        "url": "https://github.blog/news-insights/product-news/raising-the-bar-for-software-security-github-2fa-begins-march-13/",
+        "kind": "platform rollout notice",
+        "supports": "Scope, phased roll-out, and account takeover rationale."
+      },
+      {
+        "title": "Securing millions of developers through 2FA",
+        "url": "https://github.blog/security/supply-chain-security/securing-millions-of-developers-through-2fa/",
+        "kind": "platform adoption report",
+        "supports": "Enrollment and adoption results, with platform-specific scope."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "passkeys-default-signin",
+    "year": 2023,
+    "dateLabel": "2023–24",
+    "title": "Google began offering passkeys first",
+    "category": "Identity",
+    "status": "defense",
+    "summary": "Passkeys use a credential tied to a specific service and unlocked with a device PIN or biometric. In October 2023, Google made passkeys the default sign-in option for personal Google Accounts on supported devices, while keeping passwords available. By May 2024, Google reported more than a billion authentications across more than 400 million accounts.",
+    "before": "Online accounts generally presented passwords as the main sign-in method, with other factors often added afterward.",
+    "pressure": "Phishing and reused or stolen passwords remain common account compromise paths.",
+    "response": "FIDO/WebAuthn passkeys use public-key credentials unlocked by a device PIN or biometric; Google changed the prompt order on eligible devices.",
+    "outcome": "Google reported 1B+ passkey authentications across 400M+ accounts within a year; password fallback persists.",
+    "scope": "Google Accounts on supported devices and services implementing passkeys; this is not web-wide password retirement.",
+    "origin": "Google announced default prompts on October 10, 2023 after enabling account support in May.",
+    "prevalence": "High measured use in Google's accounts, but no comparable ecosystem-wide adoption measure in these sources.",
+    "milestones": [
+      {
+        "date": "2023-05",
+        "event": "Google Accounts begin supporting passkey sign-in."
+      },
+      {
+        "date": "2023-10-10",
+        "event": "Passkeys become the default suggested sign-in method on supported devices."
+      },
+      {
+        "date": "2024-05-02",
+        "event": "Google reports more than one billion authentications across 400 million accounts."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Passkeys week is here",
+        "url": "https://developers.googleblog.com/en/passkeys-week-is-here/",
+        "kind": "vendor product announcement",
+        "supports": "Default sign-in prompt date and supported-device condition."
+      },
+      {
+        "title": "Passkeys, Cross-Account Protection and new ways we’re protecting your accounts",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/google-passkeys-update-april-2024/",
+        "kind": "vendor usage report",
+        "supports": "Reported usage totals and Google-account-specific prevalence."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "s3-public-access",
+    "year": 2023,
+    "dateLabel": "2018–2023",
+    "title": "New S3 buckets got an extra guard against going public",
+    "category": "Software",
+    "status": "default",
+    "summary": "S3 buckets started private, but a mistaken access setting could still expose the files inside. AWS added Block Public Access in 2018, then switched it on and disabled access control lists for newly created buckets in April 2023. Making a new bucket public now takes an extra step; the rollout left existing buckets as they were.",
+    "before": "A policy or ACL could make a private bucket publicly accessible.",
+    "pressure": "Mistakes in access settings exposed stored data.",
+    "response": "Enable Block Public Access and disable ACLs on new buckets.",
+    "outcome": "Public sharing required an explicit configuration change.",
+    "scope": "New buckets across AWS Regions; existing buckets were not retroactively changed.",
+    "origin": "S3 always started private; the additional guard arrived in 2018.",
+    "prevalence": "Default coverage applies to every newly created bucket, not a measured share of existing storage.",
+    "milestones": [
+      {
+        "date": "2018-11-15",
+        "event": "Block Public Access launched"
+      },
+      {
+        "date": "2023-04-05",
+        "event": "New default rollout began"
+      },
+      {
+        "date": "2023-04-27",
+        "event": "AWS reported completion in all Regions"
+      }
+    ],
+    "sources": [
+      {
+        "title": "AWS’s guard and completed rollout",
+        "url": "https://aws.amazon.com/blogs/aws/amazon-s3-block-public-access-another-layer-of-protection-for-your-accounts-and-buckets/",
+        "kind": "primary",
+        "supports": "Original privacy, rationale, completion"
+      },
+      {
+        "title": "AWS rollout announcement",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-s3-two-security-best-practices-buckets-default/",
+        "kind": "primary",
+        "supports": "Default changes and new-bucket scope"
+      }
+    ],
+    "researchBatch": "lead"
+  },
+  {
+    "id": "gmail-sender-requirements",
+    "year": 2024,
+    "dateLabel": "2024–25",
+    "title": "Gmail began enforcing new rules for incoming mail",
+    "category": "Networks",
+    "status": "default",
+    "summary": "Gmail began requiring senders to authenticate mail sent to personal accounts in 2024. Bulk senders faced additional authentication requirements and had to offer one-click unsubscribe for marketing and subscribed messages. Google began increasing temporary and permanent rejections of mail that failed its rules in November 2025.",
+    "before": "Email delivery across providers accepted inconsistent sender authentication and bulk-sender practices.",
+    "pressure": "Forged sender identities and spam campaigns eroded recipient trust and enabled phishing.",
+    "response": "Google tied delivery to baseline sender authentication and stricter bulk-sender requirements, then ramped rejection enforcement.",
+    "outcome": "Requirements apply to mail reaching personal Gmail; Google documents temporary and permanent rejections beginning November 2025.",
+    "scope": "Personal Gmail accounts; senders over 5,000 messages per day face additional requirements. Other mailbox providers set their own policies.",
+    "origin": "Requirements announced October 2023 and took effect February 1, 2024; stronger rejection enforcement began November 2025.",
+    "prevalence": "Large receiving-platform policy with broad sender impact, but no overall compliance rate published in reviewed sources.",
+    "milestones": [
+      {
+        "date": "2023-10-03",
+        "event": "Google announces new bulk sender requirements."
+      },
+      {
+        "date": "2024-02-01",
+        "event": "Sender requirements take effect for personal Gmail delivery."
+      },
+      {
+        "date": "2025-11",
+        "event": "Google ramps up temporary and permanent rejection of non-compliant traffic."
+      }
+    ],
+    "sources": [
+      {
+        "title": "New Gmail protections for a safer, less spammy inbox",
+        "url": "https://blog.google/products-and-platforms/products/gmail/gmail-security-authentication-spam-protection/",
+        "kind": "platform announcement",
+        "supports": "Threat rationale, 2024 obligations and Google-reported reduction in unauthenticated mail."
+      },
+      {
+        "title": "Email sender guidelines",
+        "url": "https://support.google.com/mail/answer/81126",
+        "kind": "current service policy",
+        "supports": "Active requirements and bulk-sender threshold."
+      },
+      {
+        "title": "Email sender guidelines FAQ",
+        "url": "https://support.google.com/mail/answer/14229414",
+        "kind": "current enforcement notice",
+        "supports": "November 2025 rejection ramp; temporary and permanent rejection scope."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "office-activex-default-disabled",
+    "year": 2024,
+    "dateLabel": "2024 onward",
+    "title": "Office began leaving ActiveX controls switched off",
+    "category": "Software",
+    "status": "default",
+    "summary": "Attackers could use a document to persuade people to enable embedded ActiveX controls. Office LTSC 2024 disabled the controls by default, and Microsoft now documents the same default for Microsoft 365 and Office 2024 in Word, Excel, PowerPoint, and Visio. Users can change the setting in Trust Center.",
+    "before": "Windows desktop Office supported ActiveX controls and some configurations allowed them to run in documents.",
+    "pressure": "Malicious attachments and deceptive prompts can trick users into enabling risky embedded controls.",
+    "response": "Microsoft changed the default setting to disable ActiveX controls in Microsoft 365 and Office 2024.",
+    "outcome": "Controls cannot be created or interacted with under the default setting; administrators or users can still enable them.",
+    "scope": "Microsoft 365 and Office 2024 desktop applications on Windows; Mac and web Office do not support ActiveX.",
+    "origin": "Office LTSC 2024 shipped with the controls disabled by default. Current Microsoft support confirms the same default for Microsoft 365 and Office 2024.",
+    "prevalence": "Default across current supported desktop Office versions, with explicit override and legacy behavior remaining.",
+    "milestones": [
+      {
+        "date": "2024",
+        "event": "Office LTSC 2024 disables ActiveX controls by default."
+      }
+    ],
+    "sources": [
+      {
+        "title": "ActiveX controls are disabled by default in Microsoft 365 and Office 2024",
+        "url": "https://support.microsoft.com/en-us/office/vba/activex-controls-are-disabled-by-default-in-microsoft-365-and-office-2024",
+        "kind": "product security documentation",
+        "supports": "Current default, impact and override steps."
+      },
+      {
+        "title": "Add or register an ActiveX control",
+        "url": "https://support.microsoft.com/en-us/excel/add-or-register-an-activex-control",
+        "kind": "product documentation",
+        "supports": "Legacy feature status and current Office version applicability."
+      },
+      {
+        "title": "Overview of Office LTSC 2024",
+        "url": "https://learn.microsoft.com/en-us/office/ltsc/2024/overview",
+        "kind": "primary",
+        "supports": "Confirms the disabled default in the LTSC 2024 release."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "pypi-mandatory-2fa",
+    "year": 2024,
+    "dateLabel": "2024",
+    "title": "PyPI required a second factor to manage or publish packages",
+    "category": "Software",
+    "status": "default",
+    "summary": "A stolen PyPI account can let someone publish a package under a name developers already trust. PyPI began requiring two-factor authentication for everyone who manages projects or uploads releases. You can still browse and install packages without signing in, and automated publishing can use API tokens or trusted publishing.",
+    "before": "PyPI accounts could perform project management and release uploads without universal 2FA enrollment.",
+    "pressure": "Compromised maintainer accounts can be used to upload malicious package versions.",
+    "response": "PyPI required all account holders to enable 2FA before management actions and uploads, following earlier staged requirements.",
+    "outcome": "Mandatory account 2FA went into effect January 1, 2024; browsing and package downloads remain available without accounts.",
+    "scope": "All PyPI accounts and projects; package consumers without accounts are unaffected.",
+    "origin": "PyPI added 2FA in 2019 and began enforcing it in stages before January 2024.",
+    "prevalence": "Registry-wide rule, but no adoption metric is supplied; this does not cover all language registries.",
+    "milestones": [
+      {
+        "date": "2019",
+        "event": "PyPI adds support for two-factor authentication."
+      },
+      {
+        "date": "2023-12-13",
+        "event": "PyPI announces universal 2FA requirement beginning January 1."
+      },
+      {
+        "date": "2024-01-01",
+        "event": "2FA gate applies to management actions and uploads."
+      }
+    ],
+    "sources": [
+      {
+        "title": "2FA Requirement for PyPI begins 2024-01-01",
+        "url": "https://blog.pypi.org/posts/2023-12-13-2fa-enforcement/",
+        "kind": "registry policy announcement",
+        "supports": "Effective date and distinction between accounts and package consumers."
+      },
+      {
+        "title": "Security and Internals",
+        "url": "https://docs.pypi.org/about/security-and-internals/",
+        "kind": "registry security documentation",
+        "supports": "Current state that PyPI mandates 2FA for all users."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "npm-classic-token-revocation",
+    "year": 2025,
+    "dateLabel": "2025–2026",
+    "title": "npm revoked its old publishing tokens",
+    "category": "Software",
+    "status": "retired",
+    "summary": "A token stolen from a developer’s computer or a build system could let someone keep publishing packages under that developer’s name. In December 2025, npm revoked its classic tokens and limited how long newer write-enabled tokens could last. In July 2026, tokens that bypassed two-factor authentication lost the ability to manage accounts, organizations and packages without an interactive check. Interactive logins last two hours, and build systems still have exceptions for granular tokens.",
+    "before": "npm publishers could rely on classic long-lived tokens with broad access and no short expiry.",
+    "pressure": "Compromised package-maintainer accounts and stolen registry credentials have enabled malicious package releases.",
+    "response": "npm revoked classic tokens and shortened interactive login sessions. In July 2026, sensitive management actions began requiring interactive 2FA even when a token was configured to bypass it.",
+    "outcome": "Classic tokens no longer authenticate; existing publisher workflows had to migrate. In July 2026, governance actions using bypass-2FA tokens began requiring interactive 2FA. Granular tokens and trusted publishing remain available.",
+    "scope": "npm registry credentials and package maintainers; does not affect GitHub tokens or all package registries.",
+    "origin": "Security changes announced September 29, 2025, followed by staged rollout and final classic-token revocation December 9.",
+    "prevalence": "Enforced across npm classic tokens; token rotation burden and automation exceptions remain. This is a registry-specific outcome.",
+    "milestones": [
+      {
+        "date": "2025-09-29",
+        "event": "GitHub announces phased npm token lifetime and classic-token changes."
+      },
+      {
+        "date": "2025-11-05",
+        "event": "Classic token creation is disabled and write-token defaults/lifetimes change."
+      },
+      {
+        "date": "2025-12-09",
+        "event": "npm permanently revokes classic tokens and changes interactive login to two-hour sessions."
+      },
+      {
+        "date": "2026-07-31",
+        "event": "Tokens configured to bypass 2FA lose sensitive account, organization and package management actions unless the user completes interactive 2FA."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Strengthening npm security: Important changes to authentication and token management",
+        "url": "https://github.blog/changelog/2025-09-29-strengthening-npm-security-important-changes-to-authentication-and-token-management/",
+        "kind": "registry security rollout notice",
+        "supports": "Announced token lifetime caps, 2FA defaults and classic token sunset."
+      },
+      {
+        "title": "npm security update: Classic token creation disabled and granular token changes",
+        "url": "https://github.blog/changelog/2025-11-05-npm-security-update-classic-token-creation-disabled-and-granular-token-changes/",
+        "kind": "registry change notice",
+        "supports": "Actual disabled creation and new token constraints."
+      },
+      {
+        "title": "npm classic tokens revoked, session-based auth and CLI token management now available",
+        "url": "https://github.blog/changelog/2025-12-09-npm-classic-tokens-revoked-session-based-auth-and-cli-token-management-now-available/",
+        "kind": "registry completion notice",
+        "supports": "Completed revocation and actual two-hour session behavior."
+      },
+      {
+        "title": "Restricting npm bypass-2FA granular access tokens",
+        "url": "https://github.blog/changelog/2026-07-31-restricting-npm-bypass-2fa-granular-access-tokens/",
+        "kind": "registry enforcement notice",
+        "supports": "Completed governance-action restriction and future direct-publish plan."
+      }
+    ],
+    "researchBatch": "recent"
+  },
+  {
+    "id": "http-permission",
+    "year": 2026,
+    "dateLabel": "2026",
+    "title": "Chrome began asking before opening a public HTTP site",
+    "category": "Web",
+    "status": "default",
+    "summary": "Chrome used to show “Not secure” after it had already connected over HTTP. In October 2026, Google reported that Chrome now asks before connecting to a public site if HTTPS fails. The browser remembers an approval until the site goes unvisited for two weeks. Local addresses and intranets are generally exempt.",
+    "before": "Connect over HTTP, then show a warning in the address bar.",
+    "pressure": "An attacker could intercept the first request, including a redirect to HTTPS.",
+    "response": "Ask before making an insecure connection to a public site.",
+    "outcome": "Public HTTP access became a deliberate exception.",
+    "scope": "Chrome default; bypasses, remembered approvals and local-network exceptions remain.",
+    "origin": "An opt-in secure-connection setting preceded the default.",
+    "prevalence": "Google’s rollout report says nearly 95% of desktop users saw no HTTP warning in a given week.",
+    "milestones": [
+      {
+        "date": "2025-10-28",
+        "event": "Default change announced"
+      },
+      {
+        "date": "2026-10-21",
+        "event": "Google reported default rollout completed"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Chrome’s completed rollout",
+        "url": "https://blog.google/security/chrome-now-warns-before-insecure-http-connections/",
+        "kind": "primary",
+        "supports": "Actual rollout, exceptions and warning rates"
+      },
+      {
+        "title": "The preceding HTTPS plan",
+        "url": "https://blog.google/security/https-by-defau/",
+        "kind": "primary",
+        "supports": "Earlier behavior, threat and announced scope"
+      }
+    ],
+    "researchBatch": "lead"
+  }
+]

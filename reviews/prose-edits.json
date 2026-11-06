@@ -1,0 +1,217 @@
+[
+  {
+    "id": "early-pc-antivirus-scanning",
+    "title": "Floppy disks got a virus check",
+    "summary": "The Brain virus could spread from a floppy disk when an IBM PC booted up. ESET dates its first DOS detector to 1987 and its first retail sale to 1990 in Austria. By then, NIST was recommending virus checks before new software went into use; its 1992 guide helped organizations choose from a range of available tools."
+  },
+  {
+    "id": "morris-worm-cert",
+    "title": "A standing response team after the Morris worm",
+    "summary": "When the Morris worm spread in November 1988, it disrupted the same research network people needed to coordinate their response. DARPA asked Carnegie Mellon’s Software Engineering Institute to establish CERT/CC, giving responders a standing point of contact to share information and coordinate with vendors."
+  },
+  {
+    "id": "perimeter-firewalls",
+    "title": "A firewall at the edge of the network",
+    "summary": "As offices connected their internal networks to the Internet, a firewall could control which traffic got through. By 2000 the IETF had documented how firewalls should behave, and in 2002 NIST published a guide to choosing and deploying them. A filter at the edge could do little about some attacks that started on the inside, where later guidance recommended additional controls."
+  },
+  {
+    "id": "ssh-remote-login",
+    "title": "Remote logins got an encrypted alternative",
+    "summary": "After a password-sniffing incident at his university, Tatu Ylönen developed Secure Shell in 1995. SSH let people log in and copy files over an untrusted network without sending the session in plain text, and gave them a way to check which server they were connecting to. OpenBSD included the free OpenSSH implementation in 1999, years before the IETF standardized SSH’s architecture in 2006."
+  },
+  {
+    "id": "outlook-attachment-security",
+    "title": "Outlook put some attachments out of reach",
+    "summary": "Melissa arrived as a Word document and used Outlook to send copies to people in the recipient’s address book. After Melissa and ILOVEYOU, Microsoft announced an Outlook update in May 2000 that warned about some attachments and blocked access to others. Later versions gave administrators control over some of those restrictions."
+  },
+  {
+    "id": "des-aes-transition",
+    "title": "AES replaced DES in federal standards",
+    "summary": "DES used a 56-bit key. By July 1998 the Electronic Frontier Foundation had built a machine that could try enough keys to crack one in under three days. NIST published AES in 2001 and withdrew DES as a federal standard in 2005 because it could no longer adequately protect government information."
+  },
+  {
+    "id": "intrusion-detection-systems",
+    "title": "Watching for attacks inside the network",
+    "summary": "A firewall could filter traffic at the edge, but attacks could get through or start on the inside. By 1999, NIST was advising organizations on intrusion detection: software or hardware that watched activity on machines or networks for signs of trouble. Its 2001 guide called the tools a necessary addition for most organizations."
+  },
+  {
+    "id": "microsoft-patch-cadence",
+    "title": "Microsoft put security bulletins on a monthly schedule",
+    "summary": "Fixes for the vulnerabilities exploited by Code Red and Nimda were available before the worms spread. Keeping up with patches was a job of its own, and in October 2003 Microsoft announced that it would issue security bulletins monthly, giving administrators a date they could plan around."
+  },
+  {
+    "id": "dep-nx-windows",
+    "title": "Windows could tell the processor where code was allowed to run",
+    "summary": "A buffer overflow could let an attacker put instructions in memory set aside for data and get the processor to run them. Windows XP Service Pack 2 could use a feature AMD called NX and Intel called XD to mark those memory pages as off limits for executing code. The protection depended on the processor and on firmware and Windows settings."
+  },
+  {
+    "id": "wep-wpa-transition",
+    "title": "Wi-Fi got a replacement for WEP",
+    "summary": "WEP was supposed to keep wireless traffic private, but researchers showed practical weaknesses in its use of RC4 in 2001. The Wi-Fi Alliance introduced WPA in 2002 while IEEE worked on a stronger standard. That standard arrived in 2004, and the Alliance called its full implementation WPA2; older routers and wireless clients still needed upgrades or replacement."
+  },
+  {
+    "id": "windows-xp-sp2-firewall",
+    "title": "Windows XP turned its firewall on by default",
+    "summary": "Earlier releases of Windows XP came with a firewall and left it off. After network worms such as Blaster and Sasser exploited exposed services, Service Pack 2 turned on the built-in firewall by default in August 2004 when it found no third-party firewall. Administrators could still set exceptions or change the policy."
+  },
+  {
+    "id": "windows-uac",
+    "title": "Windows Vista asked before giving a program admin access",
+    "summary": "With Windows Vista’s User Account Control, even an administrator did everyday work with reduced privileges. A program that needed more access could bring up a prompt, and some older apps could keep working through compatibility features without getting full administrator rights. Users could suppress the prompts, and the protection depended in part on what they approved."
+  },
+  {
+    "id": "chromium-sandbox",
+    "title": "Chrome put web pages in a sandbox",
+    "summary": "From the start, Chrome rendered pages in a restricted process that had to go through the browser to get at files and the network. A bug in the code that drew a page could still give an attacker control of that process, but the sandbox was designed to limit what the attacker could reach from there."
+  },
+  {
+    "id": "dns-forgery-resistance",
+    "title": "DNS replies became harder to forge",
+    "summary": "A forged DNS reply could send people to the wrong server even while their browser showed the address they expected. After researchers showed how easily attackers could poison a DNS cache, vendors issued coordinated patches in 2008 that made requests harder to guess, in part by varying which port they came from. An IETF specification the next year spelled out stricter checks on replies; cryptographic authentication was a separate defense."
+  },
+  {
+    "id": "usb-autorun",
+    "title": "Windows took away AutoRun for ordinary USB drives",
+    "summary": "Malware such as Conficker could spread through removable drives that carried instructions to launch a program. Windows 7 stopped ordinary USB drives from offering that AutoRun command through AutoPlay, and Microsoft later made the change available for XP and Vista. CDs and DVDs kept AutoRun, as did some USB devices that presented themselves as optical drives."
+  },
+  {
+    "id": "gatekeeper",
+    "title": "The Mac checked who signed a downloaded app",
+    "summary": "With OS X Mountain Lion, Gatekeeper allowed apps from the Mac App Store and from developers identified by Apple by default. A signature let the system check who signed an app and whether it had changed since. Users could tighten or loosen the rule."
+  },
+  {
+    "id": "hsts",
+    "title": "Browsers could remember to use HTTPS",
+    "summary": "With HSTS, a site could tell a browser to use HTTPS on future visits and to refuse connections with certificate errors. The browser learned the rule over a secure connection, so an unprotected first visit could still be intercepted. Preload lists gave browsers a way to know the rule before visiting included sites."
+  },
+  {
+    "id": "internet-wide-scanning",
+    "title": "An obscure address was no longer much of a hiding place",
+    "summary": "Shodan made devices on the public internet searchable. In 2013 researchers showed that ZMap could check public IPv4 addresses for a single open port in under 45 minutes. The same tools that helped administrators see what they’d left exposed could help someone else find it, too."
+  },
+  {
+    "id": "android-runtime-permissions",
+    "title": "Android apps began asking for access when they needed it",
+    "summary": "Older Android apps could ask you to accept a whole set of permissions at installation. Android 6.0 let apps targeting its new API ask for sensitive access, such as location or contacts, when they needed it; users could also revoke individual permissions later. Developers had to handle a refusal, and the change reached people as their phones and apps updated."
+  },
+  {
+    "id": "lets-encrypt",
+    "title": "Websites got free certificates they could renew automatically",
+    "summary": "Getting an HTTPS certificate could mean paying for it and handling renewals by hand. Let’s Encrypt opened its free, automated service to everyone in December 2015, making it easier for small sites to encrypt ordinary pages as well as logins and checkouts. By February 2020 the service reported serving nearly 192 million websites."
+  },
+  {
+    "id": "npapi-retirement",
+    "title": "Java applets lost their place in the browser",
+    "summary": "Java applets and Silverlight needed browser plug-ins, each with its own bugs and updates. As browsers gained built-in alternatives, Chrome dropped the old NPAPI plug-in interface in 2015 and Firefox followed in 2017. Firefox kept a temporary exception for Flash, and enterprise arrangements gave some older applications longer to migrate."
+  },
+  {
+    "id": "rc4-tls-retirement",
+    "title": "Browsers stopped offering RC4 for HTTPS",
+    "summary": "RC4 stayed available for compatibility even as attacks against the cipher improved. The IETF prohibited RC4 cipher suites for TLS in 2015, and Firefox 44 disabled them by default in January 2016. Sites that offered only RC4 had to change their encryption settings."
+  },
+  {
+    "id": "sha1-certificates",
+    "title": "SHA-1 certificates lost the browser’s trust",
+    "summary": "Browsers were already withdrawing trust from certificates signed with SHA-1 when researchers demonstrated a practical collision in February 2017. Firefox finished its phase-out that month, leaving sites that still relied on those certificates to replace them."
+  },
+  {
+    "id": "smbv1-clean-install-removal",
+    "title": "New Windows installs began leaving out SMBv1",
+    "summary": "Windows kept its old file-sharing protocol around for compatibility after newer versions were available. WannaCry and other wormable attacks made the cost of leaving SMBv1 available harder to ignore. Starting with Windows 10 and Server version 1709, Microsoft left SMBv1 out of some clean installations by default while keeping SMBv2 and SMBv3 available. Editions and upgrade paths differed, and administrators could still reinstall SMBv1 where supported."
+  },
+  {
+    "id": "certificate-transparency",
+    "title": "Chrome required a public record for website certificates",
+    "summary": "A certificate authority could issue a certificate for your site without giving you an easy way to find out. Certificate Transparency added public logs where domain owners and researchers could look for unexpected certificates. Chrome made logging a condition of trust for publicly trusted certificates issued after April 2018."
+  },
+  {
+    "id": "chrome-site-isolation-spectre",
+    "title": "Chrome gave different sites separate renderer processes",
+    "summary": "Browsers could save memory by having pages from different sites share a process. Spectre showed how speculative execution could expose data across software boundaries, making that shared space more dangerous. Chrome 67 turned on Site Isolation by default on desktop, trading some memory for separation, and Chrome later extended a narrower version to logged-in sites on eligible Android devices."
+  },
+  {
+    "id": "http-warning",
+    "title": "Chrome started labeling plain HTTP “Not secure”",
+    "summary": "The padlock was once something to look for at checkout. By early 2018 Google counted HTTPS on 81 of the top 100 sites, and that July Chrome 68 began marking every plain HTTP page “Not secure.” The pages still opened; now the browser called attention to the unencrypted connection."
+  },
+  {
+    "id": "aws-imdsv2-transition",
+    "title": "Some new EC2 instances began requiring a token for metadata",
+    "summary": "An application on an EC2 instance can ask a local service for temporary AWS credentials. If an attacker can trick the application into making that request on their behalf, those credentials can be exposed. AWS introduced a metadata service that requires a session token obtained with a PUT request, then made it the only option by default for selected launch paths and new instance types. Many existing instances still allow the earlier method unless customers change their settings."
+  },
+  {
+    "id": "breached-passwords",
+    "title": "Chrome started warning about passwords exposed in breaches",
+    "summary": "A password could meet every complexity rule and still turn up in a breach from another site. In 2019, Google started checking credentials against known breaches, first in its Password Checkup extension and then in Chrome. In the extension’s deployment study, 26% of warnings led to a new password."
+  },
+  {
+    "id": "android-unused-permission-reset",
+    "title": "Android began taking permissions back from unused apps",
+    "summary": "An app could keep access to your location or microphone long after you stopped opening it. Android 11 introduced a reset for runtime permissions after several months of disuse, with exceptions and user controls. It also let you grant location, camera or microphone access just once."
+  },
+  {
+    "id": "tls-10-11-browser-retirement",
+    "title": "Browsers moved on from TLS 1.0 and 1.1",
+    "summary": "TLS 1.0 and 1.1 protected web connections for years, but they still relied on older cryptographic designs. Browser makers gave site operators advance warning and data to help them move to TLS 1.2 or later. Firefox 78 and Chrome 84 disabled the older versions by default in 2020; the rollout included temporary exceptions and a rollback early in the pandemic."
+  },
+  {
+    "id": "mass-mfa",
+    "title": "Google turned on two-step verification for millions of accounts",
+    "summary": "For years, Google users who wanted two-step verification had to turn it on themselves. To curb takeovers involving stolen passwords and phishing, Google began enrolling eligible users automatically and said it enrolled more than 150 million in 2021. Google later reported that compromised accounts fell by 50% following the rollout."
+  },
+  {
+    "id": "exchange-online-basic-auth-retirement",
+    "title": "Older mail clients lost their password sign-in to Exchange Online",
+    "summary": "An older mail client could send your account password with every request, bypassing protections available to newer sign-in methods. Microsoft began turning off Basic Authentication for several Exchange Online protocols in October 2022 and finished in early 2023, requiring affected clients and integrations to move to OAuth. SMTP AUTH was on a separate schedule, and the rollout was specific to Microsoft’s hosted service."
+  },
+  {
+    "id": "internet-macros",
+    "title": "Office blocked macros in files from the internet",
+    "summary": "The “Enable Content” button in an invoice could be all that stood between opening a document and running the code inside. In 2022 Microsoft started blocking macros in files Office on Windows recognized as coming from the internet, with the change reaching different update channels into 2023. Trusted macros could still run, but a malicious attachment could no longer rely on that single click."
+  },
+  {
+    "id": "github-contributor-mandatory-2fa",
+    "title": "GitHub began requiring two-factor sign-in for contributors",
+    "summary": "With a stolen developer account, an attacker can get at private code or publish changes under someone else’s name. In 2023 GitHub started requiring two-factor authentication in groups, beginning with contributors it identified as influential in the software supply chain. GitHub’s first-phase report said nearly 95% of notified contributors enrolled and adoption among active contributors rose 54%."
+  },
+  {
+    "id": "passkeys-default-signin",
+    "title": "Google began offering passkeys first",
+    "summary": "On a supported device, a Google sign-in could use the same screen lock you used to unlock the device. That unlocks a passkey that works only with the service it was created for, making it harder to hand a working credential to a phishing site. Google began offering passkeys by default in October 2023 and by May 2024 reported more than a billion uses across 400 million accounts. Passwords remained available."
+  },
+  {
+    "id": "s3-public-access",
+    "title": "New S3 buckets got an extra guard against going public",
+    "summary": "S3 buckets started private, but a mistaken access setting could still expose the files inside. AWS added Block Public Access in 2018, then switched it on and disabled access control lists for newly created buckets in April 2023. Making a new bucket public now takes an extra step; the rollout left existing buckets as they were."
+  },
+  {
+    "id": "gmail-sender-requirements",
+    "title": "Gmail began enforcing new rules for incoming mail",
+    "summary": "A sender can put a forged identity on an email. Google began requiring mail to personal Gmail accounts to pass SPF or DKIM, two ways to check where it came from, and set stricter authentication and one-click unsubscribe rules for bulk senders. From November 2025 it began rejecting more messages that failed to meet those requirements."
+  },
+  {
+    "id": "memory-safe-language-transition",
+    "title": "Google began using memory-safe languages for more new systems code",
+    "summary": "Memory errors in C and C++ can give attackers a way into software. Google has been using memory-safe languages such as Rust for some new and high-risk components, including parts of Android firmware. It is also hardening the C++ code it already has and expects to keep some of it."
+  },
+  {
+    "id": "office-activex-default-disabled",
+    "title": "Office began leaving ActiveX controls switched off",
+    "summary": "A Word or Excel file could contain an ActiveX control, and an attacker could use the document to talk someone into turning that control on. Microsoft 365 and Office 2024 disable ActiveX by default in Word, Excel, PowerPoint and Visio. People who still need the controls can enable them in Trust Center settings."
+  },
+  {
+    "id": "pypi-mandatory-2fa",
+    "title": "PyPI required a second factor to manage or publish packages",
+    "summary": "A stolen PyPI account can let someone publish a package under a name developers already trust. PyPI began requiring two-factor authentication for everyone who manages projects or uploads releases. You can still browse and install packages without signing in, and automated publishing can use API tokens or trusted publishing."
+  },
+  {
+    "id": "npm-classic-token-revocation",
+    "title": "npm revoked its old publishing tokens",
+    "summary": "A token stolen from a developer’s computer or a build system could let someone keep publishing packages under that developer’s name. In December 2025, npm revoked its classic tokens and limited how long newer write-enabled tokens could last. In July 2026, tokens that bypassed two-factor authentication lost the ability to manage accounts, organizations and packages without an interactive check. Interactive logins last two hours, and build systems still have exceptions for granular tokens."
+  },
+  {
+    "id": "http-permission",
+    "title": "Chrome began asking before opening a public HTTP site",
+    "summary": "Chrome’s “Not secure” label appeared after the browser had already made an unencrypted connection. In October 2026, Google reported that Chrome was now asking first when a public site couldn’t use HTTPS. People can still go ahead, and Chrome remembers recent approvals; local addresses and intranets are normally exempt."
+  }
+]
