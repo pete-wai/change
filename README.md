@@ -1,6 +1,6 @@
 # Change
 
-[Read the history](https://pete-wai.github.io/change/)
+[Read the history](https://pwai.dev/change/)
 
 A history of things people used to trust at the computer, and the threats that changed them. The site covers 46 selected shifts from the 1980s through November 6, 2026, with short recollections, primary sources and expandable evidence. A before/after exhibit, chronological sections and combined search/topic/outcome filters support browsing.
 
